@@ -18,8 +18,8 @@
 				class="project-info flex flex-col justify-between items-start md:flex-row md:flex-wrap sm:flex-row sm:flex-wrap py-0.5 pl-0.5"
 			>
 				<div class="project-details flex flex-row">
-					<a class="flex items-center first-line:pr-0.5" href={`/project/${name}`}>
-						<span class="font-extralight underline">
+					<a class="flex items-center pr-0.5" href={`/project/${name}`}>
+						<span class="font-light text-sm underline">
 							{name + ': ' + description}
 						</span>
 					</a>

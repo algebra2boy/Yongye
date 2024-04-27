@@ -5,7 +5,6 @@ export type Brand =
 	| 'Typescript'
 	| 'Python'
 	| 'Docker'
-	| 'Node.js'
 	| 'HTML'
 	| 'CSS'
 	| 'TailwindCSS'
@@ -15,13 +14,17 @@ export type Brand =
 	| 'R'
 	| 'C'
 	| 'C++'
-	| 'PostgreSQL';
+	| 'PostgreSQL'
+	| 'MongoDB'
+	| 'Express'
+	| 'React'
+	| 'Node.js';
 
 export type Logo = {
 	[K in Brand]: {
 		imageURL: string;
 		websiteURL?: string;
-		isPersonalRelated: boolean; // if the logo is related to personal website
+		isPersonalRelated: boolean; // if the logo is related to personal information
 	};
 };
 
@@ -104,6 +107,20 @@ export const logoData: Logo = {
 	'C++': {
 		imageURL:
 			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg',
+		isPersonalRelated: false
+	},
+	Express: {
+		imageURL:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
+		isPersonalRelated: false
+	},
+	React: {
+		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+		isPersonalRelated: false
+	},
+	MongoDB: {
+		imageURL:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
 		isPersonalRelated: false
 	}
 };

@@ -12,9 +12,9 @@
 		<p class="text-lg">{@html title}</p>
 		<p class="font-light text-sm">{@html date}</p>
 	</div>
-	<div class="flex justify-between items-center">
-		<a class="font-light text-sm italic" href={websiteURL}>{@html subTitle}</a>
-		<p class="font-light text-sm">{@html location}</p>
+	<div class="flex justify-between items-center pt-0">
+		<a class="font-light text-sm italic" href={websiteURL} title={websiteURL}>{@html subTitle}</a>
+		<p class="font-light text-sm italic">{@html location}</p>
 	</div>
 	<ul class="list-disc pl-6">
 		{#each listItems as item}

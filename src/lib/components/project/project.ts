@@ -15,5 +15,12 @@ export const projects: Project[] = [
 		logo: ['Typescript'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 5)
+	},
+	{
+		name: 'ice-faculty',
+		description: 'A web app that allows faculty to upload office hour',
+		logo: ['Typescript', 'Node.js', 'React', 'Express', 'MongoDB'],
+		startDate: new Date(2024, 4),
+		endDate: new Date(2024, 5)
 	}
 ];

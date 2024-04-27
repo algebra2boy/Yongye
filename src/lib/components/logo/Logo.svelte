@@ -21,8 +21,15 @@
 {#if websiteUrl}
 	<a href={websiteUrl}>
 		<!-- no need to set logo for simple icon since they are fixed width -->
-		<img src={imageUrl} alt={imageUrl} height={height[size]} />
+		<img src={imageUrl} alt={imageUrl} height={height[size]} title={websiteUrl} />
 	</a>
 {:else}
-	<img src={imageUrl} alt={imageUrl} width={width[size]} height={height[size]} />
+	<img
+		src={imageUrl}
+		alt={imageUrl}
+		width={width[size]}
+		height={height[size]}
+		title={brand}
+		class="cursor-pointer"
+	/>
 {/if}

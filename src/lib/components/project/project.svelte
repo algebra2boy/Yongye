@@ -25,12 +25,12 @@
 					</a>
 				</div>
 				<div class="flex flex-row">
-					<div class="programming-stack flex flex-row space-x-0.5">
+					<div class="programming-stack flex flex-row space-x-0.5 items-center">
 						{#each logo as l}
 							<Logo brand={l} />
 						{/each}
 					</div>
-					<div class="date-info ml-1">
+					<div class="date-info pl-1 ml-1">
 						<p class="font-extralight italic">
 							{convertDateToString(startDate)}-{convertDateToString(endDate)}
 						</p>

@@ -18,7 +18,11 @@ export type Brand =
 	| 'MongoDB'
 	| 'Express'
 	| 'React'
-	| 'Node.js';
+	| 'Node.js'
+	| 'Socket.io'
+	| 'Svelte'
+	| 'Playwright'
+	| 'Jest'
 
 export type Logo = {
 	[K in Brand]: {
@@ -121,6 +125,24 @@ export const logoData: Logo = {
 	MongoDB: {
 		imageURL:
 			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
+		isPersonalRelated: false
+	},
+	"Socket.io": {
+		imageURL:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg',
+		isPersonalRelated: false
+	},
+	Svelte: {
+		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg',
+		isPersonalRelated: false
+	},
+	Playwright: {
+		imageURL:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg',
+		isPersonalRelated: false
+	},
+	Jest: {
+		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
 		isPersonalRelated: false
 	}
 };

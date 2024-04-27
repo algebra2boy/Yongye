@@ -6,7 +6,7 @@
 	<img
 		src="/profile.jpeg"
 		alt="Yongye Tan's profile"
-		class="rounded-full object-scale-down w-24 h-24 md:w-18 md:h-18 sm:w-14 sm:h-14"
+		class="rounded-full object-scale-down w-20 h-20 md:w-18 md:h-18"
 	/>
 	<div class="pl-3 pt-1">
 		<h1 class="text-2xl font-thin">Yongye Tan</h1>

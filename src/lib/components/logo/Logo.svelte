@@ -1,16 +1,28 @@
 <script lang="ts">
 	import { logoData, type Brand } from './logoData.js';
-	export let brand: Brand = 'github';
+
+	type Size = 'small' | 'medium' | 'large';
+
+	interface SizeProps {
+		[key: string]: string;
+	}
+
+	export let brand: Brand = 'Github';
+	export let size: Size = 'small';
 
 	const logo = logoData[brand];
 	const imageUrl = logo.imageURL;
 	const websiteUrl = logo.websiteURL;
+
+	const width = { small: '18', medium: '30', large: '42' } as SizeProps;
+	const height = { small: '20', medium: '30', large: '40' } as SizeProps;
 </script>
 
 {#if websiteUrl}
 	<a href={websiteUrl}>
-		<img src={imageUrl} alt={imageUrl} />
+		<!-- no need to set logo for simple icon since they are fixed width -->
+		<img src={imageUrl} alt={imageUrl} height={height[size]} />
 	</a>
 {:else}
-	<img src={imageUrl} alt={imageUrl} />
+	<img src={imageUrl} alt={imageUrl} width={width[size]} height={height[size]} />
 {/if}

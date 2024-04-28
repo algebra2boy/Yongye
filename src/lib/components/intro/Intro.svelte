@@ -10,7 +10,7 @@
 	/>
 	<div class="pl-3 pt-1">
 		<h1 class="text-2xl font-thin">Yongye Tan</h1>
-		<div class="flex gap-1.5">
+		<div class="flex flex-wrap gap-1.5">
 			<Logo brand="Github" />
 			<Logo brand="Linkedin" />
 			<Logo brand="Gmail" />

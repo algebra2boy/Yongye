@@ -1,4 +1,4 @@
-export type Brand =
+export type Brand = 
 	| 'Linkedin'
 	| 'Github'
 	| 'Gmail'
@@ -23,6 +23,9 @@ export type Brand =
 	| 'Svelte'
 	| 'Playwright'
 	| 'Jest'
+	| 'Golang'
+	| 'GithubAction'
+	| 'Azure';
 
 export type Logo = {
 	[K in Brand]: {
@@ -144,5 +147,18 @@ export const logoData: Logo = {
 	Jest: {
 		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
 		isPersonalRelated: false
-	}
+	},
+	Golang: {
+		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg',
+		isPersonalRelated: false
+	},
+	GithubAction: {
+		imageURL:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
+		isPersonalRelated: false
+	},
+	Azure: {
+		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
+		isPersonalRelated: false
+	},
 };

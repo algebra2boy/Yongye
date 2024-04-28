@@ -1,4 +1,4 @@
-export type Brand = 
+export type Brand =
 	| 'Linkedin'
 	| 'Github'
 	| 'Gmail'
@@ -25,7 +25,16 @@ export type Brand =
 	| 'Jest'
 	| 'Golang'
 	| 'GithubAction'
-	| 'Azure';
+	| 'Azure'
+	| 'Bootstrap'
+	| 'AWS'
+	| 'ChatGPT'
+	| 'Flask'
+	| 'Tesseract.js'
+	| 'Twilio'
+	| 'MySQL'
+	| 'Gin'
+	| 'RabbitMQ';
 
 export type Logo = {
 	[K in Brand]: {
@@ -94,12 +103,12 @@ export const logoData: Logo = {
 		isPersonalRelated: false
 	},
 	Java: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
+		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
 		isPersonalRelated: false
 	},
 	R: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
+		imageURL:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rstudio/rstudio-original.svg',
 		isPersonalRelated: false
 	},
 	PostgreSQL: {
@@ -130,13 +139,14 @@ export const logoData: Logo = {
 			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
 		isPersonalRelated: false
 	},
-	"Socket.io": {
+	'Socket.io': {
 		imageURL:
 			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg',
 		isPersonalRelated: false
 	},
 	Svelte: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg',
+		imageURL:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg',
 		isPersonalRelated: false
 	},
 	Playwright: {
@@ -161,4 +171,45 @@ export const logoData: Logo = {
 		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
 		isPersonalRelated: false
 	},
+	Bootstrap: {
+		imageURL:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-plain.svg',
+		isPersonalRelated: false
+	},
+	AWS: {
+		imageURL:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+		isPersonalRelated: false
+	},
+	ChatGPT: {
+		imageURL: 'https://static-00.iconduck.com/assets.00/openai-icon-2021x2048-4rpe5x7n.png',
+		isPersonalRelated: false
+	},
+	Flask: {
+		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg',
+		isPersonalRelated: false
+	},
+	'Tesseract.js': {
+		imageURL:
+			'https://raw.githubusercontent.com/naptha/tesseract.js/HEAD/docs/images/tesseract.png',
+		isPersonalRelated: false
+	},
+	Twilio: {
+		imageURL:
+			'https://yt3.googleusercontent.com/ytc/AIdro_mPLQY8e9917tUTXcnpZ7jhvuyH9a9GX_57slDz38J8Ej8=s900-c-k-c0x00ffffff-no-rj',
+		isPersonalRelated: false
+	},
+	MySQL: {
+		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
+		isPersonalRelated: false
+	},
+	Gin: {
+		imageURL: 'https://raw.githubusercontent.com/gin-gonic/logo/master/color.png',
+		isPersonalRelated: false
+	},
+	RabbitMQ: {
+		imageURL:
+			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg',
+		isPersonalRelated: false
+	}
 };

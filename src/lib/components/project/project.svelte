@@ -1,16 +1,26 @@
 <script lang="ts">
-	import { projects } from './project.js';
+	import { projects, type Project } from './project.js';
 	import Logo from '../logo/Logo.svelte';
 
 	function convertDateToString(date: Date) {
 		return date.getMonth() + '/' + date.getFullYear();
 	}
+
+	const sortedProjects: Project[] = projects.sort((a, b) => {
+		if (a.startDate > b.startDate) {
+			return -1;
+		} else if (a.startDate < b.startDate) {
+			return 1;
+		} else {
+			return 0;
+		}
+	});
 </script>
 
 <div class="pt-2 pl-1 rounded-lg">
 	<h1 class="text-xl font-extralight">PROJECTS</h1>
 	<hr class="divide-solid border-slate-500 mt-1 border-1" />
-	{#each projects as { name, description, startDate, endDate, logo }}
+	{#each sortedProjects as { name, description, startDate, endDate, logo }}
 		<div id={name} class="project-entry">
 			<!-- when it is on smaller size (md:), use flex-row and flex-wrap -->
 			<!-- justify-between to push the logo and date to the other side -->
@@ -24,13 +34,11 @@
 						</span>
 					</a>
 				</div>
-				<div class="flex flex-row">
-					<div class="programming-stack flex flex-row space-x-0.5 items-center">
-						{#each logo as l}
-							<Logo brand={l} />
-						{/each}
-					</div>
-					<div class="date-info pl-1 ml-1">
+				<div class="programming-stack flex flex-wrap space-x-0.5 items-center">
+					{#each logo as l}
+						<Logo brand={l} />
+					{/each}
+					<div class="date-info ml-1">
 						<p class="font-extralight italic">
 							{convertDateToString(startDate)}-{convertDateToString(endDate)}
 						</p>

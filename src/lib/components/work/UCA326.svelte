@@ -3,7 +3,7 @@
 </script>
 
 <CardTemplate
-	title="Course Assistant: Scalable Web System"
+	title="Course Assistant: Web Programming"
 	date="May 2023-Aug 2023"
 	subTitle="Manning College of Information and Computer Sciences"
 	websiteURL="https://www.cics.umass.edu/"

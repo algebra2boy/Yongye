@@ -80,7 +80,7 @@ export const personalProjects: Project[] = [
 	{
 		name: 'MLH-Web-Scraper',
 		description: 'A scraper scrapes all the MLH hackathon event',
-		logo: ['Golang'],
+		logo: ['Golang', 'Gin'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4)
 	},
@@ -136,7 +136,7 @@ export const personalProjects: Project[] = [
 	{
 		name: 'MCAS-Analysis',
 		description: 'Explores the relationship between income and standardized test performance',
-		logo: ['R'],
+		logo: ['R', 'RStudio'],
 		startDate: new Date(2023, 9),
 		endDate: new Date(2024, 1)
 	},
@@ -241,14 +241,14 @@ export const personalProjects: Project[] = [
 	{
 		name: 'AbsenteeismAtWork',
 		description: 'Data Science Project about work absenteeism',
-		logo: ['R'],
+		logo: ['R', 'RStudio'],
 		startDate: new Date(2022, 9),
 		endDate: new Date(2023, 1)
 	},
 	{
 		name: 'Find.it',
 		description: 'A web app helps people to find their lost items on campus',
-		logo: ['React', 'CSS', 'Twilio', 'Flask', 'Express', 'MySQL'],
+		logo: ['React', 'HTML', 'CSS', 'Twilio', 'Flask', 'MySQL'],
 		startDate: new Date(2022, 11),
 		endDate: new Date(2022, 12)
 	},
@@ -281,7 +281,7 @@ export const personalProjects: Project[] = [
 		endDate: new Date(2022, 7)
 	},
 	{
-		name: 'Twillio-ChatBot',
+		name: 'Twilio-ChatBot',
 		description: 'A conversional bot that integrates with many APIs.',
 		logo: ['Python', 'Flask', 'Twilio'],
 		startDate: new Date(2022, 7),
@@ -290,7 +290,7 @@ export const personalProjects: Project[] = [
 	{
 		name: 'Covid19-Analysis',
 		description: 'A data analysis project about COVID-19 between mask mandate and hospitalization',
-		logo: ['R'],
+		logo: ['R', 'RStudio'],
 		startDate: new Date(2020, 6),
 		endDate: new Date(2020, 7)
 	},
@@ -339,7 +339,7 @@ export const personalProjects: Project[] = [
 	},
 	{
 		name: 'RateMyDine2.0',
-		description: 'Rate My version (but better, still in progress)',
+		description: 'Rate My Dine upgrade (but better, still in progress)',
 		logo: ['Typescript', 'Express', 'Svelte', 'Jest'],
 		startDate: new Date(2024, 1),
 		endDate: new Date(2024, 2)

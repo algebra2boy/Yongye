@@ -1,16 +1,31 @@
 <script lang="ts">
-	import { Intro, Education, Work, Project, Skill } from '$lib/components/index.js';
+	import {
+		Intro,
+		Education,
+		Work,
+		PersonalProject,
+		SchoolProject,
+		Skill
+	} from '$lib/components/index.js';
 
 	type ComponentOption =
 		| typeof Intro
 		| typeof Education
 		| typeof Work
-		| typeof Project
+		| typeof PersonalProject
+		| typeof SchoolProject
 		| typeof Skill;
 
-	let components: ComponentOption[] = [Intro, Education, Work, Project, Skill];
+	let components: ComponentOption[] = [
+		Intro,
+		Education,
+		Work,
+		PersonalProject,
+		SchoolProject,
+		Skill
+	];
 
-	let positions: number[] = [0, 1, 2, 3, 4];
+	let positions: number[] = [0, 1, 2, 3, 4, 5];
 
 	function shuffle() {
 		for (let i = positions.length - 1; i > 0; i--) {

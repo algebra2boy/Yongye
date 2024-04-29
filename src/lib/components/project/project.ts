@@ -8,6 +8,10 @@ export type Project = {
 	endDate: Date;
 };
 
+export const schoolProjects = [
+
+];
+
 export const personalProjects: Project[] = [
 	{
 		name: 'LingoQuest',

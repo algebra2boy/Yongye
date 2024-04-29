@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { logoData, type Brand } from './logoData.js';
+	import { techStack, type Brand } from './logoData.js';
 
 	type Size = 'small' | 'medium' | 'large';
 
@@ -10,7 +10,7 @@
 	export let brand: Brand = 'Github';
 	export let size: Size = 'small';
 
-	const logo = logoData[brand];
+	const logo = techStack[brand];
 	const imageUrl = logo.imageURL;
 	const websiteUrl = logo.websiteURL;
 

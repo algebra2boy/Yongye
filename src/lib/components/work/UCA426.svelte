@@ -8,7 +8,5 @@
 	subTitle="Manning College of Information and Computer Sciences"
 	websiteURL="https://www.cics.umass.edu/"
 	location="Amherst, MA"
-	listItems={[
-		'TOBE UPDATED',
-	]}
+	listItems={['TOBE UPDATED']}
 />

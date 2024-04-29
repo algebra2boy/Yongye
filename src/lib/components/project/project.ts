@@ -8,10 +8,10 @@ export type Project = {
 	endDate: Date;
 };
 
-export const projects: Project[] = [
+export const personalProjects: Project[] = [
 	{
 		name: 'LingoQuest',
-		description: 'A language learning web app that helps learn a new language',
+		description: 'A language learning web app that helps learn language',
 		logo: [
 			'Docker',
 			'Svelte',
@@ -23,6 +23,7 @@ export const projects: Project[] = [
 			'Flask',
 			'RabbitMQ',
 			'AWS',
+			'GraphQL'
 		],
 		startDate: new Date(2024, 5),
 		endDate: new Date(2024, 9)
@@ -226,7 +227,7 @@ export const projects: Project[] = [
 	{
 		name: 'DineAndGo',
 		description: 'Making a restaurant management app',
-		logo: ['Swift'],
+		logo: ['Swift', 'Firebase'],
 		startDate: new Date(2022, 11),
 		endDate: new Date(2023, 2)
 	},
@@ -267,7 +268,7 @@ export const projects: Project[] = [
 	},
 	{
 		name: 'OHill-Squad-WeSQL',
-		description: 'Learning how to connect mySQL database with Python.',
+		description: 'Learned how to connect mySQL database with Python.',
 		logo: ['Python', 'MySQL'],
 		startDate: new Date(2022, 8),
 		endDate: new Date(2022, 9)

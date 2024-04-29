@@ -1,13 +1,13 @@
 <script lang="ts">
-	import { logoData, type Brand } from '$lib/components/logo/logoData';
+	import { techStack, type Brand } from '$lib/components/logo/logoData';
 	import Logo from '$lib/components/logo/Logo.svelte';
 
-	const brands = Object.keys(logoData) as Brand[];
+	const brands = Object.keys(techStack) as Brand[];
 </script>
 
 <div class="logo-house flex flex-wrap gap-1.5">
 	{#each brands as brand}
-		{#if !logoData[brand].isPersonalRelated}
+		{#if !techStack[brand].isPersonalRelated}
 			<Logo {brand} size="large" />
 		{/if}
 	{/each}

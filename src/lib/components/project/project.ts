@@ -31,7 +31,7 @@ export const personalProjects: Project[] = [
 	{
 		name: 'Yongye',
 		description: 'My website! (This website!)',
-		logo: ['Typescript', 'Svelte', 'TailwindCSS'],
+		logo: ['Typescript', 'Svelte', 'TailwindCSS', 'Vercel'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 5)
 	},
@@ -45,7 +45,7 @@ export const personalProjects: Project[] = [
 	{
 		name: 'ice-faculty',
 		description: 'A web app that allows faculty to upload office hour',
-		logo: ['Docker', 'Typescript', 'Node.js', 'React', 'Express', 'MongoDB'],
+		logo: ['Docker', 'Typescript', 'Node.js', 'React', 'Express', 'MongoDB', 'Vercel'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 5)
 	},
@@ -94,14 +94,14 @@ export const personalProjects: Project[] = [
 	{
 		name: 'Free-Write',
 		description: 'A simple free rich editor web app allow you to write and focus',
-		logo: ['React', 'Javascript', 'TailwindCSS'],
+		logo: ['React', 'Javascript', 'TailwindCSS', 'Vercel'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4)
 	},
 	{
 		name: 'Career-Explorer',
 		description: 'A simple web app that searches real life job posting',
-		logo: ['Svelte', 'Javascript', 'TailwindCSS'],
+		logo: ['Svelte', 'Javascript', 'TailwindCSS', 'Vercel'],
 		startDate: new Date(2024, 3),
 		endDate: new Date(2024, 3)
 	},

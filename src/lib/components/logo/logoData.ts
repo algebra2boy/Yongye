@@ -60,7 +60,8 @@ export type Brand =
 	| 'Notion'
 	| 'Figma'
 	| 'NetworkX'
-	| 'GraphQL';
+	| 'GraphQL'
+	| 'RStudio';
 
 export type Logo = {
 	[K in Brand]: {
@@ -70,6 +71,18 @@ export type Logo = {
 		isTechTool?: boolean; // if the logo is related to tech tools
 		isPersonalRelated: boolean; // if the logo is related to personal information
 	};
+};
+
+type DevIconOption = 'original' | 'plain';
+
+export const getImageFromDevicon = (
+	name: string,
+	option: DevIconOption = 'original',
+	wordmark: boolean = false
+): string => {
+	return `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${name}/${name}-${option}${
+		wordmark ? '-wordmark' : ''
+	}.svg`;
 };
 
 export const techStack: Logo = {
@@ -89,149 +102,132 @@ export const techStack: Logo = {
 		isPersonalRelated: true
 	},
 	Typescript: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+		imageURL: getImageFromDevicon('typescript'),
 		isProgrammingLanguage: true,
 		isPersonalRelated: false
 	},
 	Python: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',
+		imageURL: getImageFromDevicon('python'),
 		isProgrammingLanguage: true,
 		isPersonalRelated: false
 	},
 	Docker: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
+		imageURL: getImageFromDevicon('docker'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	'Node.js': {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
+		imageURL: getImageFromDevicon('nodejs'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	HTML: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+		imageURL: getImageFromDevicon('html5'),
 		isProgrammingLanguage: true,
 		isPersonalRelated: false
 	},
 	CSS: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+		imageURL: getImageFromDevicon('css3'),
 		isProgrammingLanguage: true,
 		isPersonalRelated: false
 	},
 	TailwindCSS: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+		imageURL: getImageFromDevicon('tailwindcss'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Swift: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swift/swift-original.svg',
+		imageURL: getImageFromDevicon('swift'),
 		isProgrammingLanguage: true,
 		isPersonalRelated: false
 	},
 	Javascript: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+		imageURL: getImageFromDevicon('javascript'),
 		isProgrammingLanguage: true,
 		isPersonalRelated: false
 	},
 	Java: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
+		imageURL: getImageFromDevicon('java'),
 		isProgrammingLanguage: true,
 		isPersonalRelated: false
 	},
 	R: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rstudio/rstudio-original.svg',
+		imageURL: getImageFromDevicon('r'),
 		isProgrammingLanguage: true,
 		isPersonalRelated: false
 	},
 	PostgreSQL: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+		imageURL: getImageFromDevicon('postgresql'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	C: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg',
+		imageURL: getImageFromDevicon('c'),
 		isProgrammingLanguage: true,
 		isPersonalRelated: false
 	},
 	'C++': {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg',
+		imageURL: getImageFromDevicon('cplusplus'),
 		isProgrammingLanguage: true,
 		isPersonalRelated: false
 	},
 	Express: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
+		imageURL: getImageFromDevicon('express'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	React: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+		imageURL: getImageFromDevicon('react'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	MongoDB: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg',
+		imageURL: getImageFromDevicon('mongodb'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	'Socket.io': {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg',
+		imageURL: getImageFromDevicon('socketio'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Svelte: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/svelte/svelte-original.svg',
+		imageURL: getImageFromDevicon('svelte'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Playwright: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/playwright/playwright-original.svg',
+		imageURL: getImageFromDevicon('playwright'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Jest: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg',
+		imageURL: getImageFromDevicon('jest', 'plain'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Golang: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg',
+		imageURL: getImageFromDevicon('go'),
 		isProgrammingLanguage: true,
 		isPersonalRelated: false
 	},
 	GithubAction: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
+		imageURL: getImageFromDevicon('github'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Azure: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
+		imageURL: getImageFromDevicon('azure'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Bootstrap: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-plain.svg',
+		imageURL: getImageFromDevicon('bootstrap'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	AWS: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+		imageURL: getImageFromDevicon('amazonwebservices', 'original', true),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
@@ -241,7 +237,7 @@ export const techStack: Logo = {
 		isTechTool: true
 	},
 	Flask: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg',
+		imageURL: getImageFromDevicon('flask'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
@@ -252,13 +248,12 @@ export const techStack: Logo = {
 		isTechTool: true
 	},
 	Twilio: {
-		imageURL:
-			'https://yt3.googleusercontent.com/ytc/AIdro_mPLQY8e9917tUTXcnpZ7jhvuyH9a9GX_57slDz38J8Ej8=s900-c-k-c0x00ffffff-no-rj',
+		imageURL: 'https://cdn.iconscout.com/icon/free/png-256/free-twilio-3521773-2945271.png?f=webp',
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	MySQL: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
+		imageURL: getImageFromDevicon('mysql'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
@@ -268,156 +263,142 @@ export const techStack: Logo = {
 		isTechTool: true
 	},
 	RabbitMQ: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rabbitmq/rabbitmq-original.svg',
+		imageURL: getImageFromDevicon('rabbitmq'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	SQL: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg',
+		imageURL: getImageFromDevicon('azuresqldatabase'),
 		isProgrammingLanguage: true,
 		isPersonalRelated: false
 	},
 	VSCode: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg',
+		imageURL: getImageFromDevicon('vscode'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	PyCharm: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pycharm/pycharm-original.svg',
+		imageURL: getImageFromDevicon('pycharm'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	IntelliJ: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/intellij/intellij-original.svg',
+		imageURL: getImageFromDevicon('intellij'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Xcode: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/xcode/xcode-original.svg',
+		imageURL: getImageFromDevicon('xcode'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Jupyter: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original.svg',
+		imageURL: getImageFromDevicon('jupyter'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Postman: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg',
+		imageURL: getImageFromDevicon('postman'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Firebase: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg',
+		imageURL: getImageFromDevicon('firebase'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Git: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+		imageURL: getImageFromDevicon('git'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Vercel: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg',
+		imageURL: getImageFromDevicon('vercel'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Netlify: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg',
+		imageURL: getImageFromDevicon('netlify'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Bash: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg',
+		imageURL: getImageFromDevicon('bash'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	FastAPI: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg',
+		imageURL: getImageFromDevicon('fastapi'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Latex: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/latex/latex-original.svg',
+		imageURL: getImageFromDevicon('latex'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Linux: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg',
+		imageURL: getImageFromDevicon('linux'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Mongoose: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg',
+		imageURL: getImageFromDevicon('mongoose'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Kubernetes: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-original.svg',
+		imageURL: getImageFromDevicon('kubernetes'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Npm: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg',
+		imageURL: getImageFromDevicon('npm', 'original', true),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Pnpm: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pnpm/pnpm-original-wordmark.svg',
+		imageURL: getImageFromDevicon('pnpm'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Nodemon: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodemon/nodemon-original.svg',
+		imageURL: getImageFromDevicon('nodemon'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	'Three.js': {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/threejs/threejs-original.svg',
+		imageURL: getImageFromDevicon('threejs'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Vite: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vite/vite-original.svg',
+		imageURL: getImageFromDevicon('vite'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Notion: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg',
+		imageURL: getImageFromDevicon('notion'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	Figma: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
+		imageURL: getImageFromDevicon('figma'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	NetworkX: {
-		imageURL:
-			'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/networkx/networkx-original.svg',
+		imageURL: getImageFromDevicon('networkx'),
 		isPersonalRelated: false,
 		isTechTool: true
 	},
 	GraphQL: {
-		imageURL: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg',
+		imageURL: getImageFromDevicon('graphql', 'plain'),
+		isPersonalRelated: false,
+		isTechTool: true
+	},
+	RStudio: {
+		imageURL: getImageFromDevicon('rstudio'),
 		isPersonalRelated: false,
 		isTechTool: true
 	}

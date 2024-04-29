@@ -1,16 +1,5 @@
 <script lang="ts">
-	import { Intro, Education, Work, Project, Skill } from '$lib/components/index.js';
-
-	type ComponentOption =
-		| typeof Intro
-		| typeof Education
-		| typeof Work
-		| typeof Project
-		| typeof Skill;
-
-	let components: ComponentOption[] = [Intro, Education, Work, Project, Skill];
-
-	let positions: number[] = [0, 1, 2, 3, 4];
+	let positions: number[] = [1, 2, 3, 4, 5];
 
 	function shuffle() {
 		for (let i = positions.length - 1; i > 0; i--) {
@@ -20,16 +9,7 @@
 			positions[j] = temp;
 		}
 	}
-
-	$: {
-		console.log(positions);
-		components = positions.map((p) => components[p]);
-	}
 </script>
-
-{#each components as component}
-	<svelte:component this={component} />
-{/each}
 
 <div class="flex justify-center">
 	<div class="flex-row italic">Drag me to see what happens</div>

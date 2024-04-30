@@ -5,6 +5,7 @@
     $: type = name.slice(name.lastIndexOf('.') + 1);
 </script>
 
+{type}
 <span style="background-image: url(/icons/{type}.svg)">{name}</span>
 
 <style>

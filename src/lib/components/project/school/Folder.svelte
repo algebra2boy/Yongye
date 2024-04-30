@@ -17,9 +17,13 @@
 		{#each files as file}
 			<li>
 				{#if file.type === 'folder'}
-					<svlete:self {...file} />
-				{:else}
-					<File {...file} />
+					<!-- <svlete:self name={file.name} files={file.files} /> -->
+					<!-- <h1>{file.name}</h1>
+					<h1>{file.type}</h1>
+					<h2>{JSON.stringify(file.files)}</h2> -->
+					<svlete:self name={file.name} files={file.files} expanded />
+				{:else if file.type === 'file'}
+					<File name={file.name} />
 				{/if}
 			</li>
 		{/each}
@@ -29,7 +33,7 @@
 <style>
 	button {
 		padding: 0 0 0 1.5em;
-		background: url(/icons/folder-close.svg) 0 0.1em no-repeat;
+		background: url(/icons/folder.svg) 0 0.1em no-repeat;
 		background-size: 1em 1em;
 		font-weight: bold;
 		cursor: pointer;

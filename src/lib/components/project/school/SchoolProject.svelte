@@ -6,7 +6,7 @@
 		{
 			type: 'folder',
 			name: 'Important work stuff',
-			files: [{ type: 'file', name: 'quarterly-results.xlsx' }]
+			files: [{ type: 'file', name: 'TODO.md' }]
 		},
 		{ type: 'file', name: 'TODO.md' },
 		{ type: 'file', name: 'TODO.md' },

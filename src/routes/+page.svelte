@@ -37,7 +37,7 @@
 	}
 
 	$: {
-		console.log(positions);
+		// console.log(positions);
 		components = positions.map((p) => components[p]);
 	}
 </script>

@@ -54,6 +54,7 @@ const Summer2022Project: FileStructure[] = [
             { type: 'file', name: 'indexingAndTuning.sql' },
             { type: 'file', name: 'security.sql' },
             { type: 'file', name: 'concurrency.java' },
+            { type: 'file', name: 'REAMD.md' }
         ]
     }
 ]
@@ -64,6 +65,7 @@ const Fall2022Project: FileStructure[] = [
         name: 'CS 360: Network Security',
         files: [
             { type: 'file', name: 'SQLInjection.pdf' },
+            { type: 'file', name: 'REAMD.md' }
         ]
     },
     {
@@ -95,12 +97,16 @@ const Fall2022Project: FileStructure[] = [
                     { type: 'file', name: 'memoryAllocator.cpp' },
                     { type: 'file', name: 'fileSystem.cpp' }
                 ]
-            }
+            },
+            { type: 'file', name: 'REAMD.md' }
         ]
     },
     {
         type: 'folder',
         name: 'Math 397: Math Computing',
+        files: [
+            { type: 'file', name: 'REAMD.md' }
+        ]
     }
 ]
 
@@ -160,7 +166,8 @@ const Spring2023Project: FileStructure[] = [
                         ]
                     }
                 ]
-            }
+            },
+            { type: 'file', name: 'REAMD.md' }
         ]
     },
     {
@@ -185,6 +192,7 @@ const Spring2023Project: FileStructure[] = [
                     { type: 'file', name: 'python.py' },
                 ]
             },
+            { type: 'file', name: 'REAMD.md' }
         ]
     },
     {
@@ -195,7 +203,8 @@ const Spring2023Project: FileStructure[] = [
             { type: 'file', name: 'decisionTree.py' },
             { type: 'file', name: 'naiveBayes.py' },
             { type: 'file', name: 'randomForest.py' },
-            { type: 'file', name: 'neutralNetwork.py' }
+            { type: 'file', name: 'neutralNetwork.py' },
+            { type: 'file', name: 'REAMD.md' }
         ]
     }
 ];
@@ -219,12 +228,137 @@ const Summer2023Project: FileStructure[] = [
                     { type: 'file', name: 'logginWinston.js' },
                     { type: 'file', name: 'testWithNodeTestRunner.sh' },
                     { type: 'file', name: 'rateLimiting.js' },
+                    { type: 'file', name: 'todoList.svelte' },
+                    { type: 'file', name: 'weather.svelte' },
+                    { type: 'file', name: 'location.svelte' },
                 ]
             },
-            { type: 'folder', name: 'Homework' },
+            {
+                type: 'folder',
+                name: 'Homework',
+                files: [
+                    { type: 'file', name: 'busScheduleAPI.js' },
+                    { type: 'file', name: 'producerAndConsumer.js' },
+                    { type: 'file', name: 'microservices.js' }
+                ]
+            },
+            { type: 'file', name: 'REAMD.md' }
         ]
     },
 ]
+
+const Fall2023Project: FileStructure[] = [
+    {
+        type: 'folder',
+        name: 'CS 220: Programming Methodology',
+        files: [
+            {
+                type: 'folder',
+                name: 'Lab',
+                files: [
+                    { type: 'file', name: 'HOF.ts' },
+                    { type: 'file', name: 'typesAndHOF.ts' },
+                    { type: 'file', name: 'lists.ts' },
+                    { type: 'file', name: 'mentalModelsAndClosures.ts' },
+                    { type: 'file', name: 'propertyBasedTesting.ts' },
+                    { type: 'file', name: 'streams.ts' },
+                    { type: 'file', name: 'obserablesAndStreams.ts' },
+                    { type: 'file', name: 'asynchronousProgramming.ts' },
+                    { type: 'file', name: 'interpreters.ts' },
+                ]
+            },
+            {
+                type: 'folder',
+                name: 'Project',
+                files: [
+                    { type: 'file', name: 'imageProcessing.ts' },
+                    { type: 'file', name: 'imageProcessingWithHof.ts' },
+                    { type: 'file', name: 'lists.ts' },
+                    { type: 'file', name: 'oracles.ts' },
+                    { type: 'file', name: 'streamsAndSeries.ts' },
+                    { type: 'file', name: 'fluentFilterAndJson.ts' },
+                    { type: 'file', name: 'buildingAnInterpreter.ts' }
+                ]
+            },
+            { type: 'file', name: 'REAMD.md' }
+        ]
+    },
+];
+
+const Spring2024Project: FileStructure[] = [
+    {
+        type: "folder",
+        name: "CICS 305: Junior Year Writing",
+        files: [
+            { type: "file", name: "unit1-ResumeCoverLetter.pdf" },
+            { type: "file", name: "unit2-x.pdf" },
+            { type: "file", name: "unit3-3.pdf" },
+            { type: "file", name: "unit4-Duolingo.pdf" },
+            { type: "file", name: "unit5-x.pdf" },
+            { type: 'file', name: 'REAMD.md' }
+        ]
+    },
+    {
+        type: "folder",
+        name: "CS 496 - Web Systems Dev: Real-World",
+        files: [
+            {
+                type: "folder",
+                name: "frontend",
+                files: [
+                    { type: "file", name: "components.svelte" },
+                    { type: "file", name: "stores.ts" },
+                    { type: "file", name: "styles.tw" },
+                    { type: "file", name: "dockerfile.docker" },
+                    { type: "file", name: "playwright.ts.test" },
+                ]
+            },
+            {
+                type: "folder",
+                name: "backend",
+                files: [
+                    { type: "file", name: "middlewares.ts" },
+                    { type: "file", name: "configs.ts" },
+                    { type: "file", name: "routes.ts" },
+                    { type: "file", name: "controller.ts" },
+                    { type: "file", name: "service.ts" },
+                    { type: "file", name: "utils.ts" },
+                    { type: "file", name: "validations.ts" },
+                    { type: "file", name: "app.ts" },
+                    { type: "file", name: "server.ts" },
+                    { type: "file", name: "tests.test" },
+                    { type: "file", name: "dockerfile.docker" },
+                ]
+            },
+            { type: 'file', name: 'REAMD.md' }
+        ]
+    },
+    {
+        type: "folder",
+        name: "CS 520 - Theory and Practice of Software Engineering",
+        files: [
+            {
+                type: "folder",
+                name: "Exercise",
+                files: [
+                    { type: "file", name: "AdvancedGit.git" },
+                    { type: "file", name: "executionState.java" },
+                    { type: "file", name: "TestingAndDebugging.java" },
+                ]
+            },
+            {
+                type: "folder",
+                name: "Project",
+                files: [
+                    { type: "file", name: "DesignPattern.swift" },
+                    { type: "file", name: "Randoop.java" }
+                ]
+            },
+            { type: 'file', name: 'REAMD.md' }
+        ]
+    }
+];
+
 
 export const schoolProjects: FileStructure[][] = [
     Fall2021Project,
@@ -232,5 +366,7 @@ export const schoolProjects: FileStructure[][] = [
     Summer2022Project,
     Fall2022Project,
     Spring2023Project,
-    Summer2023Project
+    Summer2023Project,
+    Fall2023Project,
+    Spring2024Project
 ];

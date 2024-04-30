@@ -120,11 +120,110 @@ const Spring2023Project: FileStructure[] = [
             },
             {
                 type: 'folder',
-                name: 'Lab',
+                name: 'Exercise',
+                files: [
+                    {
+                        type: 'folder',
+                        name: '1-5',
+                        files: [
+                            { type: 'file', name: 'letterFrequency.html' },
+                            { type: 'file', name: 'panlindrome.html' },
+                            { type: 'file', name: 'decoder-ring-class.js' },
+                            { type: 'file', name: 'decoder-web-page.html' },
+                            { type: 'file', name: 'decoder-web-page.css' },
+                            { type: 'file', name: 'decoder-web-page.js' }
+                        ]
+                    },
+                    {
+                        type: 'folder',
+                        name: '6-10',
+                        files: [
+                            { type: 'file', name: 'decoder-interactive.html' },
+                            { type: 'file', name: 'decoder-interactive.css' },
+                            { type: 'file', name: 'decoder-interactive.js' },
+                            { type: 'file', name: 'decoder-ring-class.js' },
+                            { type: 'file', name: 'chessboard.html' },
+                            { type: 'file', name: 'chessboard.css' },
+                            { type: 'file', name: 'chessboard.js' },
+                            { type: 'file', name: 'persistent-encoder.js' },
+                            { type: 'file', name: 'run-server.js' }
+                        ]
+                    },
+                    {
+                        type: 'folder',
+                        name: '10-14',
+                        files: [
+                            { type: 'file', name: 'rest-and-fetch.js' },
+                            { type: 'file', name: 'crud-1.js' },
+                            { type: 'file', name: 'crud-2.js' },
+                            { type: 'file', name: 'routing.js' },
+                        ]
+                    }
+                ]
             }
         ]
+    },
+    {
+        type: 'folder',
+        name: 'CS 453: Computer Networks',
+        files: [
+            {
+                type: 'folder',
+                name: 'Socket Programming',
+                files: [
+                    { type: 'file', name: 'UDP_client.py' },
+                    { type: 'file', name: 'UDP_server.py' },
+                    { type: 'file', name: 'TCP_client.py' },
+                    { type: 'file', name: 'TCP_server.py' }
+                ]
+            },
+            {
+                type: 'folder',
+                name: 'ReliableDataTransferProtocol',
+                files: [
+                    { type: 'file', name: 'sender.py' },
+                    { type: 'file', name: 'python.py' },
+                ]
+            },
+        ]
+    },
+    {
+        type: 'folder',
+        name: "CS 589: Machine Learning",
+        files: [
+            { type: 'file', name: 'knn.py' },
+            { type: 'file', name: 'decisionTree.py' },
+            { type: 'file', name: 'naiveBayes.py' },
+            { type: 'file', name: 'randomForest.py' },
+            { type: 'file', name: 'neutralNetwork.py' }
+        ]
     }
+];
 
+const Summer2023Project: FileStructure[] = [
+    {
+        type: 'folder',
+        name: 'CS 490STA: Scalable Web Systems',
+        files: [
+            {
+                type: 'folder',
+                name: 'Exercise',
+                files: [
+                    { type: 'file', name: 'expressApp.js' },
+                    { type: 'file', name: 'importAndExport.js' },
+                    { type: 'file', name: 'nodemon.js' },
+                    { type: 'file', name: 'morganHelmet.js' },
+                    { type: 'file', name: 'expressMiddleware.js' },
+                    { type: 'file', name: 'curl.sh' },
+                    { type: 'file', name: 'testWithNodeTestRunner.js' },
+                    { type: 'file', name: 'logginWinston.js' },
+                    { type: 'file', name: 'testWithNodeTestRunner.sh' },
+                    { type: 'file', name: 'rateLimiting.js' },
+                ]
+            },
+            { type: 'folder', name: 'Homework' },
+        ]
+    },
 ]
 
 export const schoolProjects: FileStructure[][] = [
@@ -132,5 +231,6 @@ export const schoolProjects: FileStructure[][] = [
     Spring2022Project,
     Summer2022Project,
     Fall2022Project,
-    Spring2023Project
+    Spring2023Project,
+    Summer2023Project
 ];

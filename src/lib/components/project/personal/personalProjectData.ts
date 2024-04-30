@@ -1,4 +1,4 @@
-import type { Brand } from '../logo/logoData.js';
+import type { Brand } from '../../logo/index.js';
 
 export type Project = {
 	name: string;
@@ -8,9 +8,6 @@ export type Project = {
 	endDate: Date;
 };
 
-export const schoolProjects = [
-
-];
 
 export const personalProjects: Project[] = [
 	{

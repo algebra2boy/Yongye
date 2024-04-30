@@ -29,8 +29,8 @@
 
 <style lang="postcss">
 	button {
-		background: url(/icons/folder.svg) 0 0.2em no-repeat;
-		@apply text-sm border-none cursor-pointer font-bold py-0 pl-6 bg-[length:1em_1em];
+		background: url("/icons/folder.svg") 0 0.2em no-repeat;
+		@apply text-sm border-none cursor-pointer font-bold py-0 pl-4 pr-1 bg-[length:1em_1em];
 	}
 
 	.expanded {
@@ -38,7 +38,7 @@
 	}
 
 	ul {
-		@apply pt-1 pl-2 m-0 ml-2 list-none border-l border-gray-200;
+		@apply pl-2 m-0 ml-2 list-none border-l border-gray-500;
 	}
 
 	li {

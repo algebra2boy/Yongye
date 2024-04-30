@@ -13,15 +13,12 @@
 <button class:expanded on:click={toggle}>{name}</button>
 
 {#if expanded}
-	<ul transition:slide={{ duration: 300 }}>
+	<ul transition:slide={{ duration: 180 }}>
 		{#each files as file}
 			<li>
 				{#if file.type === 'folder'}
-					<!-- <svlete:self name={file.name} files={file.files} /> -->
-					<!-- <h1>{file.name}</h1>
-					<h1>{file.type}</h1>
-					<h2>{JSON.stringify(file.files)}</h2> -->
-					<svlete:self name={file.name} files={file.files} expanded />
+					<!-- recursive component build tree -->
+					<svelte:self name={file.name} files={file.files} />
 				{:else if file.type === 'file'}
 					<File name={file.name} />
 				{/if}
@@ -30,15 +27,10 @@
 	</ul>
 {/if}
 
-<style>
+<style lang="postcss">
 	button {
-		padding: 0 0 0 1.5em;
-		background: url(/icons/folder.svg) 0 0.1em no-repeat;
-		background-size: 1em 1em;
-		font-weight: bold;
-		cursor: pointer;
-		border: none;
-		font-size: 14px;
+		background: url(/icons/folder.svg) 0 0.2em no-repeat;
+		@apply text-sm border-none cursor-pointer font-bold py-0 pl-6 bg-[length:1em_1em];
 	}
 
 	.expanded {
@@ -46,13 +38,10 @@
 	}
 
 	ul {
-		padding: 0.2em 0 0 0.5em;
-		margin: 0 0 0 0.5em;
-		list-style: none;
-		border-left: 1px solid #eee;
+		@apply pt-1 pl-2 m-0 ml-2 list-none border-l border-gray-200;
 	}
 
 	li {
-		padding: 0.2em 0;
+		@apply py-0.5;
 	}
 </style>

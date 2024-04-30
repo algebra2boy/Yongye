@@ -10,7 +10,8 @@
 		},
 		{ type: 'file', name: 'TODO.md' },
 		{ type: 'file', name: 'TODO.md' },
-		{ type: 'file', name: 'TODO.md' }
+		{ type: 'file', name: 'TODO.md' },
+		{ type: 'file', name: 'abc.pdf' }
 	];
 </script>
 

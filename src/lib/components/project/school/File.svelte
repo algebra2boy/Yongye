@@ -1,17 +1,14 @@
 <script lang="ts">
-    export let name: string; 
+	export let name: string;
 
-    // "happy.gif" -> "gif"
-    $: type = name.slice(name.lastIndexOf('.') + 1);
+	// "happy.gif" -> "gif"
+	$: type = name.slice(name.lastIndexOf('.') + 1);
 </script>
 
-{type}
 <span style="background-image: url(/icons/{type}.svg)">{name}</span>
 
-<style>
+<style lang="postcss">
 	span {
-		padding: 0 0 0 1.5em;
-		background: 0 0.1em no-repeat;
-		background-size: 1em 1em;
+		@apply py-0 px-6 bg-no-repeat bg-[position:0_0.1em] bg-[size:1em_1em];
 	}
 </style>

@@ -10,7 +10,7 @@
 	const toggle = () => (expanded = !expanded);
 </script>
 
-<button class="folder" class:expanded on:click={toggle}>{name}</button>
+<button class:expanded on:click={toggle}>{name}</button>
 
 {#if expanded}
 	<ul transition:slide={{ duration: 180 }}>
@@ -18,7 +18,7 @@
 			<li>
 				{#if file.type === 'folder'}
 					<!-- recursive component build tree -->
-					<svelte:self name={file.name} files={file.files} expanded={expanded} />
+					<svelte:self name={file.name} files={file.files} />
 				{:else if file.type === 'file'}
 					<File name={file.name} />
 				{/if}

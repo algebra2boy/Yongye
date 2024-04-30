@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { personalProjects, type Project } from './project.js';
-	import Logo from '../logo/Logo.svelte';
+	import { personalProjects, type Project } from './personalProjectData.js';
+	import Logo from '../../logo/Logo.svelte';
 
 	function convertDateToString(date: Date) {
 		return date.getMonth() + '/' + date.getFullYear();

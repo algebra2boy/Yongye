@@ -29,12 +29,13 @@
 
 <style lang="postcss">
 	button {
-		background: url("/icons/folder.svg") 0 0.2em no-repeat;
-		@apply text-sm border-none cursor-pointer font-bold py-0 pl-4 pr-1 bg-[length:1em_1em];
+		background: url('/icons/folder.svg') 0 0.2em no-repeat;
+		@apply text-sm border-none cursor-pointer font-semibold py-0 pl-5 pr-1 bg-[length:1em_1em];
 	}
 
 	.expanded {
 		background-image: url(/icons/folder-open.svg);
+		@apply text-orange-500;
 	}
 
 	ul {

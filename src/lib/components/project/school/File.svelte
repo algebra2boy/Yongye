@@ -6,8 +6,13 @@
 	$: type = name.slice(name.lastIndexOf('.') + 1);
 </script>
 
-{path}
-<span style="background-image: url(/icons/{type}.svg)">{name}</span>
+{#if type === 'md' || type === 'pdf'}
+	<a href={path}>
+		<span style="background-image: url(/icons/{type}.svg)">{name}</span>
+	</a>
+{:else}
+	<span style="background-image: url(/icons/{type}.svg)">{name}</span>
+{/if}
 
 <style lang="postcss">
 	span {

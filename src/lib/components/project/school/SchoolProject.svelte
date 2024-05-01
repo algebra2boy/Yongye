@@ -27,7 +27,7 @@
 			class="text-xs hover:bg-blue-300 text-black border-2 border-black font-medium py-0.5 px-1 rounded focus:outline-none focus:shadow-outline"
 			on:click={toggleSemesterFolder}
 		>
-			Open Folder
+			{isSemesterFolderExpanded ? 'Close Folders' : 'Open Folders'}
 		</button>
 		<p class="text-xs items-center">Click on folders and README.md for more details.</p>
 	</div>
@@ -36,7 +36,7 @@
 		<Folder
 			name={semester}
 			files={schoolProjects[index]}
-			path={semester}
+			path={'/project/school/' + semester}
 			expanded={isSemesterFolderExpanded}
 		/>
 	{/each}

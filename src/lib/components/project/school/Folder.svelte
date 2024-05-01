@@ -30,7 +30,7 @@
 <style lang="postcss">
 	button {
 		background: url('/icons/folder.svg') 0 0.2em no-repeat;
-		@apply text-sm border-none cursor-pointer font-semibold py-0 pl-5 pr-1 bg-[length:1em_1em];
+		@apply text-sm border-none cursor-pointer text-left font-semibold py-0 pl-5 pr-1 bg-[length:1em_1em];
 	}
 
 	.expanded {

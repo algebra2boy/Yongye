@@ -3,14 +3,14 @@
 	import { schoolProjects } from './schoolProjectData.js';
 
 	const semesters: string[] = [
-		'Fall 2021',
-		'Spring 2022',
-		'Summer 2022',
-		'Fall 2022',
-		'Spring 2023',
-		'Summer 2023',
-		'Fall 2023',
-		'Spring 2024'
+		'Fall2021',
+		'Spring2022',
+		'Summer2022',
+		'Fall2022',
+		'Spring2023',
+		'Summer2023',
+		'Fall2023',
+		'Spring2024'
 	];
 
 	let isSemesterFolderExpanded: boolean = false;
@@ -33,6 +33,11 @@
 	</div>
 
 	{#each semesters as semester, index}
-		<Folder name={semester} files={schoolProjects[index]} expanded={isSemesterFolderExpanded} />
+		<Folder
+			name={semester}
+			files={schoolProjects[index]}
+			path={semester}
+			expanded={isSemesterFolderExpanded}
+		/>
 	{/each}
 </div>

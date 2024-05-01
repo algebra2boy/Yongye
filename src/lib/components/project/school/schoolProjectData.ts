@@ -4,7 +4,7 @@ const Fall2021Project: FileStructure[] = [
     {
         type: 'folder',
         name: 'CS 191: Data Science For Good',
-        files: [{ type: 'file', name: 'REAMD.md' }]
+        files: [{ type: 'file', name: 'README.md' }]
     },
 ];
 
@@ -54,7 +54,7 @@ const Summer2022Project: FileStructure[] = [
             { type: 'file', name: 'indexingAndTuning.sql' },
             { type: 'file', name: 'security.sql' },
             { type: 'file', name: 'concurrency.java' },
-            { type: 'file', name: 'REAMD.md' }
+            { type: 'file', name: 'README.md' }
         ]
     }
 ]
@@ -65,7 +65,7 @@ const Fall2022Project: FileStructure[] = [
         name: 'CS 360: Network Security',
         files: [
             { type: 'file', name: 'SQLInjection.pdf' },
-            { type: 'file', name: 'REAMD.md' }
+            { type: 'file', name: 'README.md' }
         ]
     },
     {
@@ -98,14 +98,14 @@ const Fall2022Project: FileStructure[] = [
                     { type: 'file', name: 'fileSystem.cpp' }
                 ]
             },
-            { type: 'file', name: 'REAMD.md' }
+            { type: 'file', name: 'README.md' }
         ]
     },
     {
         type: 'folder',
         name: 'Math 397: Math Computing',
         files: [
-            { type: 'file', name: 'REAMD.md' }
+            { type: 'file', name: 'README.md' }
         ]
     }
 ]
@@ -167,7 +167,7 @@ const Spring2023Project: FileStructure[] = [
                     }
                 ]
             },
-            { type: 'file', name: 'REAMD.md' }
+            { type: 'file', name: 'README.md' }
         ]
     },
     {
@@ -192,7 +192,7 @@ const Spring2023Project: FileStructure[] = [
                     { type: 'file', name: 'python.py' },
                 ]
             },
-            { type: 'file', name: 'REAMD.md' }
+            { type: 'file', name: 'README.md' }
         ]
     },
     {
@@ -204,7 +204,7 @@ const Spring2023Project: FileStructure[] = [
             { type: 'file', name: 'naiveBayes.py' },
             { type: 'file', name: 'randomForest.py' },
             { type: 'file', name: 'neutralNetwork.py' },
-            { type: 'file', name: 'REAMD.md' }
+            { type: 'file', name: 'README.md' }
         ]
     }
 ];
@@ -242,7 +242,7 @@ const Summer2023Project: FileStructure[] = [
                     { type: 'file', name: 'microservices.js' }
                 ]
             },
-            { type: 'file', name: 'REAMD.md' }
+            { type: 'file', name: 'README.md' }
         ]
     },
 ]
@@ -280,7 +280,7 @@ const Fall2023Project: FileStructure[] = [
                     { type: 'file', name: 'buildingAnInterpreter.ts' }
                 ]
             },
-            { type: 'file', name: 'REAMD.md' }
+            { type: 'file', name: 'README.md' }
         ]
     },
 ];
@@ -290,12 +290,8 @@ const Spring2024Project: FileStructure[] = [
         type: "folder",
         name: "CICS 305: Junior Year Writing",
         files: [
-            { type: "file", name: "unit1-ResumeCoverLetter.pdf" },
-            { type: "file", name: "unit2-x.pdf" },
-            { type: "file", name: "unit3-3.pdf" },
-            { type: "file", name: "unit4-Duolingo.pdf" },
-            { type: "file", name: "unit5-x.pdf" },
-            { type: 'file', name: 'REAMD.md' }
+            { type: "file", name: "Duolingo.pdf" },
+            { type: 'file', name: 'README.md' }
         ]
     },
     {
@@ -330,7 +326,7 @@ const Spring2024Project: FileStructure[] = [
                     { type: "file", name: "dockerfile.docker" },
                 ]
             },
-            { type: 'file', name: 'REAMD.md' }
+            { type: 'file', name: 'README.md' }
         ]
     },
     {
@@ -354,7 +350,7 @@ const Spring2024Project: FileStructure[] = [
                     { type: "file", name: "Randoop.java" }
                 ]
             },
-            { type: 'file', name: 'REAMD.md' }
+            { type: 'file', name: 'README.md' }
         ]
     }
 ];

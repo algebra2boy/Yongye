@@ -105,6 +105,9 @@ const Fall2022Project: FileStructure[] = [
         type: 'folder',
         name: 'Math 397: Math Computing',
         files: [
+            { type: 'file', name: 'billiards.py' },
+            { type: 'file', name: 'rubix-cube.py' },
+            { type: 'file', name: 'cryptography.py' },
             { type: 'file', name: 'README.md' }
         ]
     }
@@ -296,7 +299,7 @@ const Spring2024Project: FileStructure[] = [
     },
     {
         type: "folder",
-        name: "CS 496 - Web Systems Dev: Real-World",
+        name: "CS 496: Web Systems Dev: Real-World",
         files: [
             {
                 type: "folder",
@@ -331,7 +334,7 @@ const Spring2024Project: FileStructure[] = [
     },
     {
         type: "folder",
-        name: "CS 520 - Theory and Practice of Software Engineering",
+        name: "CS 520: Theory and Practice of Software Engineering",
         files: [
             {
                 type: "folder",

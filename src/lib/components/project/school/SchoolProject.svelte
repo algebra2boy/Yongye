@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Folder from './Folder.svelte';
+	import { filesExpandedStore } from '$lib/stores/filesExpandedStore.js';
 	import { schoolProjects } from './schoolProjectData.js';
 
 	const semesters: string[] = [
@@ -16,6 +17,7 @@
 	let isSemesterFolderExpanded: boolean = false;
 
 	const toggleSemesterFolder = () => (isSemesterFolderExpanded = !isSemesterFolderExpanded);
+	const toggleAllFiles = () => filesExpandedStore.update((expanded) => !expanded);
 </script>
 
 <div class="pt-2 pl-1 rounded-lg">
@@ -25,11 +27,21 @@
 	<div class="flex flex-row items-center gap-1 mt-1.5">
 		<button
 			class="text-xs hover:bg-blue-300 text-black border-2 border-black font-medium py-0.5 px-1 rounded focus:outline-none focus:shadow-outline"
+			class:disable={$filesExpandedStore}
 			on:click={toggleSemesterFolder}
+			disabled={$filesExpandedStore}
 		>
 			{isSemesterFolderExpanded ? 'Close Folders' : 'Open Folders'}
 		</button>
-		<p class="text-xs items-center">Click on folders and README.md for more details.</p>
+		<button
+			class="text-xs hover:bg-blue-300 text-black border-2 border-black font-medium py-0.5 px-1 rounded focus:outline-none focus:shadow-outline"
+			class:disable={!isSemesterFolderExpanded}
+			on:click={toggleAllFiles}
+			disabled={!isSemesterFolderExpanded}
+		>
+			{$filesExpandedStore ? 'Close Files' : 'Open Files'}
+		</button>
+		<p class="text-xs items-center">Click on folders and README.md for details.</p>
 	</div>
 
 	{#each semesters as semester, index}
@@ -37,7 +49,13 @@
 			name={semester}
 			files={schoolProjects[index]}
 			path={'/project/school/' + semester}
-			expanded={isSemesterFolderExpanded}
+			expanded={$filesExpandedStore || isSemesterFolderExpanded}
 		/>
 	{/each}
 </div>
+
+<style lang="postcss">
+	.disable {
+		@apply bg-black text-white;
+	}
+</style>

@@ -8,7 +8,6 @@ export type Project = {
 	endDate: Date;
 };
 
-
 export const personalProjects: Project[] = [
 	{
 		name: 'LingoQuest',

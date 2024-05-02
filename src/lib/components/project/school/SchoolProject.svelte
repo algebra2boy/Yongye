@@ -3,14 +3,14 @@
 	import { schoolProjects } from './schoolProjectData.js';
 
 	const semesters: string[] = [
-		'Fall 2021',
-		'Spring 2022',
-		'Summer 2022',
-		'Fall 2022',
-		'Spring 2023',
-		'Summer 2023',
-		'Fall 2023',
-		'Spring 2024'
+		'Fall2021',
+		'Spring2022',
+		'Summer2022',
+		'Fall2022',
+		'Spring2023',
+		'Summer2023',
+		'Fall2023',
+		'Spring2024'
 	];
 
 	let isSemesterFolderExpanded: boolean = false;
@@ -27,12 +27,17 @@
 			class="text-xs hover:bg-blue-300 text-black border-2 border-black font-medium py-0.5 px-1 rounded focus:outline-none focus:shadow-outline"
 			on:click={toggleSemesterFolder}
 		>
-			Open Folder
+			{isSemesterFolderExpanded ? 'Close Folders' : 'Open Folders'}
 		</button>
 		<p class="text-xs items-center">Click on folders and README.md for more details.</p>
 	</div>
 
 	{#each semesters as semester, index}
-		<Folder name={semester} files={schoolProjects[index]} expanded={isSemesterFolderExpanded} />
+		<Folder
+			name={semester}
+			files={schoolProjects[index]}
+			path={'/project/school/' + semester}
+			expanded={isSemesterFolderExpanded}
+		/>
 	{/each}
 </div>

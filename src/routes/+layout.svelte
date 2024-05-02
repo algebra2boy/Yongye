@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Yongye's website</title>
+	<title>Yongye Tan's website</title>
 </svelte:head>
 
 <div class="flex justify-center min-h-screen bg-lime-50 px-3 py-3">

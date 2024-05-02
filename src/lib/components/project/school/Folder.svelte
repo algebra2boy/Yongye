@@ -5,6 +5,7 @@
 
 	export let expanded: boolean = false;
 	export let name: string;
+	export let path: string;
 	export let files: FileStructure[];
 
 	const toggle = () => (expanded = !expanded);
@@ -18,9 +19,9 @@
 			<li>
 				{#if file.type === 'folder'}
 					<!-- recursive component build tree -->
-					<svelte:self name={file.name} files={file.files} />
+					<svelte:self name={file.name} files={file.files} path={path + '/' + file.name} />
 				{:else if file.type === 'file'}
-					<File name={file.name} />
+					<File name={file.name} path={path + '/' + file.name} />
 				{/if}
 			</li>
 		{/each}

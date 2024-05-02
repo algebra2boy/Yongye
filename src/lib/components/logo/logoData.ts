@@ -1,11 +1,13 @@
-import type { DevIconOption, Logo } from "./index.d.ts";
+import type { DevIconOption, Logo } from './index.d.ts';
 
 export const getImageFromDevicon = (
 	name: string,
 	option: DevIconOption = 'original',
 	wordmark: boolean = false
 ): string => {
-	return `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${name}/${name}-${option}${wordmark ? '-wordmark' : ''}.svg`;
+	return `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${name}/${name}-${option}${
+		wordmark ? '-wordmark' : ''
+	}.svg`;
 };
 
 export const techStack: Logo = {

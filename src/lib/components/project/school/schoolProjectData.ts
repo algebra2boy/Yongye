@@ -11,7 +11,7 @@ const Fall2021Project: FileStructure[] = [
 const Spring2022Project: FileStructure[] = [
 	{
 		type: 'folder',
-		name: 'CS 198C: C Programming Language',
+		name: 'CS198C: C Programming Language',
 		files: [
 			{ type: 'file', name: 'starterProject.c' },
 			{ type: 'file', name: 'unitConversion.c' },
@@ -137,24 +137,24 @@ const Spring2023Project: FileStructure[] = [
 						files: [
 							{ type: 'file', name: 'letterFrequency.html' },
 							{ type: 'file', name: 'panlindrome.html' },
-							{ type: 'file', name: 'decoder-ring-class.js' },
-							{ type: 'file', name: 'decoder-web-page.html' },
-							{ type: 'file', name: 'decoder-web-page.css' },
-							{ type: 'file', name: 'decoder-web-page.js' }
+							{ type: 'file', name: 'decoderRingClass.js' },
+							{ type: 'file', name: 'decoderWebPage.html' },
+							{ type: 'file', name: 'decoderWebPage.css' },
+							{ type: 'file', name: 'decoderWebPage.js' }
 						]
 					},
 					{
 						type: 'folder',
 						name: '6-10',
 						files: [
-							{ type: 'file', name: 'decoder-interactive.html' },
-							{ type: 'file', name: 'decoder-interactive.css' },
-							{ type: 'file', name: 'decoder-interactive.js' },
-							{ type: 'file', name: 'decoder-ring-class.js' },
+							{ type: 'file', name: 'decoderInteractive.html' },
+							{ type: 'file', name: 'decoderInteractive.css' },
+							{ type: 'file', name: 'decoderInteractive.js' },
+							{ type: 'file', name: 'decoderRingClass.js' },
 							{ type: 'file', name: 'chessboard.html' },
 							{ type: 'file', name: 'chessboard.css' },
 							{ type: 'file', name: 'chessboard.js' },
-							{ type: 'file', name: 'persistent-encoder.js' },
+							{ type: 'file', name: 'persistentEncoder.js' },
 							{ type: 'file', name: 'run-server.js' }
 						]
 					},
@@ -162,7 +162,7 @@ const Spring2023Project: FileStructure[] = [
 						type: 'folder',
 						name: '10-14',
 						files: [
-							{ type: 'file', name: 'rest-and-fetch.js' },
+							{ type: 'file', name: 'restAndFetch.js' },
 							{ type: 'file', name: 'crud-1.js' },
 							{ type: 'file', name: 'crud-2.js' },
 							{ type: 'file', name: 'routing.js' }
@@ -227,9 +227,9 @@ const Summer2023Project: FileStructure[] = [
 					{ type: 'file', name: 'morganHelmet.js' },
 					{ type: 'file', name: 'expressMiddleware.js' },
 					{ type: 'file', name: 'curl.sh' },
-					{ type: 'file', name: 'testWithNodeTestRunner.js' },
+					{ type: 'file', name: 'nodeTestRunner.js' },
 					{ type: 'file', name: 'logginWinston.js' },
-					{ type: 'file', name: 'testWithNodeTestRunner.sh' },
+					{ type: 'file', name: 'loadtest.sh' },
 					{ type: 'file', name: 'rateLimiting.js' },
 					{ type: 'file', name: 'todoList.svelte' },
 					{ type: 'file', name: 'weather.svelte' },
@@ -262,7 +262,7 @@ const Fall2023Project: FileStructure[] = [
 					{ type: 'file', name: 'HOF.ts' },
 					{ type: 'file', name: 'typesAndHOF.ts' },
 					{ type: 'file', name: 'lists.ts' },
-					{ type: 'file', name: 'mentalModelsAndClosures.ts' },
+					{ type: 'file', name: 'mentalModelsClosures.ts' },
 					{ type: 'file', name: 'propertyBasedTesting.ts' },
 					{ type: 'file', name: 'streams.ts' },
 					{ type: 'file', name: 'obserablesAndStreams.ts' },

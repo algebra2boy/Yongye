@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { techStack, type Brand } from './logoData.js';
+	import { techStack } from './logoData.js';
+	import type { Brand } from './index.js';
 
 	type Size = 'small' | 'medium' | 'large';
 

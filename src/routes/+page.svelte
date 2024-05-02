@@ -37,7 +37,6 @@
 	}
 
 	$: {
-		// console.log(positions);
 		components = positions.map((p) => components[p]);
 	}
 </script>
@@ -46,28 +45,12 @@
 	<svelte:component this={component} />
 {/each}
 
-<div class="flex justify-center">
-	<div class="flex-row italic">Drag me to see what happens</div>
+<div class="flex flex-row justify-center items-center mt-1">
+	<button
+		class="text-xs hover:bg-yellow-300 text-black border-2 border-black font-medium py-0.5 px-1 rounded focus:outline-none focus:shadow-outline"
+		on:click={shuffle}
+	>
+		Magic Button
+	</button>
+	<p class="ml-1 text-xs items-center">This website is entirely designed by Yongye Tan.</p>
 </div>
-<div class="flex justify-center">
-	<div class="flex-row">
-		{#each positions as position}
-			<button class="container" on:click={shuffle}>
-				{position}
-			</button>
-		{/each}
-	</div>
-</div>
-
-<style>
-	.container {
-		width: 50px;
-		height: 50px;
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		background-color: skyblue;
-		margin: 5px;
-		font-size: 20px;
-	}
-</style>

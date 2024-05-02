@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { FileStructure } from './index.d.ts';
+	import { filesExpandedStore } from '$lib/stores/filesExpandedStore.js';
 	import File from './File.svelte';
 	import { slide } from 'svelte/transition';
 
@@ -19,7 +20,11 @@
 			<li>
 				{#if file.type === 'folder'}
 					<!-- recursive component build tree -->
-					<svelte:self name={file.name} files={file.files} path={path + '/' + file.name} />
+					{#if $filesExpandedStore}
+						<svelte:self name={file.name} files={file.files} path={path + '/' + file.name} expanded/>
+					{:else}
+						<svelte:self name={file.name} files={file.files} path={path + '/' + file.name} />
+					{/if}
 				{:else if file.type === 'file'}
 					<File name={file.name} path={path + '/' + file.name} />
 				{/if}

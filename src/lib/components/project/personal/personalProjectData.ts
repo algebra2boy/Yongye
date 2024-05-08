@@ -1,12 +1,4 @@
-import type { Brand } from '../../logo/index.js';
-
-export type Project = {
-	name: string;
-	description: string;
-	logo: Brand[];
-	startDate: Date;
-	endDate: Date;
-};
+import type { Project } from '../index.js';
 
 export const personalProjects: Project[] = [
 	{
@@ -27,6 +19,15 @@ export const personalProjects: Project[] = [
 		],
 		startDate: new Date(2024, 5),
 		endDate: new Date(2024, 9)
+	},
+	{
+		name: "PandoraBox",
+		description: "A SwiftUI + Spritekit mini game that simulates the cup game",
+		logo: [
+			"Swift"
+		],
+		startDate: new Date(2024, 5),
+		endDate: new Date(2024, 5)
 	},
 	{
 		name: 'Yongye',

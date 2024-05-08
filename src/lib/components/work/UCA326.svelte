@@ -10,7 +10,7 @@
 	location="Amherst, MA"
 	listItems={[
 		'Addressed 200 Piazza queries, bridged well communication between students and staff for smooth operations',
-		'Graded 400+ assignments with feedback; held weekly office hours, assisting with debugging and clarifying materia',
+		'Graded 400+ assignments with feedback; held weekly office hours, assisting with debugging and clarifying material',
 		"Provided key web development tools and resources, amplifying students' practical knowledge in real life application"
 	]}
 />

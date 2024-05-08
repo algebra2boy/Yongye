@@ -1,3 +1,3 @@
 export function convertDateToString(date: Date) {
-    return date.getMonth() + '/' + date.getFullYear();
+	return date.getMonth() + '/' + date.getFullYear();
 }

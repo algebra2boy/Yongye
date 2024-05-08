@@ -21,7 +21,12 @@
 				{#if file.type === 'folder'}
 					<!-- recursive component build tree -->
 					{#if $filesExpandedStore}
-						<svelte:self name={file.name} files={file.files} path={path + '/' + file.name} expanded/>
+						<svelte:self
+							name={file.name}
+							files={file.files}
+							path={path + '/' + file.name}
+							expanded
+						/>
 					{:else}
 						<svelte:self name={file.name} files={file.files} path={path + '/' + file.name} />
 					{/if}

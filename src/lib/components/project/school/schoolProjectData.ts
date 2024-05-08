@@ -63,9 +63,7 @@ const Fall2022Project: FileStructure[] = [
 	{
 		type: 'folder',
 		name: 'CS360: Network Security',
-		files: [
-			{ type: 'file', name: 'SQLInjection.pdf' },
-		]
+		files: [{ type: 'file', name: 'SQLInjection.pdf' }]
 	},
 	{
 		type: 'folder',
@@ -291,9 +289,7 @@ const Spring2024Project: FileStructure[] = [
 	{
 		type: 'folder',
 		name: 'CICS305: Junior Year Writing',
-		files: [
-			{ type: 'file', name: 'Duolingo.pdf' },
-		]
+		files: [{ type: 'file', name: 'Duolingo.pdf' }]
 	},
 	{
 		type: 'folder',

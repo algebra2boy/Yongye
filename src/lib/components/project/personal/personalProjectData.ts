@@ -21,11 +21,9 @@ export const personalProjects: PersonalProject[] = [
 		endDate: new Date(2024, 9)
 	},
 	{
-		name: "PandoraBox",
-		description: "A SwiftUI + Spritekit mini game that simulates the cup game",
-		logo: [
-			"Swift"
-		],
+		name: 'PandoraBox',
+		description: 'A SwiftUI + Spritekit mini game that simulates the cup game',
+		logo: ['Swift'],
 		startDate: new Date(2024, 5),
 		endDate: new Date(2024, 5)
 	},
@@ -294,7 +292,7 @@ export const personalProjects: PersonalProject[] = [
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2020, 6),
 		endDate: new Date(2020, 7),
-		githubLink: "https://github.com/algebra2boy/LearningDataScience/tree/main/Final_Project",
+		githubLink: 'https://github.com/algebra2boy/LearningDataScience/tree/main/Final_Project'
 	},
 	{
 		name: 'Circus',

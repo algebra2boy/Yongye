@@ -1,43 +1,49 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-    import type { PersonalProject } from '$lib/components/project';
-    import Logo from '$lib/components/logo/Logo.svelte';
-    import { convertDateToString } from '$lib/utils/date';
+	import type { PersonalProject } from '$lib/components/project';
+	import Logo from '$lib/components/logo/Logo.svelte';
+	import { convertDateToString } from '$lib/utils/date';
 
-	const { name, description, logo, startDate, endDate, githubLink, readme } = ($page.data) as PersonalProject;
+	const { name, description, logo, startDate, endDate, githubLink, readme } =
+		$page.data as PersonalProject;
 </script>
 
-<div id={name}>
-    <div class="flex flex-row justify-between">
-        <h1>{name}</h1>
-        <p>{convertDateToString(startDate)} - {convertDateToString(endDate)}</p>
-    </div>
+<div id={name} class="rounded-lg p-4">
+	<div class="flex justify-between items-center mb-3">
+		<h1 class="text-xl font-bold text-gray-900">{name}</h1>
+	</div>
 
-    <!-- <div class="flex flex-row">
-        <span>Tech Stack:</span>
-        {#each logo as l}
-            <Logo brand={l} />
-        {/each}
-    </div>
+	<div class="flex mb-2">
+		<h2 class="text-lg font-semibold text-gray-700">
+			{convertDateToString(startDate)} - {convertDateToString(endDate)}
+		</h2>
+	</div>
 
+	<div class="flex items-center mb-3 space-x-0.5">
+		<h3 class="text-sm font-medium text-gray-600 mr-2">Tech Stack:</h3>
+		{#each logo as l}
+			<Logo brand={l} />
+		{/each}
+	</div>
 
-    <div class="flex flex-row">
-        <span>Github Link</span>
-        <span>:&nbsp;</span>
-        {#if githubLink}
-            <a href={githubLink} class="underline">{githubLink}</a>
-        {:else}
-            <span>Private</span>
-        {/if}
-    </div>
-    <p>One line description: {description}</p>
+	<div class="flex items-center mb-3">
+		<span class="text-sm font-medium text-gray-600">GitHub: </span>
+        <span>&nbsp;</span>
+		{#if githubLink}
+			<a href={githubLink} class="text-blue-600 hover:text-blue-800 underline break-all" title={githubLink}>{githubLink}</a>
+		{:else}
+			<span class="text-gray-500">Private</span>
+		{/if}
+	</div>
 
-    <hr class="divide-solid border-slate-500 mt-1 border-1" />
+	<p class="text-gray-800 mb-3">Description: {description}</p>
 
-    <div class="README">
-        <h1>README</h1>
-        <p>{@html readme}</p>
-    </div> -->
+	<hr class="border-t border-gray-300" />
+
+	<div class="README mt-4">
+		<h1 class="text-xl font-bold text-gray-900">README</h1>
+		<div class="text-gray-700 mt-2">
+			{@html "hah"}
+		</div>
+	</div>
 </div>
-
-<p1>{JSON.stringify($page.data)}</p1>

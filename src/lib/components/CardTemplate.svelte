@@ -13,7 +13,9 @@
 		<p class="font-light text-sm">{@html date}</p>
 	</div>
 	<div class="flex justify-between items-center pt-0">
-		<a class="font-light text-sm italic" href={websiteURL} title={websiteURL} target="_blank">{@html subTitle}</a>
+		<a class="font-light text-sm italic" href={websiteURL} title={websiteURL} target="_blank"
+			>{@html subTitle}</a
+		>
 		<p class="font-light text-sm italic">{@html location}</p>
 	</div>
 	<ul class="list-disc pl-6">

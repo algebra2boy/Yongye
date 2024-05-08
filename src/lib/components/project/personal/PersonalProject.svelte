@@ -1,13 +1,10 @@
 <script lang="ts">
-	import type { Project } from '../index.js';
+	import type { PersonalProject } from '../index.js';
 	import { personalProjects } from './personalProjectData.js';
 	import Logo from '../../logo/Logo.svelte';
+	import { convertDateToString } from '$lib/utils/date.js';
 
-	function convertDateToString(date: Date) {
-		return date.getMonth() + '/' + date.getFullYear();
-	}
-
-	const sortedProjects: Project[] = personalProjects.sort((a, b) => {
+	const sortedProjects: PersonalProject[] = personalProjects.sort((a, b) => {
 		if (a.startDate > b.startDate) {
 			return -1;
 		} else if (a.startDate < b.startDate) {
@@ -29,7 +26,7 @@
 				class="project-info flex flex-col justify-between items-start md:flex-row md:flex-wrap sm:flex-row sm:flex-wrap py-0.5 pl-0.5"
 			>
 				<div class="project-details flex flex-row">
-					<a class="flex items-center pr-0.5" href={`/project/${name}`}>
+					<a class="flex items-center pr-0.5" href={`/project/personal/${name}`}>
 						<span class="font-light text-sm underline">
 							{name + ': ' + description}
 						</span>

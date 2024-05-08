@@ -1,6 +1,6 @@
-import type { Project } from '../index.js';
+import type { PersonalProject } from '../index.js';
 
-export const personalProjects: Project[] = [
+export const personalProjects: PersonalProject[] = [
 	{
 		name: 'LingoQuest',
 		description: 'A language learning web app that helps learn language',
@@ -293,7 +293,8 @@ export const personalProjects: Project[] = [
 		description: 'A data analysis project about COVID-19 between mask mandate and hospitalization',
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2020, 6),
-		endDate: new Date(2020, 7)
+		endDate: new Date(2020, 7),
+		githubLink: "https://github.com/algebra2boy/LearningDataScience/tree/main/Final_Project",
 	},
 	{
 		name: 'Circus',

@@ -1,4 +1,4 @@
-import type { FileStructure } from './index.d.ts';
+import type { FileStructure } from '../index.d.js';
 
 const Fall2021Project: FileStructure[] = [
 	{

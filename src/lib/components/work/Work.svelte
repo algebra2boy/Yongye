@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Fidelity from './Fidelity.svelte';
 	import UCA426 from './UCA426.svelte';
 	import UCA326 from './UCA326.svelte';
 	import UCA240 from './UCA240.svelte';
@@ -11,6 +12,7 @@
 	<h1 class="text-xl font-extralight">PROFESSIONAL EXPERIENCE</h1>
 	<hr class="divide-solid border-slate-500 mt-1 border-1" />
 
+	<Fidelity />
 	<CYE />
 	<UCA426 />
 	<UCA326 />

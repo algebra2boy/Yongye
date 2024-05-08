@@ -4,7 +4,7 @@
 
 <CardTemplate
 	title="iOS/macOS Developer"
-	date="Aug 2023-Dec 2023"
+	date="Mar 2023-Present"
 	subTitle="College of Education - UMass Amherst"
 	websiteURL="https://www.cyengagement.org"
 	location="Fully remote"

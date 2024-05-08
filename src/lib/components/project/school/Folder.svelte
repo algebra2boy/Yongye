@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { FileStructure } from './index.d.ts';
+	import type { FileStructure } from '../index.js';
 	import { filesExpandedStore } from '$lib/stores/filesExpandedStore.js';
 	import File from './File.svelte';
 	import { slide } from 'svelte/transition';

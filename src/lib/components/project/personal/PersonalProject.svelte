@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { personalProjects, type Project } from './personalProjectData.js';
+	import type { Project } from '../index.js';
+	import { personalProjects } from './personalProjectData.js';
 	import Logo from '../../logo/Logo.svelte';
 
 	function convertDateToString(date: Date) {

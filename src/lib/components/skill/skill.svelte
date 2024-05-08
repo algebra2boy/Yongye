@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { techStack } from '../logo/logoData';
-	import type { Brand } from '../logo/index.d.ts';
+	import type { Brand } from '../logo/';
 	import Logo from '../logo/Logo.svelte';
 
 	const programmingLanguages = Object.keys(techStack)

@@ -1,4 +1,4 @@
-import type { DevIconOption, Logo } from './index.d.ts';
+import type { DevIconOption, Logo } from './';
 
 export const getImageFromDevicon = (
 	name: string,

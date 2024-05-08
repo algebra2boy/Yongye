@@ -1,4 +1,4 @@
-import type { Brand } from '../logo/index.d.ts';
+import type { Brand } from '../logo';
 
 export type PersonalProjectName =
 	| 'LingoQuest'

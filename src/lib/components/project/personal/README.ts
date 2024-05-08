@@ -1,4 +1,4 @@
-import type { PersonalProjectName } from '../index.d.ts';
+import type { PersonalProjectName } from '../';
 
 export type README = {
 	[R in PersonalProjectName]: string;

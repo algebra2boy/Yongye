@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { techStack } from '$lib/components/logo/logoData';
-	import type { Brand } from '$lib/components/logo/index.d.ts';
+	import type { Brand } from '$lib/components/logo';
 	import Logo from '$lib/components/logo/Logo.svelte';
 
 	const brands = Object.keys(techStack) as Brand[];

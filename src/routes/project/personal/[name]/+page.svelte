@@ -19,8 +19,8 @@
 		</h2>
 	</div>
 
-	<div class="flex items-center mb-3 space-x-0.5">
-		<h3 class="text-sm font-medium text-gray-600 mr-2">Tech Stack:</h3>
+	<div class="flex items-center mb-3 space-x-2">
+		<h3 class="text-sm font-medium text-gray-600">Tech Stack:</h3>
 		{#each logo as l}
 			<Logo brand={l} />
 		{/each}
@@ -28,9 +28,11 @@
 
 	<div class="flex items-center mb-3">
 		<span class="text-sm font-medium text-gray-600">GitHub: </span>
-        <span>&nbsp;</span>
+		<span>&nbsp;</span>
 		{#if githubLink}
-			<a href={githubLink} class="text-blue-600 hover:text-blue-800 underline break-all" title={githubLink}>{githubLink}</a>
+			<a href={githubLink} class="hover:text-blue-600 underline break-all" title={githubLink}
+				>{githubLink}</a
+			>
 		{:else}
 			<span class="text-gray-500">Private</span>
 		{/if}

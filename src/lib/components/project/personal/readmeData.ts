@@ -42,15 +42,13 @@ export const readme: README = {
 	'Twilio-ChatBot': '',
 	'Covid19-Analysis': `
 		<p class="mb-3">
-			I am fortunate to be part of Summer Search. Summer Search provided me an amazing opporunity to take this class
+			I am fortunate to be part of Summer Search. Summer Search provided me an amazing opportunity to take this class
 			at Brown University over the summer of 2020. I learned about how to write R code to understand the meaning behind data.
 		</p>
-		<div class="relative w-full h-screen overflow-auto">
-    		<div class="absolute aspect-w-16 aspect-h-9 w-full">
-        		<iframe src="/pdf/covid_19.pdf" title="covid_19" class="w-full h-full" style="height: 500px; -webkit-overflow-scrolling: touch;
-				overflow-y: scroll;"></iframe>
-   			</div>
-		</div>
+		<p>
+			Free free to check out the presentation: <a class="underline hover:text-blue-600" href="/pdf/covid_19.pdf">Statewide Mask Mandates vs COVID-19 Hospitalizations
+			</a>
+		</p>
 	`,
 	Circus: '',
 	'Java Bundle': '',

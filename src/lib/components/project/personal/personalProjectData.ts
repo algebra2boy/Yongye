@@ -201,7 +201,7 @@ export const personalProjects: PersonalProject[] = [
 		logo: ['C'],
 		startDate: new Date(2022, 2),
 		endDate: new Date(2022, 3),
-		githubLink: "https://github.com/algebra2boy/Clue"
+		githubLink: 'https://github.com/algebra2boy/Clue'
 	},
 	{
 		name: 'HelpFunding',
@@ -357,7 +357,7 @@ export const personalProjects: PersonalProject[] = [
 		description: 'A bot on WhatsApp for users to submit ID to perform background check',
 		logo: ['Python', 'Flask', 'Twilio'],
 		startDate: new Date(2022, 6),
-		endDate: new Date(2022, 7),
+		endDate: new Date(2022, 7)
 	},
 	{
 		name: 'Distance Matrix',
@@ -368,3 +368,13 @@ export const personalProjects: PersonalProject[] = [
 		endDate: new Date(2022, 8)
 	}
 ];
+
+export const sortedProjects: PersonalProject[] = personalProjects.sort((a, b) => {
+	if (a.startDate > b.startDate) {
+		return -1;
+	} else if (a.startDate < b.startDate) {
+		return 1;
+	} else {
+		return 0;
+	}
+});

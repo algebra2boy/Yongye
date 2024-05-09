@@ -44,7 +44,6 @@
 		<h1 class="text-xl font-bold text-gray-900">README</h1>
 		<div class="text-gray-700 mt-2">
 			{@html readme}
-			<iframe src="/pdf/covid_19.pdf" title="haha"></iframe>
 		</div>
 	</div>
 </div>

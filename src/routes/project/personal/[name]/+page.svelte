@@ -1,15 +1,18 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import type { PersonalProject } from '$lib/components/project';
 	import Logo from '$lib/components/logo/Logo.svelte';
 	import { convertDateToString } from '$lib/utils/date';
+	import { sortedProjects } from '$lib/components/project/personal/personalProjectData';
 
-	const { name, description, logo, startDate, endDate, githubLink, readme } =
-		$page.data as PersonalProject;
+	export let data;
 
-		
+	// whenever route changes that causes refetching, these variables should be recreated
+	$: ({ name, description, logo, startDate, endDate, githubLink, readme } = data);
 
-	
+	const projectNames = sortedProjects.map((p) => p.name);
+
+	// prevName and nextName relies on "name" reactivity
+	$: prevName = projectNames[projectNames.indexOf(name) - 1];
+	$: nextName = projectNames[projectNames.indexOf(name) + 1];
 </script>
 
 <div id={name} class="rounded-lg p-4">
@@ -54,11 +57,14 @@
 	</div>
 
 	<div class="flex flex-row mt-5 justify-center items-center gap-3">
-		<button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-			Prev
-		  </button>
-		  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-			Next
-		  </button>
+		<button
+			class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+			disabled={!prevName}
+		>
+			<a href="/project/personal/{prevName}"> Prev </a>
+		</button>
+		<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" disabled>
+			<a href="/project/personal/{nextName}"> Next </a>
+		</button>
 	</div>
 </div>

@@ -45,8 +45,8 @@ export const readme: README = {
 			I am fortunate to be part of Summer Search. Summer Search provided me an amazing opporunity to take this class
 			at Brown University over the summer of 2020. I learned about how to write R code to understand the meaning behind data.
 		</p>
-		<div class="aspect-w-16 aspect-h-9 w-full">
-  			<iframe src="/pdf/covid_19.pdf" title="covid_19" class="w-full" height="500"></iframe>
+		<div class="absolute aspect-w-16 aspect-h-9 w-full">
+  			<iframe src="/pdf/covid_19.pdf" title="covid_19" class="absolute w-full" height="500"></iframe>
 		</div>
 	`,
 	Circus: '',

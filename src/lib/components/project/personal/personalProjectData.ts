@@ -42,14 +42,14 @@ export const personalProjects: PersonalProject[] = [
 		endDate: new Date(2024, 5)
 	},
 	{
-		name: 'ice-faculty',
+		name: 'Ice-faculty',
 		description: 'A web app that allows faculty to upload office hour',
 		logo: ['Docker', 'Typescript', 'Node.js', 'React', 'Express', 'MongoDB', 'Vercel'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 5)
 	},
 	{
-		name: 'ice-queb',
+		name: 'Ice-queb',
 		description: 'A robust REST and WebSocket API for managing office hour',
 		logo: ['Docker', 'Typescript', 'Node.js', 'Express', 'MongoDB', 'Socket.io'],
 		startDate: new Date(2024, 2),
@@ -119,7 +119,7 @@ export const personalProjects: PersonalProject[] = [
 		endDate: new Date(2024, 2)
 	},
 	{
-		name: 'classic-quote-generator',
+		name: 'Classic-Quote-Generator',
 		description: 'A simple Apple Watch app that generates classic quotes',
 		logo: ['Swift'],
 		startDate: new Date(2024, 1),
@@ -182,14 +182,14 @@ export const personalProjects: PersonalProject[] = [
 		endDate: new Date(2023, 10)
 	},
 	{
-		name: 'cat',
+		name: 'Cat',
 		description: 'A website that finds cat images based on your preference',
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 10),
 		endDate: new Date(2023, 10)
 	},
 	{
-		name: 'breweries',
+		name: 'Breweries',
 		description: 'A website that finds breweries using API and generate analytics charts',
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 10),
@@ -200,7 +200,8 @@ export const personalProjects: PersonalProject[] = [
 		description: 'A room escape game implemented in C and pointers',
 		logo: ['C'],
 		startDate: new Date(2022, 2),
-		endDate: new Date(2022, 3)
+		endDate: new Date(2022, 3),
+		githubLink: "https://github.com/algebra2boy/Clue"
 	},
 	{
 		name: 'HelpFunding',
@@ -280,13 +281,6 @@ export const personalProjects: PersonalProject[] = [
 		endDate: new Date(2022, 7)
 	},
 	{
-		name: 'Twilio-ChatBot',
-		description: 'A conversional bot that integrates with many APIs.',
-		logo: ['Python', 'Flask', 'Twilio'],
-		startDate: new Date(2022, 7),
-		endDate: new Date(2022, 8)
-	},
-	{
 		name: 'Covid19-Analysis',
 		description: 'A data analysis project about COVID-19 between mask mandate and hospitalization',
 		logo: ['R', 'RStudio'],
@@ -363,7 +357,7 @@ export const personalProjects: PersonalProject[] = [
 		description: 'A bot on WhatsApp for users to submit ID to perform background check',
 		logo: ['Python', 'Flask', 'Twilio'],
 		startDate: new Date(2022, 6),
-		endDate: new Date(2022, 7)
+		endDate: new Date(2022, 7),
 	},
 	{
 		name: 'Distance Matrix',

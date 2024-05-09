@@ -18,6 +18,12 @@
 <div id={name} class="rounded-lg p-4">
 	<div class="flex justify-between items-center mb-3">
 		<h1 class="text-xl font-bold text-gray-900">{name}</h1>
+		<button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-2 rounded">
+			<a href="/" class="flex">
+				<img src="/icons/home.svg" alt="Home Page" class="px-0.5" />
+				<span>Home</span>
+			</a>
+		</button>
 	</div>
 
 	<div class="flex mb-3">

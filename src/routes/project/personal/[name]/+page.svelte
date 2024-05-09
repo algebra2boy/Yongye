@@ -60,11 +60,30 @@
 		<button
 			class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
 			disabled={!prevName}
+			class:disable={!prevName}
 		>
-			<a href="/project/personal/{prevName}"> Prev </a>
+			{#if prevName}
+				<a href="/project/personal/{prevName}">Prev</a>
+			{:else}
+				<span>Prev</span>
+			{/if}
 		</button>
-		<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" disabled>
-			<a href="/project/personal/{nextName}"> Next </a>
+		<button
+			class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+			disabled={!nextName}
+			class:disable={!nextName}
+		>
+			{#if nextName}
+				<a href="/project/personal/{nextName}">Next</a>
+			{:else}
+				<span>Next</span>
+			{/if}
 		</button>
 	</div>
 </div>
+
+<style lang="postcss">
+	.disable {
+		@apply bg-gray-400;
+	}
+</style>

@@ -13,7 +13,7 @@
 		<h1 class="text-xl font-bold text-gray-900">{name}</h1>
 	</div>
 
-	<div class="flex mb-2">
+	<div class="flex mb-3">
 		<h2 class="text-lg font-semibold text-gray-700">
 			{convertDateToString(startDate)} - {convertDateToString(endDate)}
 		</h2>

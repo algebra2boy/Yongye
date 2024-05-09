@@ -66,5 +66,4 @@ export type PersonalProject = {
 	startDate: Date;
 	endDate: Date;
 	githubLink?: string;
-	readme?: string;
 };

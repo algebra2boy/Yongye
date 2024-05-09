@@ -45,17 +45,16 @@
 
 	async function checkMostRecentCommittedTime() {
 		try {
-			const response = await fetch("https://api.github.com/repos/algebra2boy/yongye/branches/main");
+			const response = await fetch('https://api.github.com/repos/algebra2boy/yongye/branches/main');
 			const data = await response.json();
 
 			timeCommitted = new Date(data.commit.commit.author.date).toLocaleString();
 		} catch (error) {
 			console.error(error);
-		}	 
+		}
 	}
 
 	onMount(async () => await checkMostRecentCommittedTime());
-
 </script>
 
 {#each components as component}

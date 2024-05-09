@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import Logo from '$lib/components/logo/Logo.svelte';
 	import { convertDateToString } from '$lib/utils/date';
 	import { sortedProjects } from '$lib/components/project/personal/personalProjectData';
@@ -16,12 +15,15 @@
 	$: nextName = projectNames[projectNames.indexOf(name) + 1];
 
 	let readme: any;
-	console.log("name" + name);
-	// onMount(async () => {
-	// 	readme = (await import(`./readme/Clue.svelte`)).default;
-	// 	console.log(readme);
-	// });
 
+	$: if (name) {
+		loadREADME();
+	}
+
+	async function loadREADME() {
+		const fileName = `./readme/${name}.svelte`;
+		readme = (await import(/* @vite-ignore */ fileName)).default;
+	}
 </script>
 
 <div id={name} class="rounded-lg p-4">
@@ -67,7 +69,7 @@
 	<div class="README mt-4">
 		<h1 class="text-xl font-bold text-gray-900">README</h1>
 		<div class="text-gray-700 mt-2">
-			<!-- <svelte:component this={readme} /> -->
+			<svelte:component this={readme} />
 		</div>
 	</div>
 

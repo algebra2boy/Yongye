@@ -68,3 +68,7 @@ export type PersonalProject = {
 	githubLink?: string;
 	readme?: string;
 };
+
+export type README = {
+	[R in PersonalProjectName]: string;
+};

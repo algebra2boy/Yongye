@@ -1,8 +1,5 @@
-import type { PersonalProjectName } from '../';
-
-export type README = {
-	[R in PersonalProjectName]: string;
-};
+import type { README } from '..';
+import pdf from "$lib/assets/pdf/covid_19.pdf";
 
 export const readme: README = {
 	LingoQuest: '',
@@ -44,7 +41,13 @@ export const readme: README = {
 	'OHill-Squad-WeSQL': '',
 	HelloFromYongye: '',
 	'Twilio-ChatBot': '',
-	'Covid19-Analysis': '',
+	'Covid19-Analysis': `
+		<p>
+			I was fortunate to be part of Summer Search. Summer Search provided me an amazing opporunity to take this class
+			at Brown University over the summer of 2020. I learned about how to write R code to understand the meaning behind data.
+		</p>
+		
+	`,
 	Circus: '',
 	'Java Bundle': '',
 	TicTacToe: '',

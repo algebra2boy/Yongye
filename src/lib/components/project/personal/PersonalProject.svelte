@@ -1,18 +1,8 @@
 <script lang="ts">
-	import type { PersonalProject } from '../index.js';
-	import { personalProjects } from './personalProjectData.js';
+	import { sortedProjects } from './personalProjectData.js';
 	import Logo from '../../logo/Logo.svelte';
 	import { convertDateToString } from '$lib/utils/date.js';
 
-	const sortedProjects: PersonalProject[] = personalProjects.sort((a, b) => {
-		if (a.startDate > b.startDate) {
-			return -1;
-		} else if (a.startDate < b.startDate) {
-			return 1;
-		} else {
-			return 0;
-		}
-	});
 </script>
 
 <div class="pt-2 pl-1 rounded-lg">

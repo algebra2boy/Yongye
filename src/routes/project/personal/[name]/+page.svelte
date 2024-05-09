@@ -1,11 +1,18 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-	import type { PersonalProject } from '$lib/components/project';
 	import Logo from '$lib/components/logo/Logo.svelte';
 	import { convertDateToString } from '$lib/utils/date';
+	import { sortedProjects } from '$lib/components/project/personal/personalProjectData';
 
-	const { name, description, logo, startDate, endDate, githubLink, readme } =
-		$page.data as PersonalProject;
+	export let data;
+
+	// whenever route changes that causes refetching, these variables should be recreated
+	$: ({ name, description, logo, startDate, endDate, githubLink, readme } = data);
+
+	const projectNames = sortedProjects.map((p) => p.name);
+
+	// prevName and nextName relies on "name" reactivity
+	$: prevName = projectNames[projectNames.indexOf(name) - 1];
+	$: nextName = projectNames[projectNames.indexOf(name) + 1];
 </script>
 
 <div id={name} class="rounded-lg p-4">
@@ -19,8 +26,8 @@
 		</h2>
 	</div>
 
-	<div class="flex items-center mb-3 space-x-0.5">
-		<h3 class="text-sm font-medium text-gray-600 mr-2">Tech Stack:</h3>
+	<div class="flex items-center mb-3 space-x-2">
+		<h3 class="text-sm font-medium text-gray-600">Tech Stack:</h3>
 		{#each logo as l}
 			<Logo brand={l} />
 		{/each}
@@ -28,9 +35,11 @@
 
 	<div class="flex items-center mb-3">
 		<span class="text-sm font-medium text-gray-600">GitHub: </span>
-        <span>&nbsp;</span>
+		<span>&nbsp;</span>
 		{#if githubLink}
-			<a href={githubLink} class="text-blue-600 hover:text-blue-800 underline break-all" title={githubLink}>{githubLink}</a>
+			<a href={githubLink} class="hover:text-blue-600 underline break-all" title={githubLink}
+				>{githubLink}</a
+			>
 		{:else}
 			<span class="text-gray-500">Private</span>
 		{/if}
@@ -46,4 +55,35 @@
 			{@html readme}
 		</div>
 	</div>
+
+	<div class="flex flex-row mt-5 justify-center items-center gap-3">
+		<button
+			class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+			disabled={!prevName}
+			class:disable={!prevName}
+		>
+			{#if prevName}
+				<a href="/project/personal/{prevName}">Prev</a>
+			{:else}
+				<span>Prev</span>
+			{/if}
+		</button>
+		<button
+			class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+			disabled={!nextName}
+			class:disable={!nextName}
+		>
+			{#if nextName}
+				<a href="/project/personal/{nextName}">Next</a>
+			{:else}
+				<span>Next</span>
+			{/if}
+		</button>
+	</div>
 </div>
+
+<style lang="postcss">
+	.disable {
+		@apply bg-gray-400;
+	}
+</style>

@@ -6,6 +6,10 @@
 
 	const { name, description, logo, startDate, endDate, githubLink, readme } =
 		$page.data as PersonalProject;
+
+		
+
+	
 </script>
 
 <div id={name} class="rounded-lg p-4">
@@ -47,5 +51,14 @@
 		<div class="text-gray-700 mt-2">
 			{@html readme}
 		</div>
+	</div>
+
+	<div class="flex flex-row mt-5 justify-center items-center gap-3">
+		<button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+			Prev
+		  </button>
+		  <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+			Next
+		  </button>
 	</div>
 </div>

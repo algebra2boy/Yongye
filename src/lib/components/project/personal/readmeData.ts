@@ -47,7 +47,8 @@ export const readme: README = {
 		</p>
 		<div class="relative w-full h-screen overflow-auto">
     		<div class="absolute aspect-w-16 aspect-h-9 w-full">
-        		<iframe src="/pdf/covid_19.pdf" title="covid_19" class="w-full h-full" style="height: 500px;"></iframe>
+        		<iframe src="/pdf/covid_19.pdf" title="covid_19" class="w-full h-full" style="height: 500px; -webkit-overflow-scrolling: touch;
+				overflow-y: scroll;"></iframe>
    			</div>
 		</div>
 	`,

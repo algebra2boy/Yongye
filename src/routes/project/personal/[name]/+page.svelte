@@ -2,6 +2,7 @@
 	import Logo from '$lib/components/logo/Logo.svelte';
 	import { convertDateToString } from '$lib/utils/date';
 	import { sortedProjects } from '$lib/components/project/personal/personalProjectData';
+	import README from '../../../../lib/components/project/personal/README.svelte';
 
 	export let data;
 
@@ -14,16 +15,6 @@
 	$: prevName = projectNames[projectNames.indexOf(name) - 1];
 	$: nextName = projectNames[projectNames.indexOf(name) + 1];
 
-	let readme: any;
-
-	$: if (name) {
-		loadREADME();
-	}
-
-	async function loadREADME() {
-		const fileName = `./readme/${name}.svelte`;
-		readme = (await import(/* @vite-ignore */ fileName)).default;
-	}
 </script>
 
 <div id={name} class="rounded-lg p-4">
@@ -69,7 +60,7 @@
 	<div class="README mt-4">
 		<h1 class="text-xl font-bold text-gray-900">README</h1>
 		<div class="text-gray-700 mt-2">
-			<svelte:component this={readme} />
+			<README {name} />
 		</div>
 	</div>
 

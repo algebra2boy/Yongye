@@ -2,7 +2,7 @@
 	import Logo from '$lib/components/logo/Logo.svelte';
 	import { convertDateToString } from '$lib/utils/date';
 	import { sortedProjects } from '$lib/components/project/personal/personalProjectData';
-	import README from '../../../../lib/components/project/personal/README.svelte';
+	import README from '$lib/components/project/personal/README.svelte';
 
 	export let data;
 

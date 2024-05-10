@@ -57,13 +57,14 @@ const languages = {
 	dockerfile
 };
 
-export type Theme = 'github' | 'githubDarkDimmed' | 'tokyoNightDark' | 'xcode';
+export type Theme = 'github' | 'githubDarkDimmed' | 'tokyoNightDark' | 'xcode' | 'githubDark';
 
 const themes = {
 	github,
 	githubDarkDimmed,
 	tokyoNightDark,
-	xcode
+	xcode,
+	githubDark
 };
 
 export const loadLanguage = (language: Language) => languages[language];

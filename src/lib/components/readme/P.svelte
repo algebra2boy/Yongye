@@ -1,0 +1,5 @@
+<script lang="ts">
+	export let text: string = 'This is a sample paragraph';
+</script>
+
+<p class="text-base mb-3">{@html text}</p>

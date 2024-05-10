@@ -2,7 +2,6 @@
 	import { sortedProjects } from './personalProjectData.js';
 	import Logo from '../../logo/Logo.svelte';
 	import { convertDateToString } from '$lib/utils/date.js';
-
 </script>
 
 <div class="pt-2 pl-1 rounded-lg">

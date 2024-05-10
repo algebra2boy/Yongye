@@ -32,7 +32,8 @@ export const personalProjects: PersonalProject[] = [
 		description: 'My website! (This website!)',
 		logo: ['Typescript', 'Svelte', 'TailwindCSS', 'Vercel'],
 		startDate: new Date(2024, 4),
-		endDate: new Date(2024, 5)
+		endDate: new Date(2024, 5),
+		githubLink: 'https://github.com/algebra2boy/Yongye'
 	},
 	{
 		name: 'yogo',

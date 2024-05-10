@@ -3,7 +3,7 @@
 
 	export let items: ListItem[] = [
 		{
-			name: 'Item 1',
+			name: 'item1',
 			children: [
 				{ name: 'Subitem 1.1' },
 				{
@@ -17,7 +17,7 @@
 	const hasChildren = (item: ListItem) => item.children && item.children.length > 0;
 </script>
 
-<ul class="list-disc pt-1 pl-4 mb-3">
+<ol class="list-decimal pt-1 pl-4 mb-3">
 	{#each items as item}
 		<li class="font-medium">
 			{@html item.name}
@@ -26,4 +26,4 @@
 			{/if}
 		</li>
 	{/each}
-</ul>
+</ol>

@@ -1,5 +1,5 @@
 <script>
-	import { H1, H2, H3, P, Code, BulletList } from '$lib/components/readme';
+	import { H1, H2, H3, P, Code, BulletList, NumberList } from '$lib/components/readme';
 </script>
 
 <H1 text="Motivation" />
@@ -18,3 +18,4 @@
 <P />
 <Code />
 <BulletList />
+<NumberList />

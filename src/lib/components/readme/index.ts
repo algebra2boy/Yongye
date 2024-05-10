@@ -4,5 +4,6 @@ import H3 from './H3.svelte';
 import P from './P.svelte';
 import Code from './Code.svelte';
 import BulletList from './BulletList.svelte';
+import NumberList from './NumberList.svelte';
 
-export { H1, H2, H3, P, Code, BulletList };
+export { H1, H2, H3, P, Code, BulletList, NumberList };

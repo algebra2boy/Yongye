@@ -5,5 +5,8 @@ import P from './P.svelte';
 import Code from './Code.svelte';
 import BulletList from './BulletList.svelte';
 import NumberList from './NumberList.svelte';
+import Todo from './Todo.svelte';
+import { code } from './code';
+import { bold } from './bold';
 
-export { H1, H2, H3, P, Code, BulletList, NumberList };
+export { H1, H2, H3, P, Code, BulletList, NumberList, Todo, code, bold };

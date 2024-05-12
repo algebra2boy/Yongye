@@ -17,9 +17,9 @@
 	const hasChildren = (item: ListItem) => item.children && item.children.length > 0;
 </script>
 
-<ol class="list-decimal pt-1 pl-4 mb-3">
+<ol class="list-decimal pt-1 pl-4">
 	{#each items as item}
-		<li class="font-medium">
+		<li class="font-normal">
 			{@html item.name}
 			{#if hasChildren(item)}
 				<svelte:self items={item.children} />

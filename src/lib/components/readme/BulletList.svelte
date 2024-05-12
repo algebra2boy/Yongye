@@ -17,13 +17,13 @@
 	const hasChildren = (item: ListItem) => item.children && item.children.length > 0;
 </script>
 
-<ul class="list-disc pt-1 pl-4 mb-3">
-	{#each items as item}
-		<li class="font-medium">
+{#each items as item}
+	<ul class="list-disc pt-1 pl-4">
+		<li class="font-normal">
 			{@html item.name}
 			{#if hasChildren(item)}
 				<svelte:self items={item.children} />
 			{/if}
 		</li>
-	{/each}
-</ul>
+	</ul>
+{/each}

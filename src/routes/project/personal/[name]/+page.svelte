@@ -14,7 +14,6 @@
 	// prevName and nextName relies on "name" reactivity
 	$: prevName = projectNames[projectNames.indexOf(name) - 1];
 	$: nextName = projectNames[projectNames.indexOf(name) + 1];
-
 </script>
 
 <div id={name} class="rounded-lg p-4">

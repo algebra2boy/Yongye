@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { ComponentType } from "svelte";
+	import type { ComponentType } from 'svelte';
 
 	let readme: ComponentType;
 
 	export let name: string;
 
-    // dynamically import the README component based on the name
+	// dynamically import the README component based on the name
 	$: if (name) {
 		loadReadme();
 	}

@@ -480,7 +480,56 @@ git clone https://github.com/algebra2boy/HouseFinder.git
 		description: 'A web app that helps create and sign up events using microservices',
 		logo: ['Docker', 'Javascript', 'Express', 'MongoDB', 'Bootstrap'],
 		startDate: new Date(2023, 7),
-		endDate: new Date(2023, 9)
+		endDate: new Date(2023, 9),
+		githubLink: "",
+		readme: 
+`
+## What is this project about
+A dockerized web app that helps people create and sign up events using microservices
+
+## Requirements
+You would need to create two .env file, one in Gmail, another one in Yelp.
+- In Yelp service, you would need to add the API KEY, YELP_APIKEY, from [Yelp Developers](https://www.google.com/search?client=safari&rls=en&q=yelp+developer&ie=UTF-8&oe=UTF-8&dlnr=1&sei=SgjwZKLVNIe15NoPwLK2mAk).
+- In Gmail service, you would need to add multiple OAuth2 authentication code, as they are CLIENT_ID, CLIENT_SECRET, REDIRECT_URL, REFRESH_TOKEN from Google API.
+
+## How to run the web app
+Note: You must have mongoDB and Docker installed in your local machine.
+\`\`\`
+cd EventPlanner
+docker compose up
+\`\`\`
+how to stop the containers from running:
+\`\`\`
+docker compose down
+\`\`\`
+how to remove all unused objects such as images and containers:
+\`\`\`
+docker system prune -a
+\`\`\`
+how to remove all unused volumes:
+\`\`\`
+docker volume prune -a
+\`\`\`
+
+## Dockerfile
+- Run \`docker compose -f docker-compose.dev.yml up\` in dev mode
+- Why is the \`context\` keyword used?
+    - The context keyword is important when you are specifying a Dockerfile that is different from the default (Dockerfile). The context represents the directory that Docker Compose uses as the build context. This is typically the directory where your application code resides and where your Dockerfile is located. When you specify a custom Dockerfile using the dockerfile keyword, it's assumed that this Dockerfile is located in the directory defined by context. Without the context keyword, Docker Compose wouldn't know where to find the Dockerfile you're referencing.
+
+## Why start I this project
+After a few thoughtful days, I decided the best scalable web application that fits my taste is a web application that involves event planning. I wanted to create an interactive and scalable web app that helps people register and sign up for events. My idea comes from the UMASS campus pulse and FaceBook Events. These are great apps, but I wanted to create a more user-friendly web app that is simple, clean, neat, and scalable that comes with many interesting tools. 
+
+The basic components that support my web app will be microservices, interactive user interface, NoSQL database integration, and containerization and dockerization. 
+
+Microservices help modularize and organize independent applications to communicate over APIs through Eventbus. I plan to work on four microservices. The first one I am going to implement, called “Events”, helps users register for an event. An event could have an event name, start date, end date, location description, location option, image link, and an option for people to sign up online. After registering for the event, the event information will be stored in the MongoDB database and shown in a card format. Since the event can be signed up online, it gives us the ability to create another microservice that stores people’s personal information such as their first name and email - only these two are enough, making it simple. This microservice I named it is “People”.  I planned to implement the third microservice called “Yelp”. The “Yelp” will use the user preference to find the nearby place. This will generate a list of nearby suggested locations for the event. This helps event planners to better organize their events in a much quicker manner and choose their desired place. The fourth microservice will only be implemented if I have enough time, which is called “Gmail”. “Gmail” will send out an email to people who have signed up for an event, this will remind people that they have signed up for the event, deliver important messages in a quick time manner and increase user engagement in a friendly and fun way. This microservice will be utilizing the Gmail API. If possible and if I have time, their Google Calendar will attach the event automatically. 
+
+My application is interesting because it allows people to maneuver their event location in a fun and quick way, allowing more friends and families to gather together at their favorite places. People would use it because it is simple, and they can sign up for an event with a few clicks, and receive a notification with the event they signed up for, such as live updates of the events. It will also give users constant notifications about the upcoming event, and most importantly, they can see the names of friends and families attending the event. Someone would use it because it comes with great notification features, a simple UI that allows them to sign up for an event without much work, great for time-saving and having fun interacting with the web app meanwhile practicing some sort of pre-work ritual to ready to join the event. It will be fun and interactive with many micro-interactions.
+
+For an event-planning app, scalability is important. As more important events arise, the application will be populated with more users. This will lead to slow performance, crashes, or data loss due to the abundance of user information. But when effective scalability comes into play, those risks will be mitigated to allow a seamless experience for users. The scalable design will help future growth, balance traffic, and protects personal data, resulting in the app's long-term success and reliability for users.
+
+Here is video demo of the web app: [link](https://youtu.be/SlSaHrCOxC0)
+
+`
 	},
 	{
 		name: 'MCAS-Analysis',
@@ -488,48 +537,365 @@ git clone https://github.com/algebra2boy/HouseFinder.git
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2023, 9),
 		endDate: new Date(2024, 1),
+		githubLink: "https://github.com/algebra2boy/MCAS_Analysis",
+		readme: 
+`
+# What is this about:
+
+This research explores the relationship between explore the relationship between household income and standardized test performance. Our interest is in investigating how demographic predictors correspond to test results. The achievement gap is a prominent and ongoing socio-economic issue within education, so we expect our analysis to support the hypothesis that lower mean family income is correlated with lower MCAS scores and SAT scores. 
+
+# Where is the dataset from?
+1. Massachusetts Public Schools Date from [Kaggle](https://www.kaggle.com/datasets/ndalziel/massachusetts-public-schools-data).
+2. The HTML table from this [Wikipedia](https://en.wikipedia.org/wiki/List_of_Massachusetts_locations_by_per_capita_income) page, List of Massachusetts locations by per capita income.
+
+# Instructions:
+1. Read more about the abstract from [here](https://github.com/algebra2boy/MCAS_Analysis/blob/main/Group%206%20Abstract.pdf).
+2. Read the presentation slides from [here](https://github.com/algebra2boy/MCAS_Analysis/blob/main/Group%206%20Presentation.pdf).
+3. See the R source code from [here](https://github.com/algebra2boy/MCAS_Analysis/blob/main/finalProject.R).
+`
 	},
 	{
 		name: 'ShopHub',
 		description: 'A shopping app that provides convenience to daily life',
 		logo: ['Swift'],
 		startDate: new Date(2023, 6),
-		endDate: new Date(2023, 12)
+		endDate: new Date(2023, 1),
+		githubLink: "https://github.com/algebra2boy/ShopHub",
+		readme: 
+`
+This project is collaboration project that I worked on with my mentor, Chengtao, at the 2023 Apple Swift Mentorship program.
+We made a basic iOS app that focuses on shopping and convenience. The app is written in Swift and SwiftUI. 
+The app has a simple UI that allows users to browse through a list of items, add items to a cart, and view the cart. 
+It also has a search feature that allows users to search for items by name. 
+In addition, it uses a simple data model to store the items and cart data. 
+The app is designed to be simple and easy to use, with a focus on providing a good user experience. 
+The app is a good starting point for anyone who wants to learn how to build an iOS app using Swift and SwiftUI.
+We also adopted the Human Interface Guidelines to make the app more user-friendly and intuitive.
+`
 	},
 	{
 		name: 'TechHouse',
 		description: 'A platform to share computer science knowledge',
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 11),
-		endDate: new Date(2023, 12)
+		endDate: new Date(2023, 12),
+		githubLink: "https://github.com/algebra2boy/TechHouse",
+		readme:
+`
+
+## Features
+
+The following **required** functionality is completed:
+
+- [x] A create form that allows the user to create posts
+- [x] Posts have a title and optionally additional textual content and/or an image added as an external image URL
+- [x] A home feed displaying previously created posts. By default, the time created, title, and number of upvotes for each post is shown on the feed
+- [x] Clicking on a post shall direct the user to a new page for the selected post
+- [x] Users can sort posts by either their created time or upvotes count
+- [x] Users can search for posts by title
+- [x] A separate post page for each created post, where any additional information is shown is linked whenever a user clicks a post
+- [x] Users can leave comments underneath a post on the post's separate page
+- [x] Each post should have an upvote button on the post's page. Each click increases its upvotes count by one and users can upvote any number of times
+- [x] A previously created post can be edited or deleted from its post page
+
+The following **optional** features are implemented:
+
+- [ ] Users can only edit and deleted posts or delete comments by entering the secret key, which is set by the user during post creation
+- [ ] Upon launching the web app, the user is assigned a random user ID. It will be associated with all posts and comments that they make and displayed on them.
+- [ ] Users can repost a previous post by referencing its post ID. On the post page of the new post, the referenced post is displayed and linked, creating a thread
+- [ ] Users can customize the interface of the web app
+- [ ] Users can share and view web videos
+- [ ] Users can set flags while creating a post. Then users can filter posts by flags on the home feed.
+- [ ] Users can upload images directly from their local machine as an image file
+- [ ] Display a loading animation whenever data is being fetche
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<video width="400" height="240" controls>
+  <source src="https://github.com/algebra2boy/TechHouse/assets/103079472/0ef8b111-dfce-4c86-ab91-eb98fccc777a"  type="video/mp4">
+</video>
+
+## License
+
+    Copyright [2023] [Yongye Tan]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+`
 	},
 	{
 		name: 'Ree-See.it',
 		description: 'An iOS mobile app that manages and stores receipts',
 		logo: ['Docker', 'Swift', 'Express', 'MongoDB', 'AWS', 'ChatGPT', 'Flask', 'Tesseract.js'],
 		startDate: new Date(2023, 11),
-		endDate: new Date(2023, 11)
+		endDate: new Date(2023, 11),
+		githubLink: "",
+		readme: 
+`
+🔥 This project is awarded to Best Mobile Hack for HackUmass Hackathon 🔥 My responsibility was leading this project, designing different microservices, and ensuring each microservices talk to each other!
+Here is the Devpost link: [Ree-See-It](https://devpost.com/software/ree-see-it)
+
+## Inspiration
+"Ree-See-It" is driven by the urgent need to reduce environmental waste and promote healthier lifestyles. With the environmental and health impacts of paper receipts becoming increasingly evident, our app offers a sustainable and health-conscious alternative for receipt management.
+
+## What It Does
+"Ree-See-It" is a comprehensive digital receipt management and expense tracking solution. Its key features include:
+
+- Digital Receipt Storage: Transforms paper receipts into a digital format, significantly reducing environmental waste.
+- Expense Categorization: Allows users to effectively organize their expenses, promoting better financial management.
+- Health Risk Mitigation: Minimizes exposure to harmful chemicals commonly found in paper receipts, such as BPA and BPS.
+- Accessibility for the Visually Impaired: Integrates assistive technologies, ensuring the app is accessible to all users.
+- Online Purchase Management: Streamlines the process of tracking online shopping expenses.
+- Shared Expense Feature: Simplifies the splitting of costs among groups.
+
+## How We Built It 
+- "Ree-See-It" is developed as an iOS mobile application using Swift and SwiftUI. It features:
+- Microservice Architecture: Incorporates components like image processing (extract all the parsed string from the receipt), AWS S3 cloud storage (storing receipt images on the cloud in case users want to keep them for future and business management) , ChatGPT API (convert the parsed string to JSON), geolocation services (forward geocoding), and MongoDB for data storage.
+- Optical Character Recognition: Utilizes Tesseract.js for accurate OCR.
+- User Authentication: Implements comprehensive authentication using Auth0.
+
+
+## Challenges We Ran Into
+
+- Frontend Issues: Navigational bugs and image exporting challenges.
+- Backend Complexities: Difficulties with API integration and Docker compatibility (dependencies hell).
+- Database Management: Overcoming inconsistencies in MongoDB documents.
+
+## Accomplishments We're Proud Of Our team achieved:
+
+- Innovative Solution: An app that significantly contributes to resolving environmental and health concerns.
+- Effective Teamwork: Demonstrable excellence in collaboration and problem-solving.
+
+## What We Learned:
+
+- Advanced Technology: Mastery of Swift, SwiftUI, and various backend technologies.
+- Team Collaboration: Improved teamwork skills in demanding scenarios.
+
+## What's Next:
+
+- Expand Features: Add more user customization options and advanced analytics.
+- Improve Scalability: Upgrade the backend for enhanced performance.
+- Market Deployment: Gear up for a broader market release.
+"Ree-See-It" is not just an app; it's a step towards a more sustainable and health-conscious future. Join us in making a difference!
+
+`
 	},
 	{
 		name: 'SwiftUI Learning',
 		description: 'A website that helps you learn SwiftUI like quizlet',
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 10),
-		endDate: new Date(2023, 10)
+		endDate: new Date(2023, 10),
+		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/swiftui%20learning_2",
+		readme: 
+`
+# Web Development Project 3 - SwiftUI Learning
+
+Submitted by: Yongye Tan
+
+This web app: This React application is made to help you learn SwiftUI in a fun way!
+
+Time spent: 3 hours spent in total
+
+## Required Features
+
+The following **required** functionality is completed:
+
+- [x] **The user can enter their guess in a box before seeing the flipside of the card**
+- [x] **Clicking on a submit button shows visual feedback about whether the answer was correct or incorrect**
+- [x] **A back button is displayed on the card and can be used to return to the previous card in a set sequence**
+- [x] **A next button is displayed on the card and can be used to navigate to the next card in a set sequence**
+
+The following **optional** features are implemented:
+
+- [x] A shuffle button is used to randomize the order of the cards
+- [ ] A user's answer may be counted as correct even when it is slightly different from the target answer
+- [x] A counter displays the user's current and longest streak of correct responses
+- [ ] A user can mark a card that they have mastered and have it removed from the pool of answers as well as added to a list of mastered cards
+
+The following **additional** features are implemented:
+
+- [ ] List anything else that you added to improve the site's functionality!
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+
+
+<video width="400" height="240" controls>
+  <source src="https://github.com/algebra2boy/React102/assets/103079472/9a937bd0-80f6-4cc4-919a-5a1be8681cf3" type="video/mp4">
+</video>
+
+
+## Notes
+
+Describe any challenges encountered while building the app.
+
+I had difficulty with state managment. There are some state that must be uplifting up. I took a while to understand why we need to pass a function hanlder from parent to child, aka a closure. There are many states that I think I need to optimize them later.
+
+## License
+
+    Copyright [2023] [Yongye]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+`
 	},
 	{
 		name: 'Crewmate',
 		description: 'A website that creates AmongUs characters',
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 9),
-		endDate: new Date(2023, 10)
+		endDate: new Date(2023, 10),
+		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/crewmate",
+		readme: 
+`
+# Web Development Project 7 - Crewmate
+
+Submitted by: Yongye Tan
+
+This web app: Playing among us could be fun, but have you made your own among us crewmate before?
+
+Time spent:  4 hours spent in total
+
+## Required Features
+
+The following **required** functionality is completed:
+
+- [x] **A create form allows users to add new cremates**
+- [x] **Users can name the crewmate and set the crewmate's attributes by clicking on one of several values**
+- [x] **The site displays a summary page of all the user's added crewmates**
+- [x] **A previously created crewmate can be updated from the crewmate list**
+- [x] **A previously created crewmate can be deleted from the crewmate list**
+- [x] **Each crewmate has a direct, unique link to an info page about them**
+
+The following **optional** features are implemented:
+
+- [ ] A crewmate can be given a category upon creation which restricts their attributes
+- [ ] The site displays summary statistics about a user's crew on their crew page 
+- [ ] The site displays a custom "success" metric about a user's crew which changes the look of the crewmate list
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<video width="400" height="240" controls>
+  <source src="https://github.com/algebra2boy/React102/assets/103079472/b376ab92-62e6-47a6-b3e2-4ab1bc37c78b" type="video/mp4">
+</video>
+
+## Notes
+
+Describe any challenges encountered while building the app.
+
+The hardest part of this project is to connect the supabase database and render them onto the screen.
+
+## License
+
+    Copyright [2023] [Yongye Tan]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+`
 	},
 	{
 		name: 'Community Board',
 		description: 'A website that displays computer science club',
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 9),
-		endDate: new Date(2023, 10)
+		endDate: new Date(2023, 10),
+		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/community%20board",
+		readme:
+`
+# Web Development Project 1 - _Computer Science Community Board_
+
+Submitted by: **Yongye Tan**
+
+This web app: **Computer Science Amherst Club Board **
+
+Time spent: **X** hours spent in total
+
+## Required Features
+
+The following **required** functionality is completed:
+
+- [x] **There is a unique theme for events or resources relevant to a specific community**
+- [x] **At least 10 unique resources or events are displayed in a responsive card format**
+
+The following **optional** features are implemented:
+
+- [x] Buttons or links to a related resources are on each card component
+- [x] The site is responsive for both desktop and mobile formats
+
+The following **additional** features are implemented:
+
+- [x] List anything else that you added to improve the site's functionality!
+    - hovering the text would alter the background color
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented required features:
+
+
+<video width="400" height="240" controls>
+  <source src="https://github.com/algebra2boy/React102/assets/103079472/f40a5111-0489-4086-ae63-7b9a030929d4" type="video/mp4">
+</video>
+
+## Notes
+
+The challenges that I encountered while building the app were CSS and making the card component to fit in a container row by row.
+I did not know how to do it until I refreshed some of my knowledge on flex box.
+
+
+## License
+
+    Copyright [yyyy] [name of copyright owner]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+`
 	},
 	{
 		name: 'Cat',

@@ -35,5 +35,9 @@
 		"vitest": "^0.25.8",
 		"web-vitals": "^3.5.0"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@tailwindcss/typography": "^0.5.13",
+		"marked": "^12.0.2"
+	}
 }

@@ -47,9 +47,7 @@ Making my website has been something that I wanted to do for years, but I have b
 		endDate: new Date(2024, 5),
 		githubLink: "https://github.com/algebra2boy/Yogo",
 		readme:
-`
-# Yogo 
-
+			`
 Yogo is a simple command line tool written in Node.js that provides shortcut to many platforms.
 
 ## Installation
@@ -140,14 +138,36 @@ chmod +x yo
 		description: 'A web app that allows faculty to upload office hour',
 		logo: ['Docker', 'Typescript', 'Node.js', 'React', 'Express', 'MongoDB', 'Vercel'],
 		startDate: new Date(2024, 4),
-		endDate: new Date(2024, 5)
+		endDate: new Date(2024, 5),
+		githubLink: "https://github.com/algebra2boy/Ice-Faculty",
+		readme:
+			`
+## Introduction
+
+Quick fact: This is the group project for CS 520. 
+
+This is the front-end interface of the project designed specifically for teachers. It is a website that provides easy access for teachers to manage the office hour sections that they uploaded to the database.
+
+## Features included
+
+- Display all of the office hour sections uploaded by a faculty (a faculty won’t be able to see/edit any office hour sections that were uploaded by another faculty)
+- Upload office hour sections so that the students are able to add these office hour sections from *ice-quef*
+- Modify the details of existing office hours associated with a faculty member if are updates or if any information was entered incorrectly
+- Delete an office hour section if it is no longer needed (e.g., end of the semester)
+
+`
 	},
 	{
 		name: 'Ice-queb',
 		description: 'A robust REST and WebSocket API for managing office hour',
 		logo: ['Docker', 'Typescript', 'Node.js', 'Express', 'MongoDB', 'Socket.io'],
 		startDate: new Date(2024, 2),
-		endDate: new Date(2024, 5)
+		endDate: new Date(2024, 5),
+		githubLink: "https://github.com/algebra2boy/Ice-Queb",
+		readme:
+			`
+This is the back-end server of the project that handles request from both the student-end interface and teacher-end interface for office hour queuing app.
+`
 	},
 	{
 		name: 'Chemistry-Web-App',
@@ -164,7 +184,7 @@ chmod +x yo
 		endDate: new Date(2024, 2),
 		githubLink: "https://github.com/aarav-nair/Cookr-HackHer2024",
 		readme:
-`
+			`
 Being college students, a lot of us struggle with making the transition from dorm life to independent life due to the adjustments and skills one has to learn to accommodate to these new changes. The greatest challenge of them all is having the added responsibility of cooking and preparing food for yourself for each meal of the day which often leads to us developing unhealthy eating habits, affecting our mental and physical health and impacting our studies and work in the long term. Cooking is an incredibly hefty task to take on especially having been spoiled with #1 DINING for two years or more like we have. Thus, introducing Cookr! An app designed to be your sous chef in the kitchen, helping you with everything from meal prepping to the actual cooking of various cuisines... all specifically curated as per your taste.
 Check out https://devpost.com/software/cookr-4aojyl for our Devpost submission.
 `
@@ -177,7 +197,7 @@ Check out https://devpost.com/software/cookr-4aojyl for our Devpost submission.
 		endDate: new Date(2024, 4),
 		githubLink: "https://github.com/algebra2boy/CICD-pipeline",
 		readme:
-`
+			`
 This repository contains some basic examples for a Continuous Integration and Continuous Deployment (CI/CD) pipeline.
 
 ## Introduction
@@ -206,8 +226,8 @@ To trigger the pipeline, simply push your code changes to the repository. The pi
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
 		githubLink: "https://github.com/algebra2boy/mlh-scraper",
-		readme: 
-`
+		readme:
+			`
 This is my first simple mini project written in Go for web scraping. It scraps all the hackathon event from the official MLH event page([link](https://mlh.io/seasons/2024/events)) and outputs them to a csv file. I added a lot of comments to help me understand what is going on behind the scene because I am still very new to Go. For my first few attempts, I had a hard time scraping the website because the MLH website has enabled some mechniams for anti-scraping, therefore I kept receiving Forbidden response status code (403). Eventually I decided to use a free proxy server to bypass it and to avoid direct request to the MLH website. In other words, I sent a request to the proxy server with my requested website URL, and proxy server sent a request to the MLH website, and proxy server returned the HTML from MLH then sent it back to me. I learned how I/O, url query construction, Colly (the web scraping library) and other basic data structures works. Overall it is a great learning experience!
 `
 	},
@@ -467,7 +487,7 @@ git clone https://github.com/algebra2boy/HouseFinder.git
 		description: 'Explores the relationship between income and standardized test performance',
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2023, 9),
-		endDate: new Date(2024, 1)
+		endDate: new Date(2024, 1),
 	},
 	{
 		name: 'ShopHub',
@@ -516,14 +536,140 @@ git clone https://github.com/algebra2boy/HouseFinder.git
 		description: 'A website that finds cat images based on your preference',
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 10),
-		endDate: new Date(2023, 10)
+		endDate: new Date(2023, 10),
+		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/cat",
+		readme:
+`
+# Web Development Project 4 - Cat The Lover
+
+Submitted by: Yongye Tan
+
+This web app: This website is for anyone who enjoys and has a cat.
+
+Time spent: 5 hours spent in total
+
+## Required Features
+
+The following **required** functionality is completed:
+
+- [x] **Clicking a button creates a new API fetch request and displays at least three attributes from the returned JSON data**
+- [x] **Only one item/API call is viewable at a time**
+- [x] **API calls appear random to the user**
+- [x] **At least one image is displayed per API call**
+- [x] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
+- [x] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
+
+The following **optional** features are implemented:
+
+- [x] Multiple types of attributes can be added to the ban list
+- [x] Users can see a stored history of their previously viewed items from their session
+
+The following **additional** features are implemented:
+
+- [ ] List anything else that you added to improve the site's functionality!
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<video width="400" height="240" controls>
+  <source src="https://github.com/algebra2boy/React102/assets/103079472/3ac235e4-c258-4cee-a05d-ada219761010" type="video/mp4">
+</video>
+
+## Notes
+
+Describe any challenges encountered while building the app.
+
+The challenges that I encountered were trying to pass handlers from parent to child components. Understanding 
+usestate and updating the state properly for each component and making each component modular were something I learned the most from this app.
+
+## License
+
+    Copyright [2023] [Yongye Tan]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+`
 	},
 	{
 		name: 'Breweries',
 		description: 'A website that finds breweries using API and generate analytics charts',
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 10),
-		endDate: new Date(2023, 11)
+		endDate: new Date(2023, 11),
+		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/breweries_part2",
+		readme: 
+`
+# Web Development Project 6 - Breweries 2.0
+
+Submitted by: Yongye Tan
+
+This web app: This brew app adds more visualization and detail pages to the brew data.
+
+Time spent: **4** hours spent in total
+
+## Required Features
+
+The following **required** functionality is completed:
+
+- [x] **The app includes at least one unique chart developed using the fetched data that tell an interesting story**
+- [x] **Clicking on an item in the list view displays more details about it**
+- [x] **Clicking on an item has a direct, unique link to that item's detail view page**
+
+
+The following **optional** features are implemented:
+
+- [x] The site's customized dashboard contains more contÍent that explains what is interesting about the data
+- [x] The site allows users to toggle between different data visualizations
+
+The following **additional** features are implemented:
+
+* [x] Add resuable navbar and home button to be displayed across different view
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<video width="400" height="240" controls>
+  <source src="https://github.com/algebra2boy/React102/assets/103079472/2a81a825-661e-4152-b68c-8d16de33d528" type="video/mp4">
+</video>
+
+
+## Notes
+
+Describe any challenges encountered while building the app.
+
+The hardest part of making this app is to understand how to use Link, Route and pass state/props to other components through Link.
+Overall, I think this web app really helps me understand how to route to differnt view, maintain separation of concern, and make
+reusable components.
+
+## License
+
+    Copyright [2023] [Yongye]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+`
 	},
 	{
 		name: 'Clue',
@@ -596,70 +742,442 @@ gcc adventure.c room.c -o myProgram
 		description: 'A platform to share opinions about food from all dining hall at UMass Amherst',
 		logo: ['HTML', 'CSS', 'Javascript'],
 		startDate: new Date(2023, 2),
-		endDate: new Date(2023, 5)
+		endDate: new Date(2023, 5),
+		githubLink: "https://github.com/algebra2boy/RateMyDine",
+		readme:
+			`
+**How to run the website** </br>
+\`\`\`bash
+$ npm install
+$ npm run dev
+\`\`\`
+
+**Team Overview** </br>
+| <center>Name</center> | <center>GitHub Username</center> |
+| --- | --- |
+| <center>Yongye Tan</center> | <center>algebra2boy</center> |
+| <center>Ivan Liu</center> | <center>ivliu816</center> |
+| <center>Jicheng Li</center> | <center>zuki08</center> |
+| <center>Adam Trac</center> | <center>noonbles</center> |
+
+**Innovative Idea** </br>
+The platform is going to be similar to RateMyProfessor and Yelp, we will show star ratings than numerical rating and also accept half ratings. There will also be a multitude of rating criterias such as Food Quality, Customer Service, Location, and Price to calculate the Overall rating of the review. However, this platform will be for UMass Students and Faculty to post reviews of UMass Dining Hall food.
+
+
+User Logistics
+- User login: stores user login info such as uuid, username, userRole, password, email
+- Student: stores UMASS student data such as uuid, username, userRole, password, email
+- Faculty: stores UMASS Faculty data such as uuid, username, dining hall they work at, years of work experience 
+
+
+Website Logistics
+- Likes: Users can like or dislike other reviews, shown by a whole number.
+- User comments: Users can write comments in the review about the food they ate.
+- Images: Users can post images of their plate or surroundings of the dining hall
+- Rating: Users can specify the satisfactory level on food quality, customer service, atmosphere and time to spend to find a seat or table.
+- Overall Review: Each dining hall has a rating that is calculated using all the ratings from users' posts.
+
+
+**Functionality** </br>
+- Bootstrap front end: The site's styling will be primarily handled using bootstrap
+  - User Authentication page: hooks together inputs from the front end and redirects the user after confirming information with the backend
+    -Text boxes to record input
+  - Landing page: Strictly front end; redirects user to other pages (ex: checking reviews particularly Berkshire dining hall)
+    -Clickable tiles centered on the main page that redirect user
+    - Search bar in the text box for users to select the dinning hall they want to rate
+  - Dining hall pages: Loads images of user-generated pictures stored, comments, dining hall name and picture, etc.
+    - Non-interactible dining hall image
+    - Text box located at the bottom of the page, on top of a tile stack of comments, for users to upload comments and images of their food
+      - Button that prompts the user to upload images if they wish
+    - Comment tiles with like/dislike buttons for other users to interact with
+    - Small section above comments featuring the most viewed photos, top rated comments, etc.
+- MongoDB back end: Stores login information, dining hall ratings, food ratings, comments, comment ratings, images, etc.
+
+
+[Video Showcase](https://youtu.be/wruJSZfq97k) Click me!
+
+<img src="https://github.com/algebra2boy/RateMyDine/assets/103079472/38fa76bf-01d8-4755-97a3-9ba6830416ef" width="100%">
+
+
+**License** </br>
+[MIT License] (https://opensource.org/license/mit/)
+
+`
 	},
+
 	{
 		name: 'Socket programming',
 		description: 'Learn about how UCP and TCP work for both client and server',
 		logo: ['Python'],
 		startDate: new Date(2023, 3),
-		endDate: new Date(2023, 4)
+		endDate: new Date(2023, 4),
+		githubLink: "https://github.com/algebra2boy/SocketProgramming",
+		readme:
+			`
+## Project description
+
+This project is used for learning the socket programming using the socket API from python. 
+UDP and TCP are being studied and the topics of timeout. 
+
+
+## Execution
+\`\`\`python
+How to run the client:
+$ python3 your_client.py HELLO Server_IP Server_Port ConnectionID
+
+How to run the server: 
+$ python3 your_server.py Server_IP Server_Port
+\`\`\`
+
+## Server response
+server will keep a list of in-use connectionID and two types of response that the server will respond
+- OK: If the connectionID specified by the client is not in use, your server adds the connectionID to its list of in-use IDs and responds with an OK message
+    - the server includes the client IP address and client port number in its return message. Thus, the server message looks like “OK ConnectionID Client_IP Client_Port”
+    - Example would be "OK 9876 192.168.0.10 12345"
+- Reset: If the connectionID specified by the client is in use, your server responds with a RESET message. The RESET message starts with the string “RESET” and echoes back the client-provided connectionID.
+    -  the server message is “RESET ConnectionID”.
+    -  For example, "RESET 9876"
+
+
+## Time out
+
+Client Side
+- If the client receives an OK message, it prints out a “Connection established” message, indicating the connectionID, its IP address, its port number, and the current timestamp. Then, the client exits gracefully after closing any open sockets.
+-  If the client doesn’t receive a reply within **15** seconds, it should timeout and follow the protocol below 
+- Suppose the client receives a RESET message or timeouts after **15** seconds. In that case, it prints out a “Connection Error” message with the connection ID and the current timestamp, and asks the user to enter a new connection ID. Then, it retries to establish a connection again with a newly created socket and with this newly entered connection ID to the same server. After **three** tries to establish a connection without success to the same server, the client prints a “Connection Failure” message with the current timestamp and exits gracefully after closing any open sockets.
+    - Connection Error print out example: “Connection Error 2678 on 2023- 01-16 06:06:06.123456”
+    - After three tries, print out: “Connection Failure on 2023-01-16 06:06:06.123456”
+
+
+Server Side: 
+- waiting for a connection request but does not receive any requests from any clients for **two** minutes, your server should timeout and exit gracefully after closing any open sockets.
+- ConnectionID Timeout: your server should timeout and remove connectionIDs that have been in its connectionID list for more than **30** seconds
+
+`
 	},
 	{
 		name: 'DineAndGo',
 		description: 'Making a restaurant management app',
 		logo: ['Swift', 'Firebase'],
 		startDate: new Date(2022, 11),
-		endDate: new Date(2023, 2)
+		endDate: new Date(2023, 2),
+		githubLink: "https://github.com/algebra2boy/DineAndGo_SwiftUI",
+		readme:
+			`
+This was my SwiftUI project that I learned how to use Firebase to store data and authenticate users. 
+This was also my first SwiftUI project where I started my journey to learn how to build iOS apps.
+`
 	},
 	{
 		name: 'Enrollment',
 		description: 'A simple website for enrolling classes with login and register feature.',
 		logo: ['HTML', 'CSS', 'Javascript', 'MongoDB', 'Flask'],
 		startDate: new Date(2022, 11),
-		endDate: new Date(2023, 1)
+		endDate: new Date(2023, 1),
+		githubLink: "https://github.com/algebra2boy/Enrollment",
+		readme:
+			`
+This was a project that I learned about how to integrate frontend with Flask and Mongo.
+
+## Flask
+Brushing up on flask configuration and REST API
+
+## MongoDB setup
+https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-os-x/
+\`\`\`
+$ brew tap mongodb/brew
+$ brew update
+$ brew install mongodb-community@6.0
+\`\`\`
+
+## start MongoDB in the background
+\`\`\`
+$ brew services start mongodb/brew/mongodb-community
+$ mongosh
+$ show dbs
+\`\`\`
+
+## Set up
+[Download MongoDB Compass](https://www.mongodb.com/try/download/compass)
+[Flask configuration with MongoEngine](http://docs.mongoengine.org/projects/flask-mongoengine/en/latest/flask_config.html)
+
+`
 	},
 	{
 		name: 'AbsenteeismAtWork',
 		description: 'Data Science Project about work absenteeism',
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2022, 9),
-		endDate: new Date(2023, 1)
+		endDate: new Date(2023, 1),
+		githubLink: "https://github.com/algebra2boy/AbsenteeismAtWork",
+		readme: 
+`
+In the modern world, it is common to see people be absent from work for various reasons. Absenteeism at a workplace affects the accountability and availability of a person, leads to negative consequences in a team or a company such as the decline in work reputation, and the decrease in work coordination across departments. In this report, we are analyzing an existing dataset, from Kaggle, records of absenteeism at work from July 2007 to July 2010 at a courier company in Brazil. There are 740 observations and 21 variables. Important variables exist such as Distance from Residence to Work, Work load Average/day, which are important factors to determine why a worker is absent. The central question in this article is: What is the main determinant of whether someone is absent or not from work?
+
+## More instructions
+
+To read the analysis report: please click on [390RProject_YongyeTan.pdf](https://github.com/algebra2boy/AbsenteeismAtWork/blob/main/390RProject_YongyeTan.pdf)
+
+To check out the R code: please click on [Absent.R](https://github.com/algebra2boy/AbsenteeismAtWork/blob/main/Absent.R) or [AbsenteeismATWork.Rmd](https://github.com/algebra2boy/AbsenteeismAtWork/blob/main/AbsenteeismATWork.Rmd)
+
+## Achievement
+This is my first independent data science project using R and statistical analysis. 
+`
 	},
 	{
 		name: 'Find.it',
 		description: 'A web app helps people to find their lost items on campus',
 		logo: ['React', 'HTML', 'CSS', 'Twilio', 'Flask', 'MySQL'],
 		startDate: new Date(2022, 11),
-		endDate: new Date(2022, 12)
+		endDate: new Date(2022, 12),
+		githubLink: "https://github.com/algebra2boy/Find.it",
+		readme: 
+`
+Find.it is our submission for the UMASS Fall 2022 Hackathon. Find.it a scalable solution for people who've lost their things and (unsurprisingly) want to find them. 
+Here is the DevPost submission for this project: [Find.it](https://devpost.com/software/find-it-nlpzh5)
+
+## Inspiration
+  Our very initial motive comes from a team member from this group that he wanted to find his stolen bike, a very precious gift, desperately. He encouraged everyone in the team to work on a lost or found project to prevent other people like him to get another item lost on campus. Our main motive for creating Find.it was specifically to address an ubiquitous issue that we saw happen around campus: people tend to lose things quite often. It was sentimental to see students lose things and literally *post flyers on poles* to let others know to look for it. Not only that but there's even *individual* lost and found systems that each dining hall has! None of it is centralized--and that makes it horrifically difficult for people to find their things. That's why we thought that it'd be a good idea to centralize and expedite the process of finding lost things, with Find.it. We realized the items are not always tied to monetary value, but more about special meaning of the items that people cherished. 
+  
+## What does it does
+  Find.it is a responsible website that uses a SQL database to store and show data that users input themselves. In particular, this data involves user data (the thing that helps us identify who they are, like their email, name, etc.), and data about their lost item (things like pictures, a brief description, the last known location, and so on). 
+  
+## How we built it
+  We built the website using a combination of CSS, Javascipt, and React. Our plan for front-end development was to make the website as interactable and intuitive as possible, since we wouldn't want people who're looking for their lost item to have trouble accessing the site or operating it. So, what we decided to do was make the whole website look like any other website that you would typically see nowadays, since familiarity and accessibility is key! Oh--and one last append: we also used Twilio to help notify the user that their item has been found.
+  
+  Now as for the back-end, we used MySQL to create the server for the SQL database and from there we made a whole bunch of tables--one for the user name, which is then connected to 2 separate tables where 1 represents lost items, and the other represents found items. Then *those* are connected to another table that details information about the (technical parts) of the item itself, like the id of that item in the system, their written description, and so on. Finally, *that* table is connected to one last table that categorizes the item. Talk about a mouthful!
+  
+  Personally, as the guy who's writing this, I wish we did go to workshops to learn more about web design and the like, but there's also nothing better than discovering how to do these things by ourselves. It's the struggles that help us figure out the right path forward.
+  
+## Challenges we ran into
+- ALL OF US has an very minimum experience with React and Flask, so we have had to learn it from scartch starting this Friday!!!
+- A challenge that we ran into in particular was actually designing the website--the minute details like figuring out why our little magnifying glass icon started reshaping itself and flying off to the other side of the screen when we shrank the window for the website. Or, figuring out why someone completely missed how to spell the phrase "sign up" and instead just wrote "sign". Figuring out how to work well as a team was honestly one of the bigger struggles that we hate to admit. It's hard to coordinate and communicate when a majority of the team is in person, save at least one of us who was completely remote. That one guy had a bit of trouble getting everyone to answer his questions promptly. ~~That was the guy writing this description~~. So, with these difficulties, you can imagine some of the difficulties that have to do with choosing the direction for the site in terms of visual design, mechanics, and the like. 
+
+## Accomplishments we're proud of
+  - Honestly, we're just proud that we managed to get a functioning website with a functioning database and managed to put a huge chunk of it into motion in less than 24 hours! Obviously it didn't come easy, but the fact that *we did that* is just astonishing. 
+  - Finished the project on time
+  - Able to learn new technology in a limited time 
+    - website framework, database configuration, and integration between front and back end
+  - learned how Git works
+    - effectively manage the project by creating multiple branches, merging, and making pull request -- two notable ones are "git add ." and "git commit -m "project completed"
+
+## What we've learned
+  - Of the people who worked on this project, I'm (the writer) am almost 100% certain that everyone learned at least one new thing while working on this project: creating endpoints for the front and back end. You know, so they can work together as a functional website and not just 2 separate entities that *seem* to look nice together? Yeah--anyway--most of us in the front end really got to know how to use React. In fact, the whole reason why half of the team chose to do front end development was because that was something that they had little to no experience doing! The front end team really wanted to understand how to use industry tools like React to help not just themselves but everyone around them in the future. As for back end, some of us (much to our chagrin), had to figure out how to use Python and Flask, and even SQL just to get the website a proper back end. The amount of the work we have on database configuration and making efficient database schema to make the queries faster is a lot.
+  -  A few of us has experience with software engineering experience, and we are able to treat it like a project that we got assigned to in an actual real world setting such as an internship 
+  - Communication is the key. There were times that we have difficulties understand the terminology we used. Communicating effectively to make sure each part of the project is well designed. 
+
+## What's next for our hack
+  - Our vision for this hack, if the whole team decides to make it large scale, would be to seriously start making things work. We could keep the website as is, or make it just a tad bit better (blanking on ideas at the moment, bare with me!), and potentially make an app for iOS and Android so it's even more accessible! Our initial idea was to just make it easier for people to find their things, so naturally the easier we make things, the better it'll be. The endeavor itself was already a huge one and the fact that we even did *anything* about it is a milestone in and of itself. It was definitely a learning opportunity for most of us (some of us, the writer included, didn't even know how to *make* a website). As for future hackathons, we're not too sure! We'll definitely take this experience along with us when we decide to finally go after a new hackathon!
+  - We will seriously add more components, and deploy the website using AWS before June 2023.
+
+`
 	},
 	{
 		name: 'Flashcards',
 		description: 'An iOS app to help users to study in a productive and fun way',
 		logo: ['Swift'],
 		startDate: new Date(2022, 10),
-		endDate: new Date(2022, 11)
+		endDate: new Date(2022, 11),
+		githubLink: "https://github.com/algebra2boy/Flashcards",
+		readme: 
+`
+## Flashcard
+
+### App Description (Lab 1)
+User can flip the card to learn more about the answer to the question.
+
+### App Walk-through
+
+<video width="320" height="240" controls>
+  <source src="https://user-images.githubusercontent.com/103079472/190292001-0b83caf9-df5c-4a1b-b157-2ee0b59117d0.mov" type="video/mp4">
+</video>
+
+## Required
+- [x] Create New Project in Xcode
+- [x] Add a view for the front side of the flashcard to display the question
+- [x] Add a view for the back side of the flashcard to display the answer
+- [x] Build in logic to show the answer side when the card is tapped
+- [x] Push code to GitHub
+## Optional
+- [x] Toggle the flashcard between the question side and the answer side
+- [x] Style the question and answer side of the card to better distinguish between the two sides
+- [x] Add selectable multiple choice answers beneath the card
+
+
+## Lab 2
+
+### App Description
+User can customize their question and answers for the flashcard. The app creates multiple screens. 
+
+### App Walk-though
+
+<video width="320" height="240" controls>
+  <source src="https://user-images.githubusercontent.com/103079472/192846698-e986eb1c-b11a-4650-857c-c0dc7a646b0f.mov" type="video/mp4">
+</video>
+
+## Required
+- [x] User can open the creation screen
+- [x] User can cancel out of the creation screen
+- [x] User can enter a new question and answer in the creation screen to then show it on the flashcard
+- [x] Push code to GitHub
+## Optional
+- [x] User gets an error if they try to create a new flashcard with no question or answer
+- [x] User can edit existing flashcard
+- [x] User can add multiple choice answers in the creation screen
+
+## Lab 3
+
+### App Description
+Uer can go back and forth for the new flashcards they created and delete their flashcards. 
+Previous flashcards are saved on the disk.
+
+### App Walk-though
+
+<video width="320" height="240" controls>
+  <source src="https://user-images.githubusercontent.com/103079472/194996971-8522f1d5-c609-4868-98b8-9de8cca3b5e6.mp4" type="video/mp4">
+</video>
+
+
+## Required
+- [x] User can browse through multiple flashcards
+- [x] User can re-open the app and see previously created flashcards
+- [x] Push code to GitHub
+## Optional
+- [x] User can delete a flashcard
+- [x] User can edit existing flashcard
+- [x] User can store multiple choice questions
+
+📝 \`NOTE\` Paste this template at the top of your existing \`README.md\` file from the last lab.
+
+## Lab 4
+
+### App Description
+Flashcard now can now have autosize feature and fancy animation.
+
+### App Walk-though
+
+<video width="320" height="240" controls>
+  <source src="https://user-images.githubusercontent.com/103079472/197112757-88ea6770-8b06-4141-9b4c-f601da5fb959.MP4" type="video/mp4">
+</video>
+
+## Required
+- [x] User should see the app icon 
+- [x] User should see a splash screen
+- [x] User should see an flip animation when revealing the answer
+- [x] User should see a slide animation when going to the next flashcard
+- [x] User should see a slide animation when going to the previous flashcard
+- [x] Push code to GitHub
+## Optional
+- [x] User should see a nicer flaschard with rounded corners, shadows, and animating when showing the first time
+- [x] User should see all views properly layout when using the app on a phone of different sizes
+- [] Correct answer in multiple choice should be random
+
+`
 	},
 	{
 		name: 'CYE take home assessment',
 		description: 'My assessment for CYE',
 		logo: ['Swift'],
 		startDate: new Date(2022, 9),
-		endDate: new Date(2022, 10)
+		endDate: new Date(2022, 10),
+		githubLink: "https://github.com/algebra2boy/CYE_Take-Home_Assessment/tree/main/TakeHome",
+		readme: 
+`
+This is my take-home assessment for CYE. I was lucky to be able to join this team and work on this amazing project called Appbook. 
+I really appreciated this opporunity and I learned a ton about iOS dev and the team work. I have included my take-home submission above.`
 	},
 	{
 		name: 'OHill-Squad-WeSQL',
 		description: 'Learned how to connect mySQL database with Python.',
 		logo: ['Python', 'MySQL'],
 		startDate: new Date(2022, 8),
-		endDate: new Date(2022, 9)
+		endDate: new Date(2022, 9),
+		githubLink: "https://github.com/algebra2boy/OHill-Squad-WeSQL",
+		readme:
+			`
+## What this is about
+I took CS 345, which is about Database Management, and the class did not teach us much about how to connect the database with Python or other major languages. 
+I wanted to learn how to create and manipulate SQL databases with Python through this personal project. All the names and data are from my classes, or my friends, 
+and our classes. 
+
+
+## How to access to the [mySQL panel](https://stackoverflow.com/questions/35858052/how-to-fix-command-not-found-mysql-in-zsh)
+- Export the path every time you open the terminal
+    - export PATH={PATH}:/usr/local/mysql/bin/
+- connect to the MySQL (rule of thumb is "mysql -u {yourUserName} -p")
+    - In this our case, yourUserName is 'root'
+    - mysql -u root -p
+- Display all databases by putting "SHOW DATABASES;"
+- [Switch](https://linuxize.com/post/show-tables-in-mysql-database/) to the desired database using "USE {the name of the database}"
+- Display all table information by doing "SHOW TABLES;"
+
+## Important downloads
+1. [mySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+    - must be downloaded first to connect the mySQL server 
+2. [mySQL Workbench](https://www.mysql.com/products/workbench/)
+    - must be downloaded to manage database connection
+
+
+## Library
+- mysql-connector-python
+- pandas
+
+Remember to install the package with the following command
+\`\`\`bash
+pip install <the name of the package>
+\`\`\`
+
+## Entity Relation Diagram
+![plot](./EntityDiagram/E_R.png)
+
+
+## Important functions
+- sql.connector.connect(host, user_name, user_password)
+- sql.connector.cursor()
+- sql.connector.cursor().execute(query)
+- [sql.connector.commit()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlconnection-commit.html)
+    - to commit the current transaction, by default Python does not autocommit (commiting is one of the way for isolation level)
+- [cursor.fetchall()](https://dev.mysql.com/doc/connector-python/en/connector-python-api-mysqlcursor-fetchall.html)
+    - fetches all (or all remaining rows) of a query result set and result a list of tuples. If no more rows are available, it returns an empty list.
+
+## Resources
+- [freeCodeCamp](https://www.freecodecamp.org/news/connect-python-with-sql/)
+`
 	},
 	{
 		name: 'HelloFromYongye',
 		description: 'first mini iOS project to say hello and other greetings',
 		logo: ['Swift'],
 		startDate: new Date(2022, 7),
-		endDate: new Date(2022, 7)
+		endDate: new Date(2022, 7),
+		githubLink: "https://github.com/algebra2boy/codepath-prework",
+		readme:
+			`
+
+### App Description
+This project is my very first mini IOS project created on Xcode with Swift. It can do basic functionality like changing the background color and text color, altering the text string and saying goodbye!
+
+### App Walk-though
+<a href="https://ibb.co/Fw8RcdR">
+	<img src="https://user-images.githubusercontent.com/103079472/180610928-df827445-2c86-4f1f-80e4-f128e436bf7c.gif" alt="Screen-Recording-2022-07-23-at-10-10-25-AM" border="0" width = "200" />
+</a>
+
+### Required User Stories
+- [x] User sees custom text in a label - Hello from Yongye!
+- [x] User see's custom background color.
+- [x] User can tap a button to change the text color of the label.
+
+### Optional User Stories
+- [x] User can tap a button to change the color of the background view.
+- [x] User can tap a button to change the text string of the label - Goodbye 👋.
+	-  User can tap on the background view to reset all views to default settings.
+- [x] User can update the label text with custom text entered into the text field.
+   - [x] User can enter text into a text field using the keyboard.
+   - [x] User can tap the "Change text string" button to update the label with the text from the text field.
+   - [x] If the text field is empty, update label with default text string.
+   - [x] The keyboard is dismissed after the button has been tapped.
+
+`
 	},
 	{
 		name: 'Covid19-Analysis',
@@ -667,7 +1185,19 @@ gcc adventure.c room.c -o myProgram
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2020, 6),
 		endDate: new Date(2020, 7),
-		githubLink: 'https://github.com/algebra2boy/LearningDataScience/tree/main/Final_Project'
+		githubLink: 'https://github.com/algebra2boy/LearningDataScience/tree/main/Final_Project',
+		readme:
+`
+I am fortunate to be part of Summer Search. Summer Search provided me an amazing opportunity to take this class at Brown University over the summer of 2020. I learned about how to write R code
+to understand the meaning behind data. 
+<p>
+	Free free to check out the presentation: <a
+		class="underline hover:text-blue-600"
+		href="/pdf/covid_19.pdf"
+		>Statewide Mask Mandates vs COVID-19 Hospitalizations
+	</a>
+</p>
+`
 	},
 	{
 		name: 'Circus',
@@ -689,14 +1219,57 @@ gcc adventure.c room.c -o myProgram
 		description: 'A simple TicTacToe game implemented in Swift',
 		logo: ['Swift'],
 		startDate: new Date(2022, 12),
-		endDate: new Date(2023, 2)
+		endDate: new Date(2023, 2),
+		githubLink: "https://github.com/algebra2boy/Swift/tree/main/TicTacToeSwiftUI",
+		readme:
+`
+## Tic-Toe-Tac toe
+I am making a simple Tic-Toe-Tac to learn how SwiftUI works
+
+
+## The keys that I learned
+1. VStack/HStack
+2. Enum 
+3. StateObject and ObservableObject (Published)
+4. ternary operations
+
+## Credit!
+Thank you [Cal](https://www.youtube.com/watch?v=LmkHSTPK2h8) for providing such a good resource
+
+## Videowalkthrough
+
+<video width="320" height="240" controls>
+  <source src="https://user-images.githubusercontent.com/103079472/208536777-d9501074-7728-40d1-805c-ceaa15c7de44.mov" type="video/mp4">
+</video>
+
+`
 	},
 	{
 		name: 'Tips Calculator',
 		description: 'A simple tips calculator implemented in Swift',
 		logo: ['Swift'],
 		startDate: new Date(2022, 12),
-		endDate: new Date(2023, 1)
+		endDate: new Date(2023, 1),
+		githubLink: "https://github.com/algebra2boy/Swift/tree/main/TipCalculator",
+		readme:
+			`
+## About
+I am making a simple calculator wuth slider, avoiding the overhead of using the actual calculator everytime and making it fun.
+
+
+## Hints
+1. Do not put any invalid characters other than numbers.
+2. The tip percentage is only range from 0 to 30% 
+3. Have fun!
+
+
+## Video walkthrough
+
+<video width="320" height="240" controls>
+  <source src="https://user-images.githubusercontent.com/103079472/208486549-c0ed9f72-c842-4a00-a878-4e4bd1639513.mov" type="video/mp4">
+</video>
+
+`
 	},
 	{
 		name: 'Hacking with Swift',
@@ -710,14 +1283,27 @@ gcc adventure.c room.c -o myProgram
 		description: 'A simple snake game implemented in Swift using SpriteKit',
 		logo: ['Swift'],
 		startDate: new Date(2024, 4),
-		endDate: new Date(2024, 4)
+		endDate: new Date(2024, 4),
+		githubLink: "https://github.com/algebra2boy/Swift/blob/main/SpriteKit_experiment/SpriteKit_experiment/PixelMoving.swift",
+		readme:
+			`
+This is my first project that I learn how to make a game using SpriteKit. I learned how to create a pixel moving around the screen and how to make it move in a certain direction.
+This is also my first game! I am excited to learn more about SpriteKit and make more games in the future. I do feel that SpriteKit is a bit different from SwiftUI and it hasn't been updated since 2017.
+`
 	},
 	{
 		name: 'RateMyDine2.0',
 		description: 'Rate My Dine upgrade (but better, still in progress)',
 		logo: ['Typescript', 'Express', 'Svelte', 'Jest'],
-		startDate: new Date(2024, 1),
-		endDate: new Date(2024, 2)
+		startDate: new Date(2024, 5),
+		endDate: new Date(2024, 8),
+		githubLink: "https://github.com/algebra2boy/RateMyDine2.0",
+		readme:
+			`
+RateMyDine was a project I started in 2023 Spring to help students at UMass Amherst leave feedback. It was written in pure HTML, CSS, and Javascript. I decided to upgrade it to Typescript, Express, Svelte, SveleKit and Jest to learn more about these technologies. I also wanted to make it more user-friendly and interactive. The project is still in progress, but I have made significant progress in the backend and frontend. I have also written some tests for the backend using Jest. I am excited to see how it turns out!
+You can check out the previous version of [RateMyDine](https://github.com/algebra2boy/RateMyDine) here.
+`
+
 	},
 	{
 		name: 'Router API',
@@ -908,12 +1494,12 @@ especially to demonstrate its ability to transfer packages from first leg courie
 to second leg courier(ex.bike / drone / person).
 
 ## Completed Tasks  ✓
-	-[x] Change the package size
-	- [x] How to get a better map layout
-	- [x] Make the truck not disappear after dropping the package
-	- [x] ALter the depature time
-	- [x] Implement a better routing service API
-	- OSRM - online < [MapRequest](https://developer.mapquest.com)
+- [x] Change the package size
+- [x] How to get a better map layout
+- [x] Make the truck not disappear after dropping the package
+- [x] ALter the depature time
+- [x] Implement a better routing service API
+- OSRM - online < [MapRequest](https://developer.mapquest.com)
 
 
 ## Important downloads

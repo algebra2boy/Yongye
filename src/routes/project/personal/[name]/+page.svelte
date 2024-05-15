@@ -56,7 +56,7 @@
 
 	<hr class="border-t border-gray-300" />
 
-	<div class="README flex flex-row mt-3 w-full justify-center items-center">
+	<div class="README flex flex-row mt-3">
 		<README {readme} />
 	</div>
 

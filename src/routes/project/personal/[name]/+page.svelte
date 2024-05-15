@@ -7,14 +7,13 @@
 	export let data;
 
 	// whenever route changes that causes refetching, these variables should be recreated
-	$: ({ name, description, logo, startDate, endDate, githubLink } = data);
+	$: ({ name, description, logo, startDate, endDate, githubLink, readme } = data);
 
 	const projectNames = sortedProjects.map((p) => p.name);
 
 	// prevName and nextName relies on "name" reactivity
 	$: prevName = projectNames[projectNames.indexOf(name) - 1];
 	$: nextName = projectNames[projectNames.indexOf(name) + 1];
-
 </script>
 
 <div id={name} class="rounded-lg p-4">
@@ -57,14 +56,11 @@
 
 	<hr class="border-t border-gray-300" />
 
-	<div class="README mt-4">
-		<h1 class="text-xl font-bold text-gray-900">README</h1>
-		<div class="text-gray-700 mt-2">
-			<README {name} />
-		</div>
+	<div class="README flex flex-row mt-3">
+		<README {readme} />
 	</div>
 
-	<div class="flex flex-row mt-5 justify-center items-center gap-3">
+	<div class="flex mt-5 justify-center items-center gap-3">
 		<button
 			class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
 			disabled={!prevName}

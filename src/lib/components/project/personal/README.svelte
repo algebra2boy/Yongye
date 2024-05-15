@@ -1,18 +1,13 @@
 <script lang="ts">
-	import type { ComponentType } from "svelte";
+	import { marked } from 'marked';
 
-	let readme: ComponentType;
+	marked.setOptions({
+		gfm: true, // GitHub Flavored Markdown
+	});
 
-	export let name: string;
-
-    // dynamically import the README component based on the name
-	$: if (name) {
-		loadReadme();
-	}
-
-	async function loadReadme() {
-		readme = (await import(`../personal/readme/${name}.svelte`)).default;
-	}
+	export let readme: string = '';
 </script>
 
-<svelte:component this={readme} />
+<div class="w-full h-full prose prose:lg">
+	{@html marked(readme)}
+</div>

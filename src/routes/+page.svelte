@@ -57,20 +57,30 @@
 	onMount(async () => await checkMostRecentCommittedTime());
 </script>
 
+<svelte:head>
+	<title>Yongye Tan</title>
+	<meta name="description" content="Yongye Tan, Yongye, Website" />
+</svelte:head>
+
 {#each components as component}
 	<svelte:component this={component} />
 {/each}
 
 <div class="flex flex-row justify-center items-center mt-2">
+	<p class="text-xs items-center">Last updated: {timeCommitted}</p>
+</div>
+
+<div class="flex flex-row justify-center items-center ml-1 mr-1">
 	<button
 		class="text-xs hover:bg-yellow-300 text-black border-2 border-black font-medium py-0.5 px-1 rounded focus:outline-none focus:shadow-outline"
 		on:click={shuffle}
 	>
 		Magic Button
 	</button>
-	<p class="ml-1 text-xs items-center">This website is entirely designed by Yongye Tan.</p>
-</div>
-
-<div class="flex flex-row justify-center items-center mt-1">
-	<p class="ml-1 text-xs items-center">Last updated: {timeCommitted}</p>
+	<p class="m-1 text-xs items-center">This website is entirely designed by Yongye Tan</p>
+	<button
+		class="text-xs hover:bg-yellow-300 text-black border-2 border-black font-medium py-0.5 px-1 rounded focus:outline-none focus:shadow-outline"
+	>
+		<a href="/logo"> View All Logo </a>
+	</button>
 </div>

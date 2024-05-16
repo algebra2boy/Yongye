@@ -33,7 +33,7 @@ export type PersonalProjectName =
 	| 'Socket programming'
 	| 'DineAndGo'
 	| 'Enrollment'
-	| 'AbsenteeismAtWork'
+	| 'AbsentWork'
 	| 'Find.it'
 	| 'Flashcards'
 	| 'CYE take home assessment'

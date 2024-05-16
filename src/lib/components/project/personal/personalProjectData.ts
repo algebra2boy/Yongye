@@ -168,6 +168,22 @@ This is the front-end interface of the project designed specifically for teacher
 		readme:
 			`
 This is the back-end server of the project that handles request from both the student-end interface and teacher-end interface for office hour queuing app.
+A couple of things I learned from this project:
+- How to use socket.io to create a real-time communication between the server and client
+- How to create a REST API using Express using TypeScript
+- How to organize the codespace using the Model Router Controller (MRC) pattern
+- How to set up a testing environment using Jest + Supertest + MongoDB-memory-server
+- How to create a dockerized app
+- How to set up EC2 instance on AWS
+- How to use custom middleware to handle error
+- How to write robust API documentation using Notion
+- How to set up JSON Web Token (JWT) for authentication
+- How to use Ngrok to expose the local server to the public
+- How to set up a HTTPS server using self-signed certificate
+- How to use Zod to validate the request body
+- How to write a yml file to run the Github Action for test automation
+- How to use eslint and prettier to format the code
+- Better understanding of the Docker, Dockerfile
 `
 	},
 	{
@@ -175,7 +191,16 @@ This is the back-end server of the project that handles request from both the st
 		description: 'A web app that help students to learn chemistry',
 		logo: ['Typescript', 'Svelte', 'TailwindCSS', 'Express', 'MongoDB', 'Playwright', 'Jest'],
 		startDate: new Date(2024, 2),
-		endDate: new Date(2024, 5)
+		endDate: new Date(2024, 5),
+		githubLink: "https://github.com/cics-web-dev/Chem-Web-App",
+		readme:
+			`
+Long story short. This project is requested by the Chemistry department for making a web app that helps students to learn organic chemistry. 
+The web app is designed to be user-friendly, interactive, and informative. I was the tech lead for this project, and 
+I was responsible for the front-end, back-end development, and agile team management. After the end of the semester,
+I had a better understanding of how to manage a team, utilize SvelteKit, Svelte, and TailwindCSS to create a responsive web app, and 
+backend development using Express and MongoDB. 
+`
 	},
 	{
 		name: "Cook'er",
@@ -238,6 +263,7 @@ This is my first simple mini project written in Go for web scraping. It scraps a
 		logo: ['Docker', 'Node.js', 'Express', 'Azure'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
+		githubLink: "https://github.com/algebra2boy/DockerDeploymentTutorial",
 		readme:
 			`
 # Instructions of how to push a docker image to Docker Hub to your Docker account
@@ -467,14 +493,39 @@ git clone https://github.com/algebra2boy/HouseFinder.git
 		description: 'A simple pomodoro timer app on Apple Watch',
 		logo: ['Swift'],
 		startDate: new Date(2024, 1),
-		endDate: new Date(2024, 2)
+		endDate: new Date(2024, 2),
+		githubLink: "https://github.com/algebra2boy/Swift/tree/main/Pomodoro",
+		readme:
+			`
+This is a simple pomodoro timer app that I created for my sixth grade cousin in Guangzhou, China. He recently got an Apple Watch and I was living in his house for over an week.
+I wanted to leave some of my good programming skills with him and he studied hard, so I decided to create a simple pomodoro timer app for him to concentrate on his study.
+The app is simple, it has a tomato in the center. If you tap on it, it start the timer; if you tap on it again, it stops the timer.
+You can also set the study and break timer to 10, 15, 20, 25 ,and 30 minutes.
+
+<video width="400" height="240" controls>
+  <source src="/video/pomodoro.mov" type="video/mp4">
+</video>
+`
 	},
 	{
 		name: 'Classic-Quote-Generator',
 		description: 'A simple Apple Watch app that generates classic quotes',
 		logo: ['Swift'],
 		startDate: new Date(2024, 1),
-		endDate: new Date(2024, 1)
+		endDate: new Date(2024, 1),
+		githubLink: "https://github.com/algebra2boy/Swift/tree/main/AppleWatchDemo/AppleWatchDemo%20Watch%20App",
+		readme: 
+`
+When I was in China, I learned a lot of about Chinese classic quotes from my grandpa. He is a very wise man. 
+He told me that the classic quotes are the essence of the wisdom of the Chinese people. I wanted to share this wisdom
+to my cousin. Therefore, I created a simple Apple Watch app that generates classic quotes. The app is simple, it has a button
+and when you tap on it, it generates a random classic quote. When you tap on the little arrow on the top right corner,
+it will show a list of quotes on the app. All of these motivational quotes are in Chinese. 
+
+<video width="400" height="240" controls>
+  <source src="/video/classic_quote.mov" type="video/mp4">
+</video>
+`
 	},
 	{
 		name: 'Event-Planner',
@@ -1102,7 +1153,65 @@ gcc adventure.c room.c -o myProgram
 		description: 'My Codepath Web 102 prework',
 		logo: ['HTML', 'CSS', 'Javascript'],
 		startDate: new Date(2023, 2),
-		endDate: new Date(2023, 3)
+		endDate: new Date(2023, 3),
+		githubLink: "https://github.com/algebra2boy/web102_prework",
+		readme:
+			`
+# WEB102 Prework - HelpFunding
+
+Submitted by: Yongye Tan
+
+HelpFunding is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+
+Time spent: 3-4 hours spent in total
+
+## Required Features
+
+The following **required** functionality is completed:
+
+* [x] The introduction section explains the background of the company and how many games remain unfunded.
+* [x] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
+* [x] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
+* [x] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
+
+The following **optional** features are implemented:
+
+* [x] List anything else that you can get done to improve the app functionality!
+    * [x] Add scrolling behavior to the game section
+    * [x] Change button color when button is hovered
+    * [x] Modify the CSS to make it visually appealing
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented features:
+
+<video width="450" height="240" controls>
+  <source src="https://github.com/algebra2boy/web102_prework/assets/103079472/514ee95a-eeb2-48ff-abc7-a5d3f3b25389" type="video/mp4">
+</video>
+
+## Notes
+
+Describe any challenges encountered while building the app.
+
+Using reduce, spread operation were a bit unintutive for me - I had to think about and experiment a few times to make it work. It took me some time to review and refresh my knowledge on flexbox.
+
+## License
+
+    Copyright [2023] [Yongye Tan]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+`
 	},
 	{
 		name: 'RateMyDine',
@@ -1271,7 +1380,7 @@ $ show dbs
 `
 	},
 	{
-		name: 'AbsenteeismAtWork',
+		name: 'AbsentWork',
 		description: 'Data Science Project about work absenteeism',
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2022, 9),
@@ -1972,12 +2081,12 @@ to second leg courier(ex.bike / drone / person).
 
 
 ## Important downloads
-	- Link of the[VeRoViz](https://veroviz.org/downloads/index.html) 
+- Link of the[VeRoViz](https://veroviz.org/downloads/index.html) 
 - Download **CesiumJS** from[here](https://cesium.com/downloads/) 
 		- You must download this to get the 3D visualization
 	- This will be a big folder
-	- Download the **VeRoViz Cesium Viewer Plugin** from[here](https://veroviz.org/downloads/index.html)
-		- You must download this to customize the package model, car model and so on
+- Download the **VeRoViz Cesium Viewer Plugin** from[here](https://veroviz.org/downloads/index.html)
+	- You must download this to customize the package model, car model and so on
 	- This will be a small folder
 	- You will need to drag the **VeRoViz Cesium Viewer Plugin** folder to the **CesiumJS** (picture is shown at below)
 	- pip install veroviz
@@ -1987,7 +2096,7 @@ to second leg courier(ex.bike / drone / person).
   title = "Folder"
   style = "display: inline-block; margin: 0 auto;" >
 
-		You will notice the veroviz folder is in the CesiumJS folder.One other important file is the "server.cjs", which 
+You will notice the veroviz folder is in the CesiumJS folder.One other important file is the "server.cjs", which 
 we will use to activat the server to visualize the 3D model.I have included some info on how to activate the server in the 
 "travel_main_improved.ipynb"
 
@@ -2030,39 +2139,24 @@ style = "display: inline-block; margin: 0 auto;" >
 ## 3D Demonstration  
 I have included the sample video. (with watermarks)
 
-<iframe
-	src="/video/3Dvideo_Demo.mp4"
-frameborder = "0"
-allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen
-class="w-full h-96"
-title = "3Dvideo_Demo" >
-	</iframe>
+<video width="400" height="240" controls>
+  <source src="/video/3Dvideo_Demo.mp4" type="video/mp4">
+</video>
 
 ## Videos for Home Delivery Conference(without watermarks)
 
 This is the one without transship points.
 
-<iframe
-src = "/video/without-transship.mp4"
-frameborder = "0"
-allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen
-class="w-full h-96"
-title = "without-transship" >
-	</iframe>
+<video width="400" height="240" controls>
+	<source src="/video/without-transship.mp4" type="video/mp4">
+</video>
 
 
 This is the one with transship points.
 
-<iframe
-src = "/video/transship_final.mp4"
-frameborder = "0"
-allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen
-class="w-full h-96"
-title = "transship_final" >
-	</iframe>
+<video width="400" height="240" controls>
+	<source src="/video/transship_final.mp4" type="video/mp4">
+</video>
 
 ## Credit 
 We have to thank for the excellent work from Optimator Lab, who made this library open source and provided so many awesome functionality.
@@ -2115,15 +2209,9 @@ Any message is texted by the user is stored in their designated file called "inf
 
 ## Video Walkthrough 
 
-<iframe
-	src="/video/bot.mp4"
-	frameborder="0"
-	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-	allowfullscreen
-	class="w-full h-96"
-	style: "margin-bottom: 20px";
-	title="bot">
-</iframe>
+<video width="400" height="240" controls>
+  <source src="/video/bot.mp4" type="video/mp4">
+</video>
 
 ## Edge Cases
 - The bot does not accept any numbers or symbols for names.

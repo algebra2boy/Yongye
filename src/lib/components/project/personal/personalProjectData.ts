@@ -18,7 +18,8 @@ export const personalProjects: PersonalProject[] = [
 			'GraphQL'
 		],
 		startDate: new Date(2024, 5),
-		endDate: new Date(2024, 9)
+		endDate: new Date(2024, 9),
+		readme: "This will my independent study final project. Will update once i am done!!"
 	},
 	{
 		name: 'PandoraBox',
@@ -167,6 +168,22 @@ This is the front-end interface of the project designed specifically for teacher
 		readme:
 			`
 This is the back-end server of the project that handles request from both the student-end interface and teacher-end interface for office hour queuing app.
+A couple of things I learned from this project:
+- How to use socket.io to create a real-time communication between the server and client
+- How to create a REST API using Express using TypeScript
+- How to organize the codespace using the Model Router Controller (MRC) pattern
+- How to set up a testing environment using Jest + Supertest + MongoDB-memory-server
+- How to create a dockerized app
+- How to set up EC2 instance on AWS
+- How to use custom middleware to handle error
+- How to write robust API documentation using Notion
+- How to set up JSON Web Token (JWT) for authentication
+- How to use Ngrok to expose the local server to the public
+- How to set up a HTTPS server using self-signed certificate
+- How to use Zod to validate the request body
+- How to write a yml file to run the Github Action for test automation
+- How to use eslint and prettier to format the code
+- Better understanding of the Docker, Dockerfile
 `
 	},
 	{
@@ -174,7 +191,16 @@ This is the back-end server of the project that handles request from both the st
 		description: 'A web app that help students to learn chemistry',
 		logo: ['Typescript', 'Svelte', 'TailwindCSS', 'Express', 'MongoDB', 'Playwright', 'Jest'],
 		startDate: new Date(2024, 2),
-		endDate: new Date(2024, 5)
+		endDate: new Date(2024, 5),
+		githubLink: "https://github.com/cics-web-dev/Chem-Web-App",
+		readme:
+			`
+Long story short. This project is requested by the Chemistry department for making a web app that helps students to learn organic chemistry. 
+The web app is designed to be user-friendly, interactive, and informative. I was the tech lead for this project, and 
+I was responsible for the front-end, back-end development, and agile team management. After the end of the semester,
+I had a better understanding of how to manage a team, utilize SvelteKit, Svelte, and TailwindCSS to create a responsive web app, and 
+backend development using Express and MongoDB. 
+`
 	},
 	{
 		name: "Cook'er",
@@ -237,6 +263,7 @@ This is my first simple mini project written in Go for web scraping. It scraps a
 		logo: ['Docker', 'Node.js', 'Express', 'Azure'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
+		githubLink: "https://github.com/algebra2boy/DockerDeploymentTutorial",
 		readme:
 			`
 # Instructions of how to push a docker image to Docker Hub to your Docker account
@@ -466,14 +493,39 @@ git clone https://github.com/algebra2boy/HouseFinder.git
 		description: 'A simple pomodoro timer app on Apple Watch',
 		logo: ['Swift'],
 		startDate: new Date(2024, 1),
-		endDate: new Date(2024, 2)
+		endDate: new Date(2024, 2),
+		githubLink: "https://github.com/algebra2boy/Swift/tree/main/Pomodoro",
+		readme:
+			`
+This is a simple pomodoro timer app that I created for my sixth grade cousin in Guangzhou, China. He recently got an Apple Watch and I was living in his house for over an week.
+I wanted to leave some of my good programming skills with him and he studied hard, so I decided to create a simple pomodoro timer app for him to concentrate on his study.
+The app is simple, it has a tomato in the center. If you tap on it, it start the timer; if you tap on it again, it stops the timer.
+You can also set the study and break timer to 10, 15, 20, 25 ,and 30 minutes.
+
+<video width="400" height="240" controls>
+  <source src="/video/pomodoro.mov" type="video/mp4">
+</video>
+`
 	},
 	{
 		name: 'Classic-Quote-Generator',
 		description: 'A simple Apple Watch app that generates classic quotes',
 		logo: ['Swift'],
 		startDate: new Date(2024, 1),
-		endDate: new Date(2024, 1)
+		endDate: new Date(2024, 1),
+		githubLink: "https://github.com/algebra2boy/Swift/tree/main/AppleWatchDemo/AppleWatchDemo%20Watch%20App",
+		readme: 
+`
+When I was in China, I learned a lot of about Chinese classic quotes from my grandpa. He is a very wise man. 
+He told me that the classic quotes are the essence of the wisdom of the Chinese people. I wanted to share this wisdom
+to my cousin. Therefore, I created a simple Apple Watch app that generates classic quotes. The app is simple, it has a button
+and when you tap on it, it generates a random classic quote. When you tap on the little arrow on the top right corner,
+it will show a list of quotes on the app. All of these motivational quotes are in Chinese. 
+
+<video width="400" height="240" controls>
+  <source src="/video/classic_quote.mov" type="video/mp4">
+</video>
+`
 	},
 	{
 		name: 'Event-Planner',
@@ -482,8 +534,8 @@ git clone https://github.com/algebra2boy/HouseFinder.git
 		startDate: new Date(2023, 7),
 		endDate: new Date(2023, 9),
 		githubLink: "",
-		readme: 
-`
+		readme:
+			`
 ## What is this project about
 A dockerized web app that helps people create and sign up events using microservices
 
@@ -538,8 +590,8 @@ Here is video demo of the web app: [link](https://youtu.be/SlSaHrCOxC0)
 		startDate: new Date(2023, 9),
 		endDate: new Date(2024, 1),
 		githubLink: "https://github.com/algebra2boy/MCAS_Analysis",
-		readme: 
-`
+		readme:
+			`
 # What is this about:
 
 This research explores the relationship between explore the relationship between household income and standardized test performance. Our interest is in investigating how demographic predictors correspond to test results. The achievement gap is a prominent and ongoing socio-economic issue within education, so we expect our analysis to support the hypothesis that lower mean family income is correlated with lower MCAS scores and SAT scores. 
@@ -561,8 +613,8 @@ This research explores the relationship between explore the relationship between
 		startDate: new Date(2023, 6),
 		endDate: new Date(2023, 1),
 		githubLink: "https://github.com/algebra2boy/ShopHub",
-		readme: 
-`
+		readme:
+			`
 This project is collaboration project that I worked on with my mentor, Chengtao, at the 2023 Apple Swift Mentorship program.
 We made a basic iOS app that focuses on shopping and convenience. The app is written in Swift and SwiftUI. 
 The app has a simple UI that allows users to browse through a list of items, add items to a cart, and view the cart. 
@@ -581,7 +633,7 @@ We also adopted the Human Interface Guidelines to make the app more user-friendl
 		endDate: new Date(2023, 12),
 		githubLink: "https://github.com/algebra2boy/TechHouse",
 		readme:
-`
+			`
 
 ## Features
 
@@ -642,8 +694,8 @@ Here's a walkthrough of implemented user stories:
 		startDate: new Date(2023, 11),
 		endDate: new Date(2023, 11),
 		githubLink: "",
-		readme: 
-`
+		readme:
+			`
 🔥 This project is awarded to Best Mobile Hack for HackUmass Hackathon 🔥 My responsibility was leading this project, designing different microservices, and ensuring each microservices talk to each other!
 Here is the Devpost link: [Ree-See-It](https://devpost.com/software/ree-see-it)
 
@@ -699,8 +751,8 @@ Here is the Devpost link: [Ree-See-It](https://devpost.com/software/ree-see-it)
 		startDate: new Date(2023, 10),
 		endDate: new Date(2023, 10),
 		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/swiftui%20learning_2",
-		readme: 
-`
+		readme:
+			`
 # Web Development Project 3 - SwiftUI Learning
 
 Submitted by: Yongye Tan
@@ -771,8 +823,8 @@ I had difficulty with state managment. There are some state that must be uplifti
 		startDate: new Date(2023, 9),
 		endDate: new Date(2023, 10),
 		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/crewmate",
-		readme: 
-`
+		readme:
+			`
 # Web Development Project 7 - Crewmate
 
 Submitted by: Yongye Tan
@@ -838,7 +890,7 @@ The hardest part of this project is to connect the supabase database and render 
 		endDate: new Date(2023, 10),
 		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/community%20board",
 		readme:
-`
+			`
 # Web Development Project 1 - _Computer Science Community Board_
 
 Submitted by: **Yongye Tan**
@@ -905,7 +957,7 @@ I did not know how to do it until I refreshed some of my knowledge on flex box.
 		endDate: new Date(2023, 10),
 		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/cat",
 		readme:
-`
+			`
 # Web Development Project 4 - Cat The Lover
 
 Submitted by: Yongye Tan
@@ -974,8 +1026,8 @@ usestate and updating the state properly for each component and making each comp
 		startDate: new Date(2023, 10),
 		endDate: new Date(2023, 11),
 		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/breweries_part2",
-		readme: 
-`
+		readme:
+			`
 # Web Development Project 6 - Breweries 2.0
 
 Submitted by: Yongye Tan
@@ -1101,7 +1153,65 @@ gcc adventure.c room.c -o myProgram
 		description: 'My Codepath Web 102 prework',
 		logo: ['HTML', 'CSS', 'Javascript'],
 		startDate: new Date(2023, 2),
-		endDate: new Date(2023, 3)
+		endDate: new Date(2023, 3),
+		githubLink: "https://github.com/algebra2boy/web102_prework",
+		readme:
+			`
+# WEB102 Prework - HelpFunding
+
+Submitted by: Yongye Tan
+
+HelpFunding is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+
+Time spent: 3-4 hours spent in total
+
+## Required Features
+
+The following **required** functionality is completed:
+
+* [x] The introduction section explains the background of the company and how many games remain unfunded.
+* [x] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
+* [x] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
+* [x] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
+
+The following **optional** features are implemented:
+
+* [x] List anything else that you can get done to improve the app functionality!
+    * [x] Add scrolling behavior to the game section
+    * [x] Change button color when button is hovered
+    * [x] Modify the CSS to make it visually appealing
+
+## Video Walkthrough
+
+Here's a walkthrough of implemented features:
+
+<video width="450" height="240" controls>
+  <source src="https://github.com/algebra2boy/web102_prework/assets/103079472/514ee95a-eeb2-48ff-abc7-a5d3f3b25389" type="video/mp4">
+</video>
+
+## Notes
+
+Describe any challenges encountered while building the app.
+
+Using reduce, spread operation were a bit unintutive for me - I had to think about and experiment a few times to make it work. It took me some time to review and refresh my knowledge on flexbox.
+
+## License
+
+    Copyright [2023] [Yongye Tan]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+
+`
 	},
 	{
 		name: 'RateMyDine',
@@ -1270,14 +1380,14 @@ $ show dbs
 `
 	},
 	{
-		name: 'AbsenteeismAtWork',
+		name: 'AbsentWork',
 		description: 'Data Science Project about work absenteeism',
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2022, 9),
 		endDate: new Date(2023, 1),
 		githubLink: "https://github.com/algebra2boy/AbsenteeismAtWork",
-		readme: 
-`
+		readme:
+			`
 In the modern world, it is common to see people be absent from work for various reasons. Absenteeism at a workplace affects the accountability and availability of a person, leads to negative consequences in a team or a company such as the decline in work reputation, and the decrease in work coordination across departments. In this report, we are analyzing an existing dataset, from Kaggle, records of absenteeism at work from July 2007 to July 2010 at a courier company in Brazil. There are 740 observations and 21 variables. Important variables exist such as Distance from Residence to Work, Work load Average/day, which are important factors to determine why a worker is absent. The central question in this article is: What is the main determinant of whether someone is absent or not from work?
 
 ## More instructions
@@ -1297,8 +1407,8 @@ This is my first independent data science project using R and statistical analys
 		startDate: new Date(2022, 11),
 		endDate: new Date(2022, 12),
 		githubLink: "https://github.com/algebra2boy/Find.it",
-		readme: 
-`
+		readme:
+			`
 Find.it is our submission for the UMASS Fall 2022 Hackathon. Find.it a scalable solution for people who've lost their things and (unsurprisingly) want to find them. 
 Here is the DevPost submission for this project: [Find.it](https://devpost.com/software/find-it-nlpzh5)
 
@@ -1345,8 +1455,8 @@ Here is the DevPost submission for this project: [Find.it](https://devpost.com/s
 		startDate: new Date(2022, 10),
 		endDate: new Date(2022, 11),
 		githubLink: "https://github.com/algebra2boy/Flashcards",
-		readme: 
-`
+		readme:
+			`
 ## Flashcard
 
 ### App Description (Lab 1)
@@ -1447,8 +1557,8 @@ Flashcard now can now have autosize feature and fancy animation.
 		startDate: new Date(2022, 9),
 		endDate: new Date(2022, 10),
 		githubLink: "https://github.com/algebra2boy/CYE_Take-Home_Assessment/tree/main/TakeHome",
-		readme: 
-`
+		readme:
+			`
 This is my take-home assessment for CYE. I was lucky to be able to join this team and work on this amazing project called Appbook. 
 I really appreciated this opporunity and I learned a ton about iOS dev and the team work. I have included my take-home submission above.`
 	},
@@ -1494,7 +1604,7 @@ pip install <the name of the package>
 \`\`\`
 
 ## Entity Relation Diagram
-![plot](./EntityDiagram/E_R.png)
+![plot](/image/E_R.png)
 
 
 ## Important functions
@@ -1553,7 +1663,7 @@ This project is my very first mini IOS project created on Xcode with Swift. It c
 		endDate: new Date(2020, 7),
 		githubLink: 'https://github.com/algebra2boy/LearningDataScience/tree/main/Final_Project',
 		readme:
-`
+			`
 I am fortunate to be part of Summer Search. Summer Search provided me an amazing opportunity to take this class at Brown University over the summer of 2020. I learned about how to write R code
 to understand the meaning behind data. 
 <p>
@@ -1570,15 +1680,56 @@ to understand the meaning behind data.
 		description: 'A Java project that includes feature to modify student personal data',
 		logo: ['Java'],
 		startDate: new Date(2021, 2),
-		endDate: new Date(2021, 5)
+		endDate: new Date(2021, 5),
+		githubLink: "https://github.com/algebra2boy/Circus",
+		readme:
+			`
+This project is the final project that I did in my Java class in high school. This uses all the data structure concepts that I learned from Mr.Marques.
+I used in this project is ArrayList, TreeMap, TreeSet IO, and JavaFX. Here is the presentation we showed to the class: [Circus Presentation](https://github.com/algebra2boy/Circus)
+`
 	},
 	{
 		name: 'Java Bundle',
 		description:
-			'10 Java projects that I did in a community college course taught by Professor Paul Marques',
+			'9 Java projects that I did in a community college course taught by Professor Paul Marques',
 		logo: ['Java'],
 		startDate: new Date(2021, 1),
-		endDate: new Date(2021, 5)
+		endDate: new Date(2021, 5),
+		githubLink: "https://github.com/algebra2boy/Advanced_Java",
+		readme:
+			`
+Huge thanks to my high school teacher Paul Marques (known as Mr.Marques) for teaching me Java. Without him, I don't think I would be able to major in computer science in college.
+1. BucketSort: Implements the bucket sort algorithm.
+	- A bucket sort implementation using a linked list in Java. The main class BucketSortLL initializes an array of numbers and a linked list to hold them. It creates an array of buckets (linked lists), sorts the numbers by distributing them into buckets based on digit place values, and then gathers them back into the main list. The sorting process continues until the list is sorted. Supporting classes, LinkedList and Node, manage list operations and node data.
+	- BucketSortLL: Main class with sorting logic.
+	- LinkedList: Custom linked list implementation.
+	- Node: Represents individual elements in the linked list.
+2. Comparables: Contains examples and exercises on the Comparable interface.
+	- This package contains solid examples to learn about interface, abstract class, and inheritance in Java.
+	- This shows how to use the Comparable interface to extend the functionality of classes.
+	- Also learn about how compareTo() method works and comparable works in Java.
+3. FamilyTree: Manages and manipulates family tree structures.
+	- A family tree is a hierarchical structure that represents the relationships between family members.
+	- The family tree is structed as a linked list of linked lists, with each list representing a family member and their descendants. 
+	- This project truly taught me how complicate recursion works and how to manage pointers in Java. 
+4. Grid: Implements grid-based data structures and operations.
+	- Do you know the island problem in LeetCode? This project is similar to that problem.
+	- Cannot believe I was already solving leetcode problem when I was in high school.
+5. Hashing: Covers hashing algorithms and their applications.
+6. ScrambleParagraph: Scrambles and manipulates paragraphs of text.
+	- Scramble a paragraph of text by randomly permuting the words in it.
+	- A lot of IO operations and string manipulation and smart function calls!
+7. StringSinM: Find the path in a maze using recursion.
+	- Given a string, find if there is a path in a maze from the start to the end.
+	- This project is a good example of how Backtracking, BFS and DFS works.
+8. TranslationMap: Handles translations between different data mappings.
+	-  A dictionary can be represented as a map in which each word is associated with a set of all its translations into another language.  
+	- For example, in an English-Spanish dictionary, holiday might be associated with {fiesta, vacaciones}; in a Spanish-English dictionary, fiesta might be associated with {holiday, party, celebration, feast}.  
+	- In a dictionary map, a word is a key and a set of its translations is a “value” associated with that key.  Suppose the dictionary is implemented as a TreeMap and a set of translations for each word implemented as a TreeSet.
+9. TreeBalancing: Implements tree balancing algorithms and techniques
+	- This project contains a binary search tree implementation in Java. The main class, TreeBalancing, initializes a binary search tree and inserts nodes into it.  
+	- Supporting classes, Node and Tree, manage tree operations and node data.
+`
 	},
 	{
 		name: 'TicTacToe',
@@ -1588,7 +1739,7 @@ to understand the meaning behind data.
 		endDate: new Date(2023, 2),
 		githubLink: "https://github.com/algebra2boy/Swift/tree/main/TicTacToeSwiftUI",
 		readme:
-`
+			`
 ## Tic-Toe-Tac toe
 I am making a simple Tic-Toe-Tac to learn how SwiftUI works
 
@@ -1642,7 +1793,68 @@ I am making a simple calculator wuth slider, avoiding the overhead of using the 
 		description: '13 projects that I did in Hacking with Swift',
 		logo: ['Swift'],
 		startDate: new Date(2023, 1),
-		endDate: new Date(2023, 10)
+		endDate: new Date(2023, 10),
+		githubLink: "https://github.com/algebra2boy/Swift/tree/main/TaylorSwift",
+		readme:
+			`
+	First of all, I really love Swift, SwiftUI, and libraries that Apple provides. I was fascinated with iOS dev
+	and wanted to learn more about it. I found this amazing website called Hacking with Swift by Paul Hudson.
+	I did all of his SwiftUI projects and learned a ton about iOS dev. I am so grateful for his amazing tutorials.
+	Here are the projects that I did:
+
+1. Project 1: WeSplit
+	- a simple app to split a restaurant bill among friends, demonstrating forms, user input, and basic SwiftUI views.
+
+2. Project 2: Guess the Flag
+	- A fun quiz app where users guess which flag belongs to which country, highlighting SwiftUI's layout and image capabilities.
+
+3. Project 3: Views and Modifiers
+	- Explores SwiftUI's views and modifiers to create reusable UI components.
+
+4. Project 4: BetterRest
+	- An app to calculate the optimal sleep time using CoreML, showcasing forms, user input, and integration with machine learning.
+
+5. Project 5: Word Scramble
+	- A word game that reinforces the use of lists, alerts, and text input in SwiftUI.
+
+6. Project 6: Animation
+	- Demonstrates various animation techniques in SwiftUI, including implicit and explicit animations.
+
+7. Project 7: iExpense
+	- An expense tracker app that covers state management, user defaults, and data persistence.
+
+8. Project 8: Moonshot
+	- A space exploration app using JSON data, custom layouts, and advanced navigation.
+
+9. Project 9: Drawing
+	- Focuses on drawing with SwiftUI, including paths, shapes, and transformations.
+
+10. Project 10: Cupcake Corner
+	- An app for cupcake orders, demonstrating forms, networking, and data validation.
+
+11. Project 11: Bookworm
+	- A book tracking app that integrates Core Data for persistent storage.
+
+12. Project 12: CoreData Project
+	- Explores Core Data in depth, showcasing advanced data management techniques.
+
+13. Project 13: Instafilter
+	- A photo editing app that demonstrates the use of Core Image filters.
+
+14. Project 14: BucketList
+	- An app for keeping track of places to visit, integrating location and map views.
+
+15. Project 15: Accessibility
+	- Enhances the accessibility of SwiftUI apps, making them more usable for everyone.
+
+16. Project 16: HotProspects
+	- A contacts app that uses QR codes, local notifications, and context menus.
+
+17. Project 17: Flashzilla
+	- A flashcard app demonstrating gestures, haptics, and user notifications.
+18. Project 18: Layout and Geometry
+	- Explores advanced layout techniques and geometry readers in SwiftUI.
+	`
 	},
 	{
 		name: 'Snake Game',
@@ -1659,7 +1871,7 @@ This is also my first game! I am excited to learn more about SpriteKit and make 
 	},
 	{
 		name: 'RateMyDine2.0',
-		description: 'Rate My Dine upgrade (but better, still in progress)',
+		description: 'Rate My Dine upgrade',
 		logo: ['Typescript', 'Express', 'Svelte', 'Jest'],
 		startDate: new Date(2024, 5),
 		endDate: new Date(2024, 8),
@@ -1869,26 +2081,26 @@ to second leg courier(ex.bike / drone / person).
 
 
 ## Important downloads
-	- Link of the[VeRoViz](https://veroviz.org/downloads/index.html) 
-- Download ** CesiumJS ** from[here](https://cesium.com/downloads/) 
+- Link of the[VeRoViz](https://veroviz.org/downloads/index.html) 
+- Download **CesiumJS** from[here](https://cesium.com/downloads/) 
 		- You must download this to get the 3D visualization
 	- This will be a big folder
-	- Download the ** VeRoViz Cesium Viewer Plugin ** from[here](https://veroviz.org/downloads/index.html)
-		- You must download this to customize the package model, car model and so on
+- Download the **VeRoViz Cesium Viewer Plugin** from[here](https://veroviz.org/downloads/index.html)
+	- You must download this to customize the package model, car model and so on
 	- This will be a small folder
-	- You will need to drag the ** VeRoViz Cesium Viewer Plugin ** folder to the ** CesiumJS ** (picture is shown at below)
+	- You will need to drag the **VeRoViz Cesium Viewer Plugin** folder to the **CesiumJS** (picture is shown at below)
 	- pip install veroviz
 
-	< img src = "/image/curbhub/folder.png"
+<img src = "/image/curbhub/folder.png"
   alt = "Alt text"
   title = "Folder"
   style = "display: inline-block; margin: 0 auto;" >
 
-		You will notice the veroviz folder is in the CesiumJS folder.One other important file is the "server.cjs", which 
+You will notice the veroviz folder is in the CesiumJS folder.One other important file is the "server.cjs", which 
 we will use to activat the server to visualize the 3D model.I have included some info on how to activate the server in the 
 "travel_main_improved.ipynb"
 
-		< img src = "/image/curbhub/activate_server.png"
+<img src = "/image/curbhub/activate_server.png"
   alt = "Alt text"
   title = "activate web server"
   style = "display: inline-block; margin: 0 auto;" >
@@ -1899,7 +2111,7 @@ A 2D model with 3 different vehicles: Two trucks and one drone.The city I pick i
 There are many icons on the graph.The icon with blue star is "delivery order", and the icon with red home is "warehouse", and
 lastly the one with "green flag" is "transship point".
 
-< img src = "/image/curbhub/2D.png"
+<img src = "/image/curbhub/2D.png"
 alt = "Alt text"
 title = "2D Charlestown"
 style = "display: inline-block; margin: 0 auto;" >
@@ -1907,18 +2119,18 @@ style = "display: inline-block; margin: 0 auto;" >
  
 ** Below are for Home Delivery **
 
-	<img src= "/image/curbhub/HomeDelivery_2D.png"
-  alt = "Alt text"
+<img src= "/image/curbhub/HomeDelivery_2D.png"
+alt = "Alt text"
 title = "home delivery"
 style = "display: inline-block; margin: 0 auto;" >
 
 
-	<img src="/image/curbhub/2D_transship_improved.png"
+<img src="/image/curbhub/2D_transship_improved.png"
 alt = "Alt text"
 title = "transship_improved"
 style = "display: inline-block; margin: 0 auto;" >
 
-	<img src="/image/curbhub/HomeDelivery_2D_no_transship.png"
+<img src="/image/curbhub/HomeDelivery_2D_no_transship.png"
 alt = "Alt text"
 title = "homedelivery"
 style = "display: inline-block; margin: 0 auto;" >
@@ -1927,39 +2139,24 @@ style = "display: inline-block; margin: 0 auto;" >
 ## 3D Demonstration  
 I have included the sample video. (with watermarks)
 
-<iframe
-	src="/video/3Dvideo_Demo.mp4"
-frameborder = "0"
-allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen
-class="w-full h-96"
-title = "3Dvideo_Demo" >
-	</iframe>
+<video width="400" height="240" controls>
+  <source src="/video/3Dvideo_Demo.mp4" type="video/mp4">
+</video>
 
 ## Videos for Home Delivery Conference(without watermarks)
 
 This is the one without transship points.
 
-< iframe
-src = "/video/without-transship.mp4"
-frameborder = "0"
-allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen
-class="w-full h-96"
-title = "without-transship" >
-	</iframe>
+<video width="400" height="240" controls>
+	<source src="/video/without-transship.mp4" type="video/mp4">
+</video>
 
 
 This is the one with transship points.
 
-< iframe
-src = "/video/transship_final.mp4"
-frameborder = "0"
-allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen
-class="w-full h-96"
-title = "transship_final" >
-	</iframe>
+<video width="400" height="240" controls>
+	<source src="/video/transship_final.mp4" type="video/mp4">
+</video>
 
 ## Credit 
 We have to thank for the excellent work from Optimator Lab, who made this library open source and provided so many awesome functionality.
@@ -2012,15 +2209,9 @@ Any message is texted by the user is stored in their designated file called "inf
 
 ## Video Walkthrough 
 
-<iframe
-	src="/video/bot.mp4"
-	frameborder="0"
-	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-	allowfullscreen
-	class="w-full h-96"
-	style: "margin-bottom: 20px";
-	title="bot">
-</iframe>
+<video width="400" height="240" controls>
+  <source src="/video/bot.mp4" type="video/mp4">
+</video>
 
 ## Edge Cases
 - The bot does not accept any numbers or symbols for names.

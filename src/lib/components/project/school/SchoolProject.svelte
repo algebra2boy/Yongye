@@ -14,7 +14,7 @@
 		'Spring2024'
 	];
 
-	let isSemesterFolderExpanded: boolean = false;
+	let isSemesterFolderExpanded: boolean = true;
 
 	const toggleSemesterFolder = () => (isSemesterFolderExpanded = !isSemesterFolderExpanded);
 	const toggleAllFiles = () => filesExpandedStore.update((expanded) => !expanded);

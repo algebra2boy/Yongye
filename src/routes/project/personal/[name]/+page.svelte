@@ -16,8 +16,13 @@
 	$: nextName = projectNames[projectNames.indexOf(name) + 1];
 </script>
 
+<svelte:head>
+	<title>{name}</title>
+	<meta name="description" content={name} />
+</svelte:head>
+
 <div id={name} class="rounded-lg p-4">
-	<div class="flex justify-between items-center mb-3">
+	<div class="flex justify-between items-center mb-2">
 		<h1 class="text-xl font-bold text-gray-900">{name}</h1>
 		<button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-2 rounded">
 			<a href="/" class="flex">
@@ -52,7 +57,7 @@
 		{/if}
 	</div>
 
-	<p class="text-gray-800 mb-3">Description: {description}</p>
+	<p class="text-sm font-medium text-gray-600 mb-3">Description: {description}</p>
 
 	<hr class="border-t border-gray-300" />
 

@@ -97,16 +97,6 @@ const Fall2022Project: FileStructure[] = [
 			},
 			{ type: 'file', name: 'README.md' }
 		]
-	},
-	{
-		type: 'folder',
-		name: 'Math397: Math Computing',
-		files: [
-			{ type: 'file', name: 'billiards.py' },
-			{ type: 'file', name: 'rubix-cube.py' },
-			{ type: 'file', name: 'cryptography.py' },
-			{ type: 'file', name: 'README.md' }
-		]
 	}
 ];
 

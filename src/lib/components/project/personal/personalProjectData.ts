@@ -26,7 +26,9 @@ export const personalProjects: PersonalProject[] = [
 		description: 'A SwiftUI + Spritekit mini game that simulates the cup game',
 		logo: ['Swift'],
 		startDate: new Date(2024, 5),
-		endDate: new Date(2024, 5)
+		endDate: new Date(2024, 5),
+		githubLink: "https://github.com/algebra2boy/PandoraBox",
+		readme: `to be updated`
 	},
 	{
 		name: 'Yongye',
@@ -1797,10 +1799,10 @@ I am making a simple calculator wuth slider, avoiding the overhead of using the 
 		githubLink: "https://github.com/algebra2boy/Swift/tree/main/TaylorSwift",
 		readme:
 			`
-	First of all, I really love Swift, SwiftUI, and libraries that Apple provides. I was fascinated with iOS dev
-	and wanted to learn more about it. I found this amazing website called Hacking with Swift by Paul Hudson.
-	I did all of his SwiftUI projects and learned a ton about iOS dev. I am so grateful for his amazing tutorials.
-	Here are the projects that I did:
+First of all, I really love Swift, SwiftUI, and libraries that Apple provides. I was fascinated with iOS dev
+and wanted to learn more about it. I found this amazing website called Hacking with Swift by Paul Hudson.
+I did all of his SwiftUI projects and learned a ton about iOS dev. I am so grateful for his amazing tutorials.
+Here are the projects that I did:
 
 1. Project 1: WeSplit
 	- a simple app to split a restaurant bill among friends, demonstrating forms, user input, and basic SwiftUI views.

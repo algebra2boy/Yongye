@@ -1880,7 +1880,7 @@ This is also my first game! I am excited to learn more about SpriteKit and make 
 		githubLink: "https://github.com/algebra2boy/RateMyDine2.0",
 		readme:
 			`
-RateMyDine was a project I started in 2023 Spring to help students at UMass Amherst leave feedback. It was written in pure HTML, CSS, and Javascript. I decided to upgrade it to Typescript, Express, Svelte, SveleKit and Jest to learn more about these technologies. I also wanted to make it more user-friendly and interactive. The project is still in progress, but I have made significant progress in the backend and frontend. I have also written some tests for the backend using Jest. I am excited to see how it turns out!
+RateMyDine was a project I started in 2023 Spring to help students at UMass Amherst leave feedback for food quality. It was written in pure HTML, CSS, and Javascript. I decided to upgrade it to Typescript, Express, Svelte, SveleKit and Jest to learn more about these technologies. I also wanted to make it more user-friendly and interactive. The project is still in progress, but I have made significant progress in the backend and frontend. I have also written some tests for the backend using Jest. I am excited to see how it turns out!
 You can check out the previous version of [RateMyDine](https://github.com/algebra2boy/RateMyDine) here.
 `
 

@@ -70,14 +70,14 @@
 	<p class="text-xs items-center">Last updated: {timeCommitted}</p>
 </div>
 
-<div class="flex flex-row justify-center items-center ml-1 mr-1">
+<div class="flex flex-row justify-center items-center ml-1 mr-1 mt-1 p-0.5">
 	<button
 		class="text-xs hover:bg-yellow-300 text-black border-2 border-black font-medium py-0.5 px-1 rounded focus:outline-none focus:shadow-outline"
 		on:click={shuffle}
 	>
 		Magic Button
 	</button>
-	<p class="m-1 text-xs items-center">This website is entirely designed by Yongye Tan</p>
+	<p class="m-1 text-xs items-center">This website is designed by Yongye Tan</p>
 	<button
 		class="text-xs hover:bg-yellow-300 text-black border-2 border-black font-medium py-0.5 px-1 rounded focus:outline-none focus:shadow-outline"
 	>

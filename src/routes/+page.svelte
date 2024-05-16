@@ -72,5 +72,5 @@
 </div>
 
 <div class="flex flex-row justify-center items-center mt-1">
-	<p class="ml-1 text-xs items-center">Last updated was: {timeCommitted}</p>
+	<p class="ml-1 text-xs items-center">Last updated: {timeCommitted}</p>
 </div>

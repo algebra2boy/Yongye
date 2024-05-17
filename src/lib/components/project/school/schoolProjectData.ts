@@ -63,7 +63,7 @@ const Fall2022Project: FileStructure[] = [
 	{
 		type: 'folder',
 		name: 'CS360: Network Security',
-		files: [{ type: 'file', name: 'SQLInjection.pdf' }]
+		files: [{ type: 'file', name: 'README.md' }]
 	},
 	{
 		type: 'folder',
@@ -95,16 +95,6 @@ const Fall2022Project: FileStructure[] = [
 					{ type: 'file', name: 'fileSystem.cpp' }
 				]
 			},
-			{ type: 'file', name: 'README.md' }
-		]
-	},
-	{
-		type: 'folder',
-		name: 'Math397: Math Computing',
-		files: [
-			{ type: 'file', name: 'billiards.py' },
-			{ type: 'file', name: 'rubix-cube.py' },
-			{ type: 'file', name: 'cryptography.py' },
 			{ type: 'file', name: 'README.md' }
 		]
 	}
@@ -289,7 +279,7 @@ const Spring2024Project: FileStructure[] = [
 	{
 		type: 'folder',
 		name: 'CICS305: Junior Year Writing',
-		files: [{ type: 'file', name: 'Duolingo.pdf' }]
+		files: [{ type: 'file', name: 'README.md' }]
 	},
 	{
 		type: 'folder',
@@ -347,6 +337,13 @@ const Spring2024Project: FileStructure[] = [
 					{ type: 'file', name: 'Randoop.java' }
 				]
 			},
+			{ type: 'file', name: 'README.md' }
+		]
+	},
+	{
+		type: 'folder',
+		name: 'CS396: Independent Study',
+		files: [
 			{ type: 'file', name: 'README.md' }
 		]
 	}

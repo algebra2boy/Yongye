@@ -201,7 +201,7 @@ Long story short. This project is requested by the Chemistry department for maki
 The web app is designed to be user-friendly, interactive, and informative. I was the tech lead for this project, and 
 I was responsible for the front-end, back-end development, and agile team management. After the end of the semester,
 I had a better understanding of how to manage a team, utilize SvelteKit, Svelte, and TailwindCSS to create a responsive web app, and 
-backend development using Express and MongoDB. 
+backend development using Express, MongoDB and Typescript. 
 `
 	},
 	{
@@ -535,7 +535,7 @@ it will show a list of quotes on the app. All of these motivational quotes are i
 		logo: ['Docker', 'Javascript', 'Express', 'MongoDB', 'Bootstrap'],
 		startDate: new Date(2023, 7),
 		endDate: new Date(2023, 9),
-		githubLink: "",
+		githubLink: "https://github.com/algebra2boy/EventPlanner",
 		readme:
 			`
 ## What is this project about

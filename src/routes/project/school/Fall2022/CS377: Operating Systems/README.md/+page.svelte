@@ -56,7 +56,7 @@
 	</button>
 	<button
 		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-		on:click={() => goto('/project/school/Fall2022/CS377: Operating Systems/README.md')}
+		on:click={() => goto('/project/school/Spring2023/CS326: Web Programming/README.md')}
 	>
 		Next
 	</button>

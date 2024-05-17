@@ -63,7 +63,7 @@ const Fall2022Project: FileStructure[] = [
 	{
 		type: 'folder',
 		name: 'CS360: Network Security',
-		files: [{ type: 'file', name: 'SQLInjection.pdf' }]
+		files: [{ type: 'file', name: 'README.md' }]
 	},
 	{
 		type: 'folder',

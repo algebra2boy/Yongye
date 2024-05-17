@@ -59,7 +59,7 @@ type HTTPRequest = {
 	</button>
 	<button
 		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-		on:click={() => goto('/project/school/Spring2024/CICS305: Junior Year Writting/README.md')}
+		on:click={() => goto('/project/school/Spring2024/CICS305: Junior Year Writing/README.md')}
 	>
 		Next
 	</button>

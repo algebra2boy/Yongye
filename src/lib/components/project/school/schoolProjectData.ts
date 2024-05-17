@@ -339,6 +339,13 @@ const Spring2024Project: FileStructure[] = [
 			},
 			{ type: 'file', name: 'README.md' }
 		]
+	},
+	{
+		type: 'folder',
+		name: 'CS396: Independent Study',
+		files: [
+			{ type: 'file', name: 'README.md' }
+		]
 	}
 ];
 

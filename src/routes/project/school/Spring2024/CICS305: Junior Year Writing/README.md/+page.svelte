@@ -40,7 +40,7 @@
 <div class="flex mt-5 justify-center items-center gap-3">
 	<button
 		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-		on:click={() => goto('/project/school/Summer2023/CS490STA: Scalable Web Systems/README.md')}
+		on:click={() => goto('/project/school/Fall2023/CS220: Programming Methodology/README.md')}
 	>
 		Prev
 	</button>

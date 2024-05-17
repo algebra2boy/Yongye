@@ -23,7 +23,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		name: 'PandoraBox',
-		description: 'A SwiftUI + Spritekit mini game that simulates the cup game',
+		description: 'A Spritekit mini game that simulates the cup game',
 		logo: ['Swift'],
 		startDate: new Date(2024, 5),
 		endDate: new Date(2024, 5),
@@ -1657,7 +1657,7 @@ This project is my very first mini IOS project created on Xcode with Swift. It c
 	},
 	{
 		name: 'Covid19-Analysis',
-		description: 'A data analysis project about COVID-19 between mask mandate and hospitalization',
+		description: 'Relationship between mask mandate and hospitalization',
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2020, 6),
 		endDate: new Date(2020, 7),
@@ -1691,7 +1691,7 @@ I used in this project is ArrayList, TreeMap, TreeSet IO, and JavaFX. Here is th
 	{
 		name: 'Java Bundle',
 		description:
-			'9 Java projects that I did in a community college course taught by Professor Paul Marques',
+			'9 Java projects that I did in a community college course',
 		logo: ['Java'],
 		startDate: new Date(2021, 1),
 		endDate: new Date(2021, 5),
@@ -2174,7 +2174,7 @@ We have to thank for the excellent work from Optimator Lab, who made this librar
 	},
 	{
 		name: 'Twilio-ChatBot',
-		description: 'A bot on WhatsApp for users to submit ID to perform background check',
+		description: 'A bot on WhatsApp for users to perform background check',
 		logo: ['Python', 'Flask', 'Twilio'],
 		startDate: new Date(2022, 6),
 		endDate: new Date(2022, 7),

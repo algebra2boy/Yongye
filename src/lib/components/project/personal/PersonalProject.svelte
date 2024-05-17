@@ -20,7 +20,7 @@
 						</span>
 					</a>
 				</div>
-				<div class="programming-stack flex flex-wrap space-x-0.5 items-center">
+				<div class="programming-stack flex flex-row space-x-0.5 items-center mt-1">
 					{#each logo as l}
 						<Logo brand={l} />
 					{/each}

@@ -1,21 +1,21 @@
-<script lang="ts">
-	import Fidelity from './Fidelity.svelte';
-	import UCA426 from './UCA426.svelte';
-	import UCA326 from './UCA326.svelte';
-	import UCA240 from './UCA240.svelte';
-	import CYE from './CYE.svelte';
-	import Paper from './Paper.svelte';
-	import Curbhub from './Curbhub.svelte';
-</script>
-
 <div class="pt-2 pl-1 rounded-lg">
-	<h1 class="text-xl font-normal mb-2">Working Experience</h1>
+	<h1 class="text-xl font-normal mb-2">Work Experience</h1>
 
-	<Fidelity />
-	<CYE />
-	<UCA426 />
-	<UCA326 />
-	<UCA240 />
-	<Paper />
-	<Curbhub />
+	<ul class="list-disc pl-2">
+		<li>Center Youth Engagement (Mar 2023 - present): iOS/macOS developer</li>
+		<li>
+			Manning College (Fall 2023) Course Assistant:
+			Scalable Web Systems
+		</li>
+		<li>
+			Manning College (Summer 2023) Course Assistant:
+			Web Programming
+		</li>
+		<li>
+			Manning College (Spring 2023) Course Assistant:
+			Reasoning Under Uncertainty
+		</li>
+		<li>Paper.co (May 2022 - Feb 2023): Math Tutor</li>
+		<li>Curbhub (Summer 2022): Software Development Intern</li>
+	</ul>
 </div>

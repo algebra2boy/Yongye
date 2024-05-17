@@ -1,7 +1,6 @@
 <script lang="ts">
 	import {
 		Intro,
-		Education,
 		Work,
 		PersonalProject,
 		SchoolProject,
@@ -32,13 +31,13 @@
 </svelte:head>
 
 <Intro />
-<Education />
 <Work />
 <PersonalProject />
 <SchoolProject />
 <Skill />
 
-<div class="flex flex-col justify-center items-center ml-1 mr-1 mt-1 p-0.5">
+<hr class="border-t border-gray-300 mt-4" />
+
+<div class="flex flex-col justify-center items-center ml-1 mr-1 mt-1 mb-2 p-0.5">
 	<p class="text-xs items-center">Last updated: {timeCommitted}</p>
-	<p class="m-1 text-xs items-center">This website is designed by Yongye Tan</p>
 </div>

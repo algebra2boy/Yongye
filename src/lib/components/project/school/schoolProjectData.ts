@@ -279,7 +279,7 @@ const Spring2024Project: FileStructure[] = [
 	{
 		type: 'folder',
 		name: 'CICS305: Junior Year Writing',
-		files: [{ type: 'file', name: 'Duolingo.pdf' }]
+		files: [{ type: 'file', name: 'README.md' }]
 	},
 	{
 		type: 'folder',

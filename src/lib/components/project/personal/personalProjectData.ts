@@ -535,7 +535,7 @@ it will show a list of quotes on the app. All of these motivational quotes are i
 		logo: ['Docker', 'Javascript', 'Express', 'MongoDB', 'Bootstrap'],
 		startDate: new Date(2023, 7),
 		endDate: new Date(2023, 9),
-		githubLink: "",
+		githubLink: "https://github.com/algebra2boy/EventPlanner",
 		readme:
 			`
 ## What is this project about

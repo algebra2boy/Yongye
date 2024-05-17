@@ -6,13 +6,13 @@ const pages: string[] = [];
 
 const generateDyanmicRoutes = () => {
     const peronalProjectNames = personalProjects.map((p) => p.name);
-    peronalProjectNames.forEach((name) => pages.push(`/project/personal/${name}`));
+    peronalProjectNames.forEach((name) => pages.push(`project/personal/${name}`));
 
     let index = 0;
     const semesters = ["Fall2021", "Spring2022", "Summer2022", "Fall2022", "Spring2023", "Summer2023", "Fall2023", "Spring2024"];
     schoolProjects.forEach((semester) => {
         semester.forEach((course) => {
-            pages.push('/project/school/' + semesters[index] + '/' + course.name + "/README.md");
+            pages.push('project/school/' + semesters[index] + '/' + course.name + "/README.md");
         })
         index++;
     })

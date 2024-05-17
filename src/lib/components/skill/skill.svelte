@@ -13,8 +13,7 @@
 </script>
 
 <div class="pt-2 pl-1 rounded-lg">
-	<h1 class="text-xl font-extralight">TECHNICAL SKILLS</h1>
-	<hr class="divide-solid border-slate-500 mt-1 border-1" />
+	<h1 class="text-xl font-normal mb-2">Technical skills</h1>
 	<div class="programming-language flex">
 		<div class="flex flex-wrap gap-0.5 items-center">
 			<p class="font-normal pr-1">Programming Languages:</p>

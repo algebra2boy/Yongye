@@ -220,7 +220,7 @@ Check out https://devpost.com/software/cookr-4aojyl for our Devpost submission.
 	{
 		name: 'CI-CD-Pipeline',
 		description: 'Learning how to set up and trigger Github workflows',
-		logo: ['GithubAction'],
+		logo: ['Github'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
 		githubLink: "https://github.com/algebra2boy/CICD-pipeline",
@@ -407,10 +407,8 @@ docker container run --name <container name> -p <local port: container port> -d 
 		githubLink: "https://github.com/algebra2boy/FreeWrite",
 		readme:
 			`
-## FreeWrite
-
+## Introduction
 Exploring how Quill rich editor works on a React web app. 
-
 
 ## Basic Features
 - [x] Able to change header and font
@@ -897,7 +895,7 @@ The hardest part of this project is to connect the supabase database and render 
 
 Submitted by: **Yongye Tan**
 
-This web app: **Computer Science Amherst Club Board **
+This web app: **Computer Science Amherst Club Board**
 
 Time spent: **X** hours spent in total
 

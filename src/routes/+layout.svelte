@@ -1,9 +1,11 @@
 <script>
 	import '../app.pcss';
+	import Navbar from './Navbar.svelte';
 </script>
 
-<div class="flex justify-center min-h-screen bg-lime-50 px-3 py-3">
-	<div class="md:w-2/3 w-full overflow-auto p-4 bg-amber-50 shadow-xl rounded-xl">
+<div class="flex justify-center min-h-screen bg-gray-100 text-gray-700">
+	<div class="md:w-2/3 w-full overflow-auto pl-4 pr-4 pt-10">
+		<Navbar />
 		<slot />
 	</div>
 </div>

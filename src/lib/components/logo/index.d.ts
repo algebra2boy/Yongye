@@ -1,7 +1,4 @@
 export type Brand =
-	| 'Linkedin'
-	| 'Github'
-	| 'Gmail'
 	| 'Typescript'
 	| 'Python'
 	| 'Docker'
@@ -24,7 +21,7 @@ export type Brand =
 	| 'Playwright'
 	| 'Jest'
 	| 'Golang'
-	| 'GithubAction'
+	| 'Github'
 	| 'Azure'
 	| 'Bootstrap'
 	| 'AWS'
@@ -69,7 +66,6 @@ export type Logo = {
 		websiteURL?: string;
 		isProgrammingLanguage?: boolean; // if the logo is related to programming language
 		isTechTool?: boolean; // if the logo is related to tech tools
-		isPersonalRelated: boolean; // if the logo is related to personal information
 	};
 };
 

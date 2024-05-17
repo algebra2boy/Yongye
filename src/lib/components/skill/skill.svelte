@@ -12,7 +12,7 @@
 		.filter((stack) => techStack[stack as Brand].isTechTool) as Brand[];
 </script>
 
-<div class="pt-2 pl-1 rounded-lg">
+<div class="pt-2 pl-2 rounded-lg">
 	<h1 class="text-xl font-normal mb-2">Technical skills</h1>
 	<div class="programming-language flex">
 		<div class="flex flex-wrap gap-0.5 items-center">

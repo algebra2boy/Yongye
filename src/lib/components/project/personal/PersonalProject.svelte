@@ -3,7 +3,7 @@
 	import Logo from '../../logo/Logo.svelte';
 </script>
 
-<div class="pt-2 pl-1 rounded-lg">
+<div class="pt-2 pl-2 rounded-lg">
 	<h1 class="text-xl font-normal mb-2">Projects</h1>
 
 	{#each sortedProjects as { name, description, logo }}

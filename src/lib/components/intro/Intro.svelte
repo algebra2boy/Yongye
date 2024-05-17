@@ -1,4 +1,4 @@
-<div class="flex items-center">
+<div class="flex items-center pl-2">
 	<img
 		src="/profile.jpeg"
 		alt="Yongye Tan's profile"
@@ -8,7 +8,7 @@
 		<p class="text-sm pt-2">
 			I am a junior at the University of Massachusetts Amherst, majoring in Computer Science and
 			Mathematics. I am passionate about software engineering, API, iOS dev, full stack and game
-			dev. I am interning in <span class="text-green-600 font-semibold">Fidelity</span>
+			dev. I'm interning in <span class="text-green-600 font-semibold">Fidelity</span>
 			this summer!
 		</p>
 	</div>

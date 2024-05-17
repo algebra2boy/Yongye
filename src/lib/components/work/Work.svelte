@@ -52,7 +52,7 @@
 	];
 </script>
 
-<div class="pt-2 pl-1 rounded-lg">
+<div class="pt-2 pl-2 rounded-lg">
 	<h1 class="text-xl font-normal mb-2">Work Experience</h1>
 
 	<ul class="list-disc pl-6 text-sm">

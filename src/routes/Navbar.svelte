@@ -1,4 +1,4 @@
-<div class="flex justify-between items-center">
+<div class="flex justify-between items-center pt-2 pl-2">
 	<div class="pt-1 pb-2">
 		<h1 class="text-2xl font-light font-serif">
 			<a href="/">Yongye Tan </a>

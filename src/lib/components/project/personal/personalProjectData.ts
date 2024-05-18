@@ -23,7 +23,7 @@ export const personalProjects: PersonalProject[] = [
 	},
 	{
 		name: 'PandoraBox',
-		description: 'A SwiftUI + Spritekit mini game that simulates the cup game',
+		description: 'A Spritekit mini game that simulates the cup game',
 		logo: ['Swift'],
 		startDate: new Date(2024, 5),
 		endDate: new Date(2024, 5),
@@ -220,7 +220,7 @@ Check out https://devpost.com/software/cookr-4aojyl for our Devpost submission.
 	{
 		name: 'CI-CD-Pipeline',
 		description: 'Learning how to set up and trigger Github workflows',
-		logo: ['GithubAction'],
+		logo: ['Github'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
 		githubLink: "https://github.com/algebra2boy/CICD-pipeline",
@@ -407,10 +407,8 @@ docker container run --name <container name> -p <local port: container port> -d 
 		githubLink: "https://github.com/algebra2boy/FreeWrite",
 		readme:
 			`
-## FreeWrite
-
+## Introduction
 Exploring how Quill rich editor works on a React web app. 
-
 
 ## Basic Features
 - [x] Able to change header and font
@@ -897,7 +895,7 @@ The hardest part of this project is to connect the supabase database and render 
 
 Submitted by: **Yongye Tan**
 
-This web app: **Computer Science Amherst Club Board **
+This web app: **Computer Science Amherst Club Board**
 
 Time spent: **X** hours spent in total
 
@@ -1659,7 +1657,7 @@ This project is my very first mini IOS project created on Xcode with Swift. It c
 	},
 	{
 		name: 'Covid19-Analysis',
-		description: 'A data analysis project about COVID-19 between mask mandate and hospitalization',
+		description: 'Relationship between mask mandate and hospitalization',
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2020, 6),
 		endDate: new Date(2020, 7),
@@ -1693,7 +1691,7 @@ I used in this project is ArrayList, TreeMap, TreeSet IO, and JavaFX. Here is th
 	{
 		name: 'Java Bundle',
 		description:
-			'9 Java projects that I did in a community college course taught by Professor Paul Marques',
+			'9 Java projects that I did in a community college course',
 		logo: ['Java'],
 		startDate: new Date(2021, 1),
 		endDate: new Date(2021, 5),
@@ -2176,7 +2174,7 @@ We have to thank for the excellent work from Optimator Lab, who made this librar
 	},
 	{
 		name: 'Twilio-ChatBot',
-		description: 'A bot on WhatsApp for users to submit ID to perform background check',
+		description: 'A bot on WhatsApp for users to perform background check',
 		logo: ['Python', 'Flask', 'Twilio'],
 		startDate: new Date(2022, 6),
 		endDate: new Date(2022, 7),

@@ -20,9 +20,8 @@
 	const toggleAllFiles = () => filesExpandedStore.update((expanded) => !expanded);
 </script>
 
-<div class="pt-2 pl-1 rounded-lg">
-	<h1 class="text-xl font-extralight">SCHOOL PROJECTS & LOGISTICS</h1>
-	<hr class="divide-solid border-slate-500 mt-1 border-1" />
+<div class="pt-2 pl-2 rounded-lg">
+	<h1 class="text-xl font-normal mb-2">Classes</h1>
 
 	<div class="flex flex-row items-center gap-1 mt-1.5">
 		<button

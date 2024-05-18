@@ -23,10 +23,12 @@
 	<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
 
 	<p class="mt-1 text-gray-700 text-sm font-mono">
-		I took this independent study in the Spring of 2024. First of all, thank you to Tim, as known as my
+		I took this independent study in the Spring of 2024. First of all, thank you Tim, as known as my
 		advisor, mentor, professor, and friend. I really wanted to learn more about advanced web topics and decided
-        to reach out to my favorite professor, Tim Richards to see if he would be interested in advising me on an independent study.
-        
+        to reach out to my favorite professor, Tim Richards, to see if he would be interested in advising me on an independent study.
+        This course was a great opporunity for me to learn independently and explore the topics that I am interested in. There 
+		are many web topics that I explored and this Notion page is a reflection of my learning journey: 
+		<a href="https://yongye.notion.site/Advanced-Web-Topics-a306d6ba3c934af09bffa17ae318d875?pvs=25" class="underline">Advanced Web programming.</a>
 	</p>
 </div>
 

@@ -693,7 +693,7 @@ Here's a walkthrough of implemented user stories:
 		logo: ['Docker', 'Swift', 'Express', 'MongoDB', 'AWS', 'ChatGPT', 'Flask', 'Tesseract.js'],
 		startDate: new Date(2023, 11),
 		endDate: new Date(2023, 11),
-		githubLink: "",
+		githubLink: "https://github.com/algebra2boy/Ree-See.it",
 		readme:
 			`
 🔥 This project is awarded to Best Mobile Hack for HackUmass Hackathon 🔥 My responsibility was leading this project, designing different microservices, and ensuring each microservices talk to each other!

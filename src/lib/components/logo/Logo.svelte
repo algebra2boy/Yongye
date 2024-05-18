@@ -11,8 +11,8 @@
 	export let brand: Brand = 'AWS';
 	export let size: Size = 'small';
 
-	const logo = techStack[brand];
-	const imageUrl = logo.imageURL;
+	$: logo = techStack[brand];
+	$: imageUrl = logo.imageURL;
 
 	const width = { small: '18', medium: '30', large: '42' } as SizeProps;
 	const height = { small: '20', medium: '30', large: '40' } as SizeProps;

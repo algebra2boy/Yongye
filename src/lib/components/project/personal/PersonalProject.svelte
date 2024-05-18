@@ -4,7 +4,7 @@
 </script>
 
 <div class="pt-2 pl-2 rounded-lg">
-	<h1 class="text-xl font-normal mb-2">Projects</h1>
+	<h1 class="text-xl font-normal mb-2 twinkling">Projects</h1>
 
 	{#each sortedProjects as { name, description, logo }}
 		<div id={name} class="project-entry">

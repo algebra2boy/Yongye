@@ -59,7 +59,7 @@
 		<README {readme} />
 	</div>
 
-	<div class="flex mt-5 justify-center items-center gap-3">
+	<div class="flex mt-5 justify-center items-center gap-3 mb-6 mt-4">
 		<button
 			class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
 			disabled={!prevName}

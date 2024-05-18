@@ -19,7 +19,7 @@ function takeCS326() {
 <div class="mt-2 text-gray-700">
 	<h1 class="text-xl font-bold text-gray-900">CS326: Web Programming</h1>
 
-	<h2 class="text-sm font-semibold text-gray-700 mt-1">
+	<h2 class="text-sm font-medium text-gray-600 mt-1">
 		Course Description: COMPSCI 326 presents a harmonious blend of theoretical foundations and
 		practical application in the domain of web programming. Emphasizing both the aesthetic aspects
 		of HTML and CSS and the functional use of JavaScript, the curriculum is designed to provide a
@@ -43,9 +43,9 @@ function takeCS326() {
 
 	<hr class="divide-solid border-slate-500 mt-1 border-1" />
 
-	<h1 class="text-xl font-extralight mt-1">My Course Reflection</h1>
+	<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
 
-	<p class="mt-1 text-gray-700 font-serif">
+	<p class="mt-1 text-gray-700 text-sm font-mono">
 		I took this course in Spring 2023. I had a lot of fun learning about web programming. 
         Vanilla.js definitely should be the first thing to learn before jumping into any framework, like React, Svelte.
         The fundamental of web programming is to understnad how web API, DOM manipulation, and event handling works.
@@ -55,18 +55,18 @@ function takeCS326() {
         Yes, Tim Richards, what a great professor. I would highly recommend this course to anyone who wants to learn web programming. For the final project,
         I worked on a web application that allows students to leave feedback for dinning hall food, which is called 
         <a href="/project/personal/RateMyDine/" class="underline">
-            RateMyDine
-        </a>.
+            RateMyDine.
+        </a>
         I still remember the day when I presented this project to him in the office hour. He was very impressed with the design and the functionality of the project.
         Jeff (one of my team member) and I showed him the sign and login page, and Tim signed up with his fake account and got saved into the MongoDB database.
         Amazing!
 	</p>
 
-	<h1 class="text-xl font-extralight mt-1">Code demonstration of Javascript</h1>
+	<h1 class="text-xl font-normal font-mono mt-1">Code demonstration of Javascript</h1>
 	<Code language="javascript" {code} />
 </div>
 
-<div class="flex mt-5 justify-center items-center gap-3">
+<div class="flex mt-5 justify-center items-center gap-3 mb-6 mt-4">
 	<button
 		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
 		on:click={() => goto('/project/school/Fall2022/CS377: Operating Systems/README.md')}

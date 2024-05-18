@@ -18,7 +18,7 @@ WHERE name='Yongye';
 <div class="mt-2 text-gray-700">
 	<h1 class="text-xl font-bold text-gray-900">CS345: Data Management</h1>
 
-	<h2 class="text-sm font-semibold text-gray-700 mt-1">
+	<h2 class="text-sm font-medium text-gray-600 mt-1">
 		Course Description: Modern computer systems make ample use of databases from where to share and
 		synchronize many types of information. For example, commercial websites store information about
 		clients and products in databases. Likewise, news organizations store news items and user
@@ -31,9 +31,9 @@ WHERE name='Yongye';
 
 	<hr class="divide-solid border-slate-500 mt-1 border-1" />
 
-	<h1 class="text-xl font-extralight mt-1">My Course Reflection</h1>
+	<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
 
-	<p class="mt-1 text-gray-700 font-serif">
+	<p class="mt-1 text-gray-700 text-sm font-mono">
 		I took this course in Summer 2022. This course was a great introduction to the use of data
         management systems with an demonstration on SQL. The most takeway from this course
         was understanding the relational database model, entity relationship diagrams, SQL queries,
@@ -46,7 +46,7 @@ WHERE name='Yongye';
         
 </div>
 
-<div class="flex mt-5 justify-center items-center gap-3">
+<div class="flex mt-5 justify-center items-center gap-3 mb-6 mt-4">
 	<button
 		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
 		on:click={() => goto('/project/school/Spring2022/CS198C: C Programming Language/README.md')}

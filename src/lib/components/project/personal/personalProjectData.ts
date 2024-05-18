@@ -219,7 +219,7 @@ Check out https://devpost.com/software/cookr-4aojyl for our Devpost submission.
 	},
 	{
 		name: 'CI-CD-Pipeline',
-		description: 'Learning how to set up and trigger Github workflows',
+		description: 'Learned how to set up and trigger Github workflows',
 		logo: ['Github'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
@@ -261,7 +261,7 @@ This is my first simple mini project written in Go for web scraping. It scraps a
 	},
 	{
 		name: 'DockerDeployment',
-		description: 'learn how to deploy node.js express dockerized app on Azure',
+		description: 'Learned how to deploy node.js express dockerized app on Azure',
 		logo: ['Docker', 'Node.js', 'Express', 'Azure'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
@@ -585,7 +585,7 @@ Here is video demo of the web app: [link](https://youtu.be/SlSaHrCOxC0)
 	},
 	{
 		name: 'MCAS-Analysis',
-		description: 'Explores the relationship between income and standardized test performance',
+		description: 'Relationship between income and standardized test performance',
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2023, 9),
 		endDate: new Date(2024, 1),

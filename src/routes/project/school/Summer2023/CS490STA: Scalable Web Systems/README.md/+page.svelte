@@ -33,7 +33,7 @@
 <div class="mt-2 text-gray-700">
 	<h1 class="text-xl font-bold text-gray-900">CS490STA: Scalable Web Systems</h1>
 
-	<h2 class="text-sm font-semibold text-gray-700 mt-1">
+	<h2 class="text-sm font-medium text-gray-600 mt-1">
 		Course Description: The web has become a large and complex area for application development.
 		Access to an abundance of open source languages, libraries, and frameworks has led to the quick
 		and easy construction of a variety of applications with several moving parts working in
@@ -50,9 +50,9 @@
 
 	<hr class="divide-solid border-slate-500 mt-1 border-1" />
 
-	<h1 class="text-xl font-extralight mt-1">My Course Reflection</h1>
+	<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
 
-	<p class="mt-1 text-gray-700 font-serif">
+	<p class="mt-1 text-gray-700 text-sm font-mono">
 		I took this course in Summer 2023. What? You haven't taken this course yet? You should! This
 		course was amazing, excellent, and fantastic. Can I tell you how much I love this course? You
 		learn about nodemon, morgan, helmet, middleware, curl, logging, testing, rate limiting, svelte,
@@ -66,12 +66,12 @@
 		Richards, and I learned a lot from him, TAs and other students.
 	</p>
 
-	<h1 class="text-xl font-extralight mt-1">Code demonstration of Event Bus</h1>
+	<h1 class="text-xl font-normal font-mono mt-1">Code demonstration of Event Bus</h1>
 
 	<Code language="javascript" {code} />
 </div>
 
-<div class="flex mt-5 justify-center items-center gap-3">
+<div class="flex mt-5 justify-center items-center gap-3 mb-6 mt-4">
 	<button
 		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
 		on:click={() => goto('/project/school/Spring2023/CS589: Machine Learning/README.md')}

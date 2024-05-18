@@ -10,7 +10,7 @@
 <div class="mt-2 text-gray-700">
 	<h1 class="text-xl font-bold text-gray-900">CICS305: Junior Year Writting</h1>
 
-	<h2 class="text-sm font-semibold text-gray-700 mt-1">
+	<h2 class="text-sm font-medium text-gray-600 mt-1">
 		Course Description: CICS 305 satisfies the Junior Year Writing (JYW) requirement for CS and
 		Informatics Majors at UMass. It is also an important course in the undergraduate curriculum for
 		learning more about ethics and the social implications of computing. Topics vary each semester
@@ -25,9 +25,9 @@
 
 	<hr class="divide-solid border-slate-500 mt-1 border-1" />
 
-	<h1 class="text-xl font-extralight mt-1">My Course Reflection</h1>
+	<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
 
-	<p class="mt-1 text-gray-700 font-serif">
+	<p class="mt-1 text-gray-700 text-sm font-mono">
 		I took this course in the Spring of 2024. This course was interesting. First homework
         was to build a resume and cover letter. Second homework was to write a letter to a manager about 
         advertisement. Third homework was to argue about unethical and ethical tools. Fourth homework was
@@ -37,7 +37,7 @@
 	</p>
 </div>
 
-<div class="flex mt-5 justify-center items-center gap-3">
+<div class="flex mt-5 justify-center items-center gap-3 mb-6 mt-4">
 	<button
 		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
 		on:click={() => goto('/project/school/Fall2023/CS220: Programming Methodology/README.md')}

@@ -22,7 +22,7 @@ type HTTPRequest = {
 <div class="mt-2 text-gray-700">
 	<h1 class="text-xl font-bold text-gray-900">CS220: Programming Methodology</h1>
 
-	<h2 class="text-sm font-semibold text-gray-700 mt-1">
+	<h2 class="text-sm font-medium text-gray-600 mt-1">
 		Course Description: The goal of COMPSCI220 Programming Methodology is to turn you into an
 		advanced programmer with a deep understanding of modern programming methodology. We will
 		emphasize good software engineering skills, including programming abstractions, testing, and
@@ -34,9 +34,9 @@ type HTTPRequest = {
 
 	<hr class="divide-solid border-slate-500 mt-1 border-1" />
 
-	<h1 class="text-xl font-extralight mt-1">My Course Reflection</h1>
+	<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
 
-	<p class="mt-1 text-gray-700 font-serif">
+	<p class="mt-1 text-gray-700 text-sm font-mono">
 		I took this course in Fall 2023. A lot of design patterns, and software engineering principles taught by
         professor Marius Minea. This course is indeed very time consuming, and but it is super worth and rewarding.
         You learn how to write good code and think more critically about the code you write. The course is very
@@ -45,12 +45,12 @@ type HTTPRequest = {
         fluent design, black box testing, and functional programming.
 	</p>
 
-	<h1 class="text-xl font-extralight mt-1">Code demonstration of Typescript</h1>
+	<h1 class="text-xl font-normal font-mono mt-1">Code demonstration of Typescript</h1>
 
 	<Code language="typescript" {code} />
 </div>
 
-<div class="flex mt-5 justify-center items-center gap-3">
+<div class="flex mt-5 justify-center items-center gap-3 mb-6 mt-4">
 	<button
 		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
 		on:click={() => goto('/project/school/Summer2023/CS490STA: Scalable Web Systems/README.md')}

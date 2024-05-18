@@ -10,7 +10,7 @@
 <div class="mt-2 text-gray-700">
 	<h1 class="text-xl font-bold text-gray-900">CS360: Network Security</h1>
 
-	<h2 class="text-sm font-semibold text-gray-700 mt-1">
+	<h2 class="text-sm font-medium text-gray-600 mt-1">
 		Course Description: This course provides an introduction to the principles and practice of
 		computer and network security. A focus on both fundamentals and practical information will be
 		stressed. The three key topics of this course are cryptography, privacy, and network security.
@@ -21,9 +21,9 @@
 
 	<hr class="divide-solid border-slate-500 mt-1 border-1" />
 
-	<h1 class="text-xl font-extralight mt-1">My Course Reflection</h1>
+	<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
 
-	<p class="mt-1 text-gray-700 font-serif">
+	<p class="mt-1 text-gray-700 text-sm font-mono">
 		I took this course in Fall 2022. This course was a great introduction to the principles and
 		practice of computer and network security. The most takeway from this course was understanding
 		the importance of cryptography, privacy, and network security. The course covered cryptography
@@ -33,7 +33,7 @@
 	</p>
 </div>
 
-<div class="flex mt-5 justify-center items-center gap-3">
+<div class="flex mt-5 justify-center items-center gap-3 mb-6 mt-4">
 	<button
 		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
 		on:click={() => goto('/project/school/Summer2022/CS345: Data Management/README.md')}

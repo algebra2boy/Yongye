@@ -27,7 +27,7 @@
 
 <svelte:head>
 	<title>Yongye Tan</title>
-	<meta name="description" content="Yongye'website" />
+	<meta name="description" content="Yongye's website" />
 </svelte:head>
 
 <Intro />

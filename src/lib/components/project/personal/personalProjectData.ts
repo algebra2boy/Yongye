@@ -668,23 +668,6 @@ Here's a walkthrough of implemented user stories:
 <video width="400" height="240" controls>
   <source src="https://github.com/algebra2boy/TechHouse/assets/103079472/0ef8b111-dfce-4c86-ab91-eb98fccc777a"  type="video/mp4">
 </video>
-
-## License
-
-    Copyright [2023] [Yongye Tan]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
 `
 	},
 	{
@@ -755,8 +738,6 @@ Here is the Devpost link: [Ree-See-It](https://devpost.com/software/ree-see-it)
 			`
 # Web Development Project 3 - SwiftUI Learning
 
-Submitted by: Yongye Tan
-
 This web app: This React application is made to help you learn SwiftUI in a fun way!
 
 Time spent: 3 hours spent in total
@@ -797,23 +778,6 @@ Here's a walkthrough of implemented user stories:
 Describe any challenges encountered while building the app.
 
 I had difficulty with state managment. There are some state that must be uplifting up. I took a while to understand why we need to pass a function hanlder from parent to child, aka a closure. There are many states that I think I need to optimize them later.
-
-## License
-
-    Copyright [2023] [Yongye]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
 `
 	},
 	{
@@ -826,8 +790,6 @@ I had difficulty with state managment. There are some state that must be uplifti
 		readme:
 			`
 # Web Development Project 7 - Crewmate
-
-Submitted by: Yongye Tan
 
 This web app: Playing among us could be fun, but have you made your own among us crewmate before?
 
@@ -863,23 +825,6 @@ Here's a walkthrough of implemented user stories:
 Describe any challenges encountered while building the app.
 
 The hardest part of this project is to connect the supabase database and render them onto the screen.
-
-## License
-
-    Copyright [2023] [Yongye Tan]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
 `
 	},
 	{
@@ -892,8 +837,6 @@ The hardest part of this project is to connect the supabase database and render 
 		readme:
 			`
 # Web Development Project 1 - _Computer Science Community Board_
-
-Submitted by: **Yongye Tan**
 
 This web app: **Computer Science Amherst Club Board**
 
@@ -929,24 +872,6 @@ Here's a walkthrough of implemented required features:
 
 The challenges that I encountered while building the app were CSS and making the card component to fit in a container row by row.
 I did not know how to do it until I refreshed some of my knowledge on flex box.
-
-
-## License
-
-    Copyright [yyyy] [name of copyright owner]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
 `
 	},
 	{
@@ -959,8 +884,6 @@ I did not know how to do it until I refreshed some of my knowledge on flex box.
 		readme:
 			`
 # Web Development Project 4 - Cat The Lover
-
-Submitted by: Yongye Tan
 
 This web app: This website is for anyone who enjoys and has a cat.
 
@@ -1000,23 +923,6 @@ Describe any challenges encountered while building the app.
 
 The challenges that I encountered were trying to pass handlers from parent to child components. Understanding 
 usestate and updating the state properly for each component and making each component modular were something I learned the most from this app.
-
-## License
-
-    Copyright [2023] [Yongye Tan]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
 `
 	},
 	{
@@ -1029,8 +935,6 @@ usestate and updating the state properly for each component and making each comp
 		readme:
 			`
 # Web Development Project 6 - Breweries 2.0
-
-Submitted by: Yongye Tan
 
 This web app: This brew app adds more visualization and detail pages to the brew data.
 
@@ -1070,23 +974,6 @@ Describe any challenges encountered while building the app.
 The hardest part of making this app is to understand how to use Link, Route and pass state/props to other components through Link.
 Overall, I think this web app really helps me understand how to route to differnt view, maintain separation of concern, and make
 reusable components.
-
-## License
-
-    Copyright [2023] [Yongye]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
 `
 	},
 	{
@@ -1159,8 +1046,6 @@ gcc adventure.c room.c -o myProgram
 			`
 # WEB102 Prework - HelpFunding
 
-Submitted by: Yongye Tan
-
 HelpFunding is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
 Time spent: 3-4 hours spent in total
@@ -1194,23 +1079,6 @@ Here's a walkthrough of implemented features:
 Describe any challenges encountered while building the app.
 
 Using reduce, spread operation were a bit unintutive for me - I had to think about and experiment a few times to make it work. It took me some time to review and refresh my knowledge on flexbox.
-
-## License
-
-    Copyright [2023] [Yongye Tan]
-
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
-
-        http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
-
 `
 	},
 	{

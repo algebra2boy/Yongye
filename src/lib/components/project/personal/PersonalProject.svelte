@@ -33,7 +33,8 @@
 				class="project-info flex flex-col justify-between items-start md:flex-row md:flex-wrap sm:flex-row sm:flex-wrap py-0.5 pl-0.5"
 			>
 				<div class="project-details flex flex-row">
-					<a class="flex items-center pr-0.5" href={`/project/personal/${name}`}>
+					<!-- adding data-sveltekit-reload will cause a full-page navigation when the link is clicked -->
+					<a class="flex items-center pr-0.5" href={`/project/personal/${name}`} data-sveltekit-reload>
 						<span class="font-medium text-sm underline decoration-gray-900/30 hover:text-gray-900">
 							{name + ': ' + description}
 						</span>

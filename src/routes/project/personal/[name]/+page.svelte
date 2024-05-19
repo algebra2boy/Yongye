@@ -66,7 +66,7 @@
 			class:disable={!prevName}
 		>
 			{#if prevName}
-				<a href="/project/personal/{prevName}">Prev</a>
+				<a href="/project/personal/{prevName}" data-sveltekit-replacestate>Prev</a>
 			{:else}
 				<span>Prev</span>
 			{/if}
@@ -77,7 +77,7 @@
 			class:disable={!nextName}
 		>
 			{#if nextName}
-				<a href="/project/personal/{nextName}">Next</a>
+				<a href="/project/personal/{nextName}" data-sveltekit-replacestate>Next</a>
 			{:else}
 				<span>Next</span>
 			{/if}

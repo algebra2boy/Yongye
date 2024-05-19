@@ -7,7 +7,7 @@
 
 	<div class="flex flex-wrap gap-1">
 		<div class="relative group">
-			<a href="mailto:yongyetan1209@gmail.com" class="relative z-10">
+			<a href="mailto:yongyetan1209@gmail.com" class="relative z-10" title="email">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					x="0px"
@@ -72,7 +72,7 @@
 		</div>
 
         <div class="relative group">
-			<a href="https://github.com/algebra2boy" class="relative z-10">
+			<a href="https://github.com/algebra2boy" class="relative z-10" title="github"> 
 				<svg
 				xmlns="http://www.w3.org/2000/svg"
 				x="0px"
@@ -122,7 +122,7 @@
 		</div>
 
         <div class="relative group">
-			<a href="https://linkedin.com/in/yytan04" class="relative z-10">
+			<a href="https://linkedin.com/in/yytan04" class="relative z-10" title="linkedin">
 				<svg
 				xmlns="http://www.w3.org/2000/svg"
 				x="0px"

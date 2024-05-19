@@ -1,15 +1,6 @@
 <script lang="ts">
-	import { techStack } from '../logo/logoData';
-	import type { Brand } from '../logo/';
+	import { programmingLanguages, tools } from '../logo/logoData';
 	import Logo from '../logo/Logo.svelte';
-
-	const programmingLanguages = Object.keys(techStack)
-		.sort()
-		.filter((stack) => techStack[stack as Brand].isProgrammingLanguage) as Brand[];
-
-	const tools = Object.keys(techStack)
-		.sort()
-		.filter((stack) => techStack[stack as Brand].isTechTool) as Brand[];
 </script>
 
 <div class="pt-2 pl-2 rounded-lg">

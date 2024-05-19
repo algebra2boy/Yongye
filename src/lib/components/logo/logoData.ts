@@ -1,13 +1,13 @@
 import type { DevIconOption, Logo } from './';
+import type { Brand } from './index';
 
 export const getImageFromDevicon = (
 	name: string,
 	option: DevIconOption = 'original',
 	wordmark: boolean = false
 ): string => {
-	return `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${name}/${name}-${option}${
-		wordmark ? '-wordmark' : ''
-	}.svg`;
+	return `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${name}/${name}-${option}${wordmark ? '-wordmark' : ''
+		}.svg`;
 };
 
 export const techStack: Logo = {
@@ -253,3 +253,12 @@ export const techStack: Logo = {
 		isTechTool: true
 	}
 };
+
+
+export const programmingLanguages = Object.keys(techStack)
+	.sort()
+	.filter((stack) => techStack[stack as Brand].isProgrammingLanguage) as Brand[];
+
+export const tools = Object.keys(techStack)
+	.sort()
+	.filter((stack) => techStack[stack as Brand].isTechTool) as Brand[];

@@ -21,7 +21,7 @@
 	<meta name="description" content={name} />
 </svelte:head>
 
-<div id={name} class="rounded-lg p-4">
+<div id={name} class="rounded-lg p-2">
 	<div class="flex justify-between items-center mb-2">
 		<h1 class="text-xl font-bold text-gray-900">{name}</h1>
 	</div>

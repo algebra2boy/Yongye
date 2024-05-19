@@ -57,7 +57,7 @@ int checkDirectionValid(char* direction);
 	<meta name="description" content="Computer Systems Principles" />
 </svelte:head>
 
-<div class="mt-2 text-gray-700">
+<div class="text-gray-700 p-2">
 	<h1 class="text-xl font-bold text-gray-900">CS230: Computer Systems Principles</h1>
 
 	<h2 class="text-sm font-medium text-gray-600 mt-1">

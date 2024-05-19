@@ -16,7 +16,7 @@ function takeCS326() {
 	<meta name="description" content="Web Programming" />
 </svelte:head>
 
-<div class="mt-2 text-gray-700">
+<div class="text-gray-700 p-2">
 	<h1 class="text-xl font-bold text-gray-900">CS326: Web Programming</h1>
 
 	<h2 class="text-sm font-medium text-gray-600 mt-1">

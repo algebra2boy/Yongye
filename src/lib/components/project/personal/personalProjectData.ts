@@ -1735,7 +1735,7 @@ Huge thanks to my high school teacher Paul Marques (known as Mr.Marques) for tea
 		name: 'TicTacToe',
 		description: 'A simple TicTacToe game implemented in Swift',
 		logo: ['Swift'],
-		startDate: new Date(2022, 12),
+		startDate: new Date(2023, 1),
 		endDate: new Date(2023, 2),
 		githubLink: "https://github.com/algebra2boy/Swift/tree/main/TicTacToeSwiftUI",
 		readme:
@@ -1765,7 +1765,7 @@ Thank you [Cal](https://www.youtube.com/watch?v=LmkHSTPK2h8) for providing such 
 		name: 'Tips Calculator',
 		description: 'A simple tips calculator implemented in Swift',
 		logo: ['Swift'],
-		startDate: new Date(2022, 12),
+		startDate: new Date(2023, 1),
 		endDate: new Date(2023, 1),
 		githubLink: "https://github.com/algebra2boy/Swift/tree/main/TipCalculator",
 		readme:

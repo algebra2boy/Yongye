@@ -1,19 +1,19 @@
 <script lang="ts">
-	import { sortedProjects } from './personalProjectData.js';
+	import { personalProjects } from './personalProjectData.js';
 	import Logo from '../../logo/Logo.svelte';
 	import type { Brand } from '$lib/components/logo/index.js';
 	import { convertDateToString } from '$lib/utils/date.js';
 
 	const projectTechStack = Array.from(
-		new Set(sortedProjects.map((project) => project.logo).flat())
+		new Set(personalProjects.map((project) => project.logo).flat())
 	).sort();
 
 	let selectedTechStack = 'Tech Stack';
 
 	$: filteredProjects =
 		selectedTechStack === 'Tech Stack'
-			? sortedProjects
-			: sortedProjects.filter((project) => project.logo.includes(selectedTechStack as Brand));
+			? personalProjects
+			: personalProjects.filter((project) => project.logo.includes(selectedTechStack as Brand));
 </script>
 
 <div class="pt-2 pl-2 rounded-lg">

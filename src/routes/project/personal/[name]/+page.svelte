@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Logo from '$lib/components/logo/Logo.svelte';
 	import { convertDateToString } from '$lib/utils/date';
-	import { sortedProjects } from '$lib/components/project/personal/personalProjectData';
+	import { personalProjects } from '$lib/components/project/personal/personalProjectData';
 	import README from '$lib/components/project/personal/README.svelte';
 
 	export let data;
@@ -9,7 +9,7 @@
 	// whenever route changes that causes refetching, these variables should be recreated
 	$: ({ name, description, logo, startDate, endDate, githubLink, readme } = data);
 
-	const projectNames = sortedProjects.map((p) => p.name);
+	const projectNames = personalProjects.map((p) => p.name);
 
 	// prevName and nextName relies on "name" reactivity
 	$: prevName = projectNames[projectNames.indexOf(name) - 1];

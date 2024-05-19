@@ -514,8 +514,8 @@ You can also set the study and break timer to 10, 15, 20, 25 ,and 30 minutes.
 		startDate: new Date(2024, 1),
 		endDate: new Date(2024, 1),
 		githubLink: "https://github.com/algebra2boy/Swift/tree/main/AppleWatchDemo/AppleWatchDemo%20Watch%20App",
-		readme: 
-`
+		readme:
+			`
 When I was in China, I learned a lot of about Chinese classic quotes from my grandpa. He is a very wise man. 
 He told me that the classic quotes are the essence of the wisdom of the Chinese people. I wanted to share this wisdom
 to my cousin. Therefore, I created a simple Apple Watch app that generates classic quotes. The app is simple, it has a button
@@ -2326,7 +2326,12 @@ This is a path from Roslindale to South Boston waterfront, and it takes **49** m
 	}
 ];
 
-export const sortedProjects: PersonalProject[] = personalProjects.sort((a, b) => {
+// sort by logo name alphabetically
+personalProjects.forEach((project) => {
+	project.logo.sort((a, b) => a.localeCompare(b));
+});
+
+personalProjects.sort((a, b) => {
 	if (a.startDate > b.startDate) {
 		return -1;
 	} else if (a.startDate < b.startDate) {
@@ -2335,3 +2340,4 @@ export const sortedProjects: PersonalProject[] = personalProjects.sort((a, b) =>
 		return 0;
 	}
 });
+

@@ -219,7 +219,7 @@ Check out https://devpost.com/software/cookr-4aojyl for our Devpost submission.
 	},
 	{
 		name: 'CI-CD-Pipeline',
-		description: 'Learned how to set up and trigger Github workflows',
+		description: 'How to set up and trigger Github workflows',
 		logo: ['Github'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
@@ -261,7 +261,7 @@ This is my first simple mini project written in Go for web scraping. It scraps a
 	},
 	{
 		name: 'DockerDeployment',
-		description: 'Learned how to deploy node.js express dockerized app on Azure',
+		description: 'How to deploy node.js express dockerized app on Azure',
 		logo: ['Docker', 'Node.js', 'Express', 'Azure'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
@@ -440,7 +440,7 @@ This is my first web app, written in Svelte 5. The website takes a keyword, loca
 	},
 	{
 		name: 'HouseFinder',
-		description: 'A simple SwiftUI demo app to manage houses for real estate agent.',
+		description: 'A SwiftUI demo app to manage houses for real estate',
 		logo: ['Swift'],
 		startDate: new Date(2024, 2),
 		endDate: new Date(2024, 2),
@@ -508,7 +508,7 @@ You can also set the study and break timer to 10, 15, 20, 25 ,and 30 minutes.
 `
 	},
 	{
-		name: 'Classic-Quote-Generator',
+		name: 'Quote-Generator',
 		description: 'A simple Apple Watch app that generates classic quotes',
 		logo: ['Swift'],
 		startDate: new Date(2024, 1),
@@ -529,7 +529,7 @@ it will show a list of quotes on the app. All of these motivational quotes are i
 	},
 	{
 		name: 'Event-Planner',
-		description: 'A web app that helps create and sign up events using microservices',
+		description: 'A web app that helps manage events using microservices',
 		logo: ['Docker', 'Javascript', 'Express', 'MongoDB', 'Bootstrap'],
 		startDate: new Date(2023, 7),
 		endDate: new Date(2023, 9),
@@ -1021,7 +1021,7 @@ usestate and updating the state properly for each component and making each comp
 	},
 	{
 		name: 'Breweries',
-		description: 'A website that finds breweries using API and generate analytics charts',
+		description: 'A website that finds breweries and generate analytics charts',
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 10),
 		endDate: new Date(2023, 11),
@@ -1215,7 +1215,7 @@ Using reduce, spread operation were a bit unintutive for me - I had to think abo
 	},
 	{
 		name: 'RateMyDine',
-		description: 'A platform to share opinions about food from all dining hall at UMass Amherst',
+		description: 'A platform to share feedback about food for dining hall',
 		logo: ['HTML', 'CSS', 'Javascript'],
 		startDate: new Date(2023, 2),
 		endDate: new Date(2023, 5),
@@ -1283,7 +1283,7 @@ Website Logistics
 
 	{
 		name: 'Socket programming',
-		description: 'Learn about how UCP and TCP work for both client and server',
+		description: 'How UCP and TCP work for both client and server',
 		logo: ['Python'],
 		startDate: new Date(2023, 3),
 		endDate: new Date(2023, 4),
@@ -1346,7 +1346,7 @@ This was also my first SwiftUI project where I started my journey to learn how t
 	},
 	{
 		name: 'Enrollment',
-		description: 'A simple website for enrolling classes with login and register feature.',
+		description: 'A website for enrolling classes with login and register feature',
 		logo: ['HTML', 'CSS', 'Javascript', 'MongoDB', 'Flask'],
 		startDate: new Date(2022, 11),
 		endDate: new Date(2023, 1),
@@ -1564,7 +1564,7 @@ I really appreciated this opporunity and I learned a ton about iOS dev and the t
 	},
 	{
 		name: 'OHill-Squad-WeSQL',
-		description: 'Learned how to connect mySQL database with Python.',
+		description: 'How to connect mySQL database with Python.',
 		logo: ['Python', 'MySQL'],
 		startDate: new Date(2022, 8),
 		endDate: new Date(2022, 9),
@@ -1622,7 +1622,7 @@ pip install <the name of the package>
 	},
 	{
 		name: 'HelloFromYongye',
-		description: 'first mini iOS project to say hello and other greetings',
+		description: 'First mini iOS project to say hello and other greetings',
 		logo: ['Swift'],
 		startDate: new Date(2022, 7),
 		endDate: new Date(2022, 7),
@@ -2224,7 +2224,7 @@ Any message is texted by the user is stored in their designated file called "inf
 	{
 		name: 'Distance Matrix',
 		description:
-			"Predict travel time using Uber's H3, Distance Matrix API, and NetworkX's Dijkstra",
+			"Predict travel time using H3, Distance Matrix, and NetworkX Dijkstra",
 		logo: ['Python', 'Flask'],
 		startDate: new Date(2022, 7),
 		endDate: new Date(2022, 8),

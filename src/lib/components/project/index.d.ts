@@ -16,7 +16,7 @@ export type PersonalProjectName =
 	| 'Career-Explorer'
 	| 'HouseFinder'
 	| 'Pomodoro'
-	| 'Classic-Quote-Generator'
+	| 'Quote-Generator'
 	| 'Event-Planner'
 	| 'MCAS-Analysis'
 	| 'ShopHub'

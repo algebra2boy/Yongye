@@ -2,6 +2,7 @@
 	import { sortedProjects } from './personalProjectData.js';
 	import Logo from '../../logo/Logo.svelte';
 	import type { Brand } from '$lib/components/logo/index.js';
+	import { convertDateToString } from '$lib/utils/date.js';
 
 	const projectTechStack = Array.from(
 		new Set(sortedProjects.map((project) => project.logo).flat())
@@ -26,7 +27,7 @@
 		</select>
 	</div>
 
-	{#each filteredProjects as { name, description, logo }}
+	{#each filteredProjects as { name, description, logo, startDate, endDate }}
 		<div id={name} class="project-entry">
 			<div
 				class="project-info flex flex-col justify-between items-start md:flex-row md:flex-wrap sm:flex-row sm:flex-wrap py-0.5 pl-0.5"
@@ -38,10 +39,13 @@
 						</span>
 					</a>
 				</div>
-				<div class="programming-stack flex flex-row space-x-0.5 items-center mt-1">
+				<div class="flex flex-row space-x-0.5 items-center mt-1">
 					{#each logo as l}
 						<Logo brand={l} />
 					{/each}
+					<p class="text-sm font-mono tracking-wide ml-2">
+						{convertDateToString(startDate)}
+					</p>
 				</div>
 			</div>
 		</div>

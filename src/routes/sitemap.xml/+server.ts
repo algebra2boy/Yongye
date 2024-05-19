@@ -5,6 +5,9 @@ const site = 'https://yongyetan.com';
 const pages: string[] = [];
 
 const generateDyanmicRoutes = () => {
+
+    pages.push('course');
+
     const peronalProjectNames = personalProjects.map((p) => p.name);
     peronalProjectNames.forEach((name) => pages.push(`project/personal/${name}`));
 

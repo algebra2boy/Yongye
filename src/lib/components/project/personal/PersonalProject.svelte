@@ -19,7 +19,7 @@
 <div class="pt-2 pl-2 rounded-lg">
 	<div class="flex flex-row items-center gap-2 mb-2">
 		<h1 class="text-xl font-normal">Projects</h1>
-		<select class="select select-bordered select-xs border-0 shadow-sm outline outline-neutral-500 -mb-1" bind:value={selectedTechStack}>
+		<select class="select select-bordered select-xs border-0 shadow-sm outline outline-neutral-300 -mb-1" bind:value={selectedTechStack}>
 			<option selected>Tech Stack</option>
 			{#each projectTechStack as tech}
 				<option value={tech}>{tech}</option>

@@ -1,6 +1,7 @@
 import type { Brand } from '../logo';
 
 export type PersonalProjectName =
+	| 'DonutStripe'
 	| 'LingoQuest'
 	| 'PandoraBox'
 	| 'Yongye'

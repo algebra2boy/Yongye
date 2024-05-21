@@ -1,8 +1,8 @@
 <script lang="ts">
 	import Logo from '$lib/components/logo/Logo.svelte';
 	import { convertDateToString } from '$lib/utils/date';
-	import { personalProjects } from '$lib/components/project/personal/personalProjectData';
-	import README from '$lib/components/project/personal/README.svelte';
+	import { personalProjects } from '$lib/components/project/personalProjectData.js';
+	import README from '$lib/components/project/README.svelte';
 
 	export let data;
 
@@ -59,7 +59,7 @@
 		<README {readme} />
 	</div>
 
-	<div class="flex mt-5 justify-center items-center gap-3 mb-6 mt-4">
+	<div class="flex justify-center items-center gap-3 mb-6 mt-4">
 		<button
 			class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
 			disabled={!prevName}

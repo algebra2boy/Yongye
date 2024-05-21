@@ -1,5 +1,5 @@
-import { personalProjects } from '$lib/components/project/personal/personalProjectData';
-import { schoolProjects } from '$lib/components/project/school/schoolProjectData';
+import { personalProjects } from '$lib/components/project/personalProjectData';
+import { schoolProjects } from '$lib/components/course/schoolProjectData';
 
 const site = 'https://yongyetan.com';
 const pages: string[] = [];

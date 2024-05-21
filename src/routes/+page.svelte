@@ -1,13 +1,6 @@
 <script lang="ts">
-	import {
-		Intro,
-		Work,
-		PersonalProject,
-		SchoolProject,
-		Skill
-	} from '$lib/components/index.js';
+	import { Intro, Work, Skill } from '$lib/components/index.js';
 	import { onMount } from 'svelte';
-
 
 	let timeCommitted: string;
 
@@ -32,8 +25,6 @@
 
 <Intro />
 <Work />
-<PersonalProject />
-<SchoolProject />
 <Skill />
 
 <hr class="border-t border-gray-300 mt-4" />

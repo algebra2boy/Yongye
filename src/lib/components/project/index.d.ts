@@ -54,11 +54,6 @@ export type PersonalProjectName =
 	| 'Distance Matrix'
 	| 'Twilio-ChatBot';
 
-export type FileStructure = {
-	type: 'folder' | 'file';
-	name: string;
-	files?: FileStructure[];
-};
 
 export type PersonalProject = {
 	name: PersonalProjectName;

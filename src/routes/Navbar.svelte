@@ -3,15 +3,24 @@
 	import { Github, LinkedIn, Gmail, Hamburger } from '$lib/components/icons';
 </script>
 
-<div class="flex justify-between items-center navbar pt-2">
+<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+<div class="flex justify-between items-center navbar pt-2" tabindex="0">
 	<div class="navbar-start">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="lg:hidden mr-1.5 hover:text-bl-900">
 				<Hamburger />
 			</div>
-			<ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
-				<li><a href="/projects" class:landing={$page.url.pathname.endsWith('/projects/')}>Projects</a></li>
-				<li><a href="/courses" class:landing={$page.url.pathname.endsWith('/courses/')}>Courses</a></li>
+
+			<ul
+				tabindex="0"
+				class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52"
+			>
+				<li>
+					<a href="/projects" class:landing={$page.url.pathname.endsWith('/projects/')}>Projects</a>
+				</li>
+				<li>
+					<a href="/courses" class:landing={$page.url.pathname.endsWith('/courses/')}>Courses</a>
+				</li>
 			</ul>
 		</div>
 		<div class="pt-1 pb-2">

@@ -20,7 +20,7 @@
 
 <svelte:head>
 	<title>Yongye Tan</title>
-	<meta name="description" content="Yongye's website" />
+	<meta name="description" content="Welcome to yongye's website where it contains lots of information about myself and many creative ideas 🔥💡" />
 </svelte:head>
 
 <Intro />

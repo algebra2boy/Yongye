@@ -70,7 +70,7 @@
 			class="bg-green-500 text-white font-bold py-2 px-4 rounded"
 			disabled={!prevName}
 			class:disable={!prevName}
-			class:hover={prevName}
+			class:hoverPrevColor={prevName}
 		>
 			{#if prevName}
 				<a href="/projects/{prevName}" data-sveltekit-replacestate>Prev</a>
@@ -82,7 +82,7 @@
 			class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
 			disabled={!nextName}
 			class:disable={!nextName}
-			class:hover={nextName}
+			class:hoverNextColor={nextName}
 		>
 			{#if nextName}
 				<a href="/projects/{nextName}" data-sveltekit-replacestate>Next</a>
@@ -98,7 +98,11 @@
 		@apply bg-gray-400;
 	}
 
-	.hover {
-		@apply hover:bg-green-500;
+	.hoverPrevColor {
+		@apply hover:bg-green-700;
+	}
+
+	.hoverNextColor {
+		@apply hover:bg-blue-700;
 	}
 </style>

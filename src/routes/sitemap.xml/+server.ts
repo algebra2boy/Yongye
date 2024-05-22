@@ -1,24 +1,25 @@
-import { personalProjects } from '$lib/components/project/personal/personalProjectData';
-import { schoolProjects } from '$lib/components/project/school/schoolProjectData';
+import { personalProjects } from '$lib/components/project/personalProjectData';
+import { courses } from '$lib/components/course/courseData';
 
 const site = 'https://yongyetan.com';
 const pages: string[] = [];
 
 const generateDyanmicRoutes = () => {
 
-    pages.push('course');
+  const peronalProjectNames = personalProjects.map((p) => p.name);
+  peronalProjectNames.forEach((name) => pages.push(`projects/${name}`));
 
-    const peronalProjectNames = personalProjects.map((p) => p.name);
-    peronalProjectNames.forEach((name) => pages.push(`project/personal/${name}`));
-
-    let index = 0;
-    const semesters = ["Fall2021", "Spring2022", "Summer2022", "Fall2022", "Spring2023", "Summer2023", "Fall2023", "Spring2024"];
-    schoolProjects.forEach((semester) => {
-        semester.forEach((course) => {
-            pages.push('project/school/' + semesters[index] + '/' + course.name + "/README.md");
-        })
-        index++;
+  pages.push('courses');
+  pages.push('courses/list');
+  
+  let index = 0;
+  const semesters = ["Fall2021", "Spring2022", "Summer2022", "Fall2022", "Spring2023", "Summer2023", "Fall2023", "Spring2024"];
+  courses.forEach((semester) => {
+    semester.forEach((course) => {
+      pages.push('courses/' + semesters[index] + '/' + course.name + "/README.md");
     })
+    index++;
+  });
 }
 
 const sitemap = (pages: string[]) => `<?xml version="1.0" encoding="UTF-8" ?>
@@ -50,10 +51,10 @@ ${pages.map((page) => `
 // https://sveltekit.io/blog/svelte-sitemaps
 export async function GET() {
 
-    generateDyanmicRoutes();
-    const body = sitemap(pages);
-    const response = new Response(body);
-    response.headers.set('Cache-Control', 'max-age=0, s-maxage=3600');
-    response.headers.set('Content-Type', 'application/xml');
-    return response;
+  generateDyanmicRoutes();
+  const body = sitemap(pages);
+  const response = new Response(body);
+  response.headers.set('Cache-Control', 'max-age=0, s-maxage=3600');
+  response.headers.set('Content-Type', 'application/xml');
+  return response;
 }

@@ -10,8 +10,8 @@
 				<Hamburger />
 			</div>
 			<ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
-				<li><a href="/projects" class:landing={$page.url.pathname.endsWith('/projects')}>Projects</a></li>
-				<li><a href="/courses" class:landing={$page.url.pathname.endsWith('/courses')}>Courses</a></li>
+				<li><a href="/projects" class:landing={$page.url.pathname.endsWith('/projects/')}>Projects</a></li>
+				<li><a href="/courses" class:landing={$page.url.pathname.endsWith('/courses/')}>Courses</a></li>
 			</ul>
 		</div>
 		<div class="pt-1 pb-2">
@@ -21,10 +21,10 @@
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal px-1">
 			<li>
-				<a href="/projects" class:landing={$page.url.pathname.endsWith('/projects')}>Projects</a>
+				<a href="/projects" class:landing={$page.url.pathname.endsWith('/projects/')}>Projects</a>
 			</li>
 			<li>
-				<a href="/courses" class:landing={$page.url.pathname.endsWith('/courses')}>Courses</a>
+				<a href="/courses" class:landing={$page.url.pathname.endsWith('/courses/')}>Courses</a>
 			</li>
 		</ul>
 	</div>

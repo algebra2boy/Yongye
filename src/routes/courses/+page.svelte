@@ -4,6 +4,7 @@
 
 <svelte:head>
 	<title>Yongye's course folder</title>
+	<meta name="description" content="Yongye's course folder" />
 </svelte:head>
 
 <Course />

@@ -1,16 +1,17 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { Github, LinkedIn, Gmail, Hamburger } from '$lib/components/icons';
 </script>
 
-<div class="flex justify-between items-center navbar pt-2 pl-2">
+<div class="flex justify-between items-center navbar pt-2">
 	<div class="navbar-start">
 		<div class="dropdown">
-			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+			<div tabindex="0" role="button" class="lg:hidden mr-1.5 hover:text-bl-900">
 				<Hamburger />
 			</div>
 			<ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 bg-base-100 rounded-box w-52">
-				<li><a href="/projects">Projects</a></li>
-				<li><a href="/courses">Courses</a></li>
+				<li><a href="/projects" class:landing={$page.url.pathname.endsWith('/projects')}>Projects</a></li>
+				<li><a href="/courses" class:landing={$page.url.pathname.endsWith('/courses')}>Courses</a></li>
 			</ul>
 		</div>
 		<div class="pt-1 pb-2">
@@ -19,8 +20,12 @@
 	</div>
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal px-1">
-			<li><a href="/projects">Projects</a></li>
-			<li><a href="/courses">Courses</a></li>
+			<li>
+				<a href="/projects" class:landing={$page.url.pathname.endsWith('/projects')}>Projects</a>
+			</li>
+			<li>
+				<a href="/courses" class:landing={$page.url.pathname.endsWith('/courses')}>Courses</a>
+			</li>
 		</ul>
 	</div>
 	<div class="navbar-end">
@@ -60,3 +65,9 @@
 		</div>
 	</div>
 </div>
+
+<style lang="postcss">
+	.landing {
+		@apply text-blue-500;
+	}
+</style>

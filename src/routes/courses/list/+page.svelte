@@ -1,5 +1,6 @@
 <svelte:head>
 	<title>Yongye's course list</title>
+	<meta name="description" content="Yongye's course list" />
 </svelte:head>
 
 <div class="class-container m-2">

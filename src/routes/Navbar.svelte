@@ -26,7 +26,7 @@
 	<div class="navbar-end">
 		<div class="flex flex-wrap gap-1">
 			<div class="relative group">
-				<a href="mailto:yongyetan1209@gmail.com" class="relative z-10" title="email">
+				<a href="mailto:yongyetan1209@gmail.com" class="relative z-10">
 					<Gmail />
 				</a>
 				<div class="absolute top-1 -right-1 group-hover:block pt-6 pr-1 hidden">
@@ -37,7 +37,7 @@
 			</div>
 
 			<div class="relative group">
-				<a href="https://github.com/algebra2boy" class="relative z-10" title="github">
+				<a href="https://github.com/algebra2boy" class="relative z-10">
 					<Github />
 				</a>
 				<div class="absolute top-1 -right-1 group-hover:block pt-6 pr-1 hidden">
@@ -48,7 +48,7 @@
 			</div>
 
 			<div class="relative group">
-				<a href="https://linkedin.com/in/yytan04" class="relative z-10" title="linkedin">
+				<a href="https://linkedin.com/in/yytan04" class="relative z-10">
 					<LinkedIn />
 				</a>
 				<div class="absolute top-1 -right-1 group-hover:block pt-6 pr-1 hidden">

@@ -44,7 +44,7 @@
 	<button
 		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
 		on:click={() =>
-			goto('/project/school/Spring2024/CS520: Theory and Practice of Software Engineering/README.md')}
+			goto('/courses/Spring2024/CS520: Theory and Practice of Software Engineering/README.md')}
 	>
 		Next
 	</button>

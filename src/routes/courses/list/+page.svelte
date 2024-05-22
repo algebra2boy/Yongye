@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Yongye's course list</title>
+</svelte:head>
+
 <div class="class-container m-2">
 	<p>
 		The following is a list of college courses I have taken at University of Massachusetts Amherst, and Codepath. 

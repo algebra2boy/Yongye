@@ -14,14 +14,14 @@
 		'Spring2024'
 	];
 
-	let isSemesterFolderExpanded: boolean = true;
+	let isSemesterFolderExpanded: boolean = false;
 
 	const toggleSemesterFolder = () => (isSemesterFolderExpanded = !isSemesterFolderExpanded);
 	const toggleAllFiles = () => filesExpandedStore.update((expanded) => !expanded);
 </script>
 
-<div class="pt-2 pl-2 rounded-lg">
-	<h1 class="text-xl font-normal mb-2"><a href="/courses/list" class="underline" data-sveltekit-reload>Classes</a></h1>
+<div class="p-2 mb-2.5 rounded-lg">
+	<h1 class="text-xl font-normal mb-2"><a href="/courses/list" class="underline" data-sveltekit-reload>Courses</a></h1>
 
 	<div class="flex flex-row items-center gap-1 mt-1.5">
 		<button
@@ -47,7 +47,7 @@
 		<Folder
 			name={semester}
 			files={courses[index]}
-			path={'/project/school/' + semester}
+			path={'/courses/' + semester}
 			expanded={$filesExpandedStore || isSemesterFolderExpanded}
 		/>
 	{/each}

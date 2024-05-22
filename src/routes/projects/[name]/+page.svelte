@@ -61,23 +61,25 @@
 
 	<div class="flex justify-center items-center gap-3 mb-6 mt-4">
 		<button
-			class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+			class="bg-green-500 text-white font-bold py-2 px-4 rounded"
 			disabled={!prevName}
 			class:disable={!prevName}
+			class:hover={prevName}
 		>
 			{#if prevName}
-				<a href="/project/personal/{prevName}" data-sveltekit-replacestate>Prev</a>
+				<a href="/projects/{prevName}" data-sveltekit-replacestate>Prev</a>
 			{:else}
 				<span>Prev</span>
 			{/if}
 		</button>
 		<button
-			class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+			class="bg-blue-500 text-white font-bold py-2 px-4 rounded"
 			disabled={!nextName}
 			class:disable={!nextName}
+			class:hover={nextName}
 		>
 			{#if nextName}
-				<a href="/project/personal/{nextName}" data-sveltekit-replacestate>Next</a>
+				<a href="/projects/{nextName}" data-sveltekit-replacestate>Next</a>
 			{:else}
 				<span>Next</span>
 			{/if}
@@ -88,5 +90,9 @@
 <style lang="postcss">
 	.disable {
 		@apply bg-gray-400;
+	}
+
+	.hover {
+		@apply hover:bg-green-500;
 	}
 </style>

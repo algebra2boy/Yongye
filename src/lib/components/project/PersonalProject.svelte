@@ -16,7 +16,7 @@
 			: personalProjects.filter((project) => project.logo.includes(selectedTechStack as Brand));
 </script>
 
-<div class="pt-2 pl-2 rounded-lg">
+<div class="pt-2 pl-2 mb-2.5 rounded-lg">
 	<div class="flex flex-row items-center gap-2 mb-2">
 		<h1 class="text-xl font-normal">Projects</h1>
 		<select class="select select-bordered select-xs border-0 shadow-sm outline outline-neutral-300 -mb-1" bind:value={selectedTechStack}>
@@ -33,7 +33,7 @@
 				class="project-info flex flex-col justify-between items-start md:flex-row md:flex-wrap sm:flex-row sm:flex-wrap py-0.5 pl-0.5"
 			>
 				<div class="project-details flex flex-row">
-					<a class="flex items-center pr-0.5" href={`/project/personal/${name}`}>
+					<a class="flex items-center pr-0.5" href={`/projects/${name}`}>
 						<span class="font-medium text-sm underline decoration-gray-900/30 hover:text-gray-900">
 							{name + ': ' + description}
 						</span>

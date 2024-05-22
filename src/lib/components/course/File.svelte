@@ -7,7 +7,7 @@
 </script>
 
 {#if type === 'md' || type === 'pdf'}
-	<a href={path} data-sveltekit-reload>
+	<a href={path}>
 		<span style="background-image: url(/icons/{type}.svg)">{name}</span>
 	</a>
 {:else}

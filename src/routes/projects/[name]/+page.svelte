@@ -22,6 +22,10 @@
 </svelte:head>
 
 <div id={name} class="rounded-lg p-2">
+	<small class="flex flex-row items-center gap-2 mb-3">
+		<a href="/projects">← Projects</a>
+	</small>
+
 	<div class="flex justify-between items-center mb-3">
 		<h1 class="text-xl font-bold text-gray-900">{name}</h1>
 	</div>
@@ -43,8 +47,10 @@
 		<span class="text-sm font-medium text-gray-600">GitHub: </span>
 		<span class="flex-shrink-0">&nbsp;</span>
 		{#if githubLink}
-			<a href={githubLink} class="hover:text-blue-600 underline break-all flex-grow min-w-0" title={githubLink}
-				>{githubLink.split('github.com/')[1]}</a
+			<a
+				href={githubLink}
+				class="hover:text-blue-600 underline break-all flex-grow min-w-0"
+				title={githubLink}>{githubLink.split('github.com/')[1]}</a
 			>
 		{:else}
 			<span class="text-gray-500">Private</span>

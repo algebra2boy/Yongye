@@ -21,6 +21,9 @@
 				<li>
 					<a href="/courses" class:landing={$page.url.pathname.endsWith('/courses/')}>Courses</a>
 				</li>
+				<li>
+					<a href="/blogs" class:landing={$page.url.pathname.endsWith('/blogs/')}>Blogs</a>
+				</li>
 			</ul>
 		</div>
 		<div class="pt-1 pb-2">
@@ -34,6 +37,9 @@
 			</li>
 			<li>
 				<a href="/courses" class:landing={$page.url.pathname.endsWith('/courses/')}>Courses</a>
+			</li>
+			<li>
+				<a href="/blogs" class:landing={$page.url.pathname.endsWith('/blogs/')}>Blogs</a>
 			</li>
 		</ul>
 	</div>

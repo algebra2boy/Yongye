@@ -35,7 +35,7 @@ Live Web App at Vercel: <a>donut-stripe.vercel.app</a>
 	},
 	{
 		name: 'LingoQuest',
-		description: 'A language learning web app that helps learn language',
+		description: 'My gamified language learning web app',
 		logo: [
 			'Docker',
 			'Svelte',

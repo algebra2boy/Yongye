@@ -17,9 +17,16 @@
 </script>
 
 <div class="pt-2 pl-2 mb-2.5 rounded-lg">
+	<small class="flex flex-row items-center gap-2 mb-3">
+		<a href="/">← Home</a>
+	</small>
+
 	<div class="flex flex-row items-center gap-2 mb-2">
 		<h1 class="text-xl font-normal">Projects</h1>
-		<select class="select select-bordered select-xs border-0 shadow-sm outline outline-neutral-300 -mb-1" bind:value={selectedTechStack}>
+		<select
+			class="select select-bordered select-xs border-0 shadow-sm outline outline-neutral-300 -mb-1"
+			bind:value={selectedTechStack}
+		>
 			<option selected>Tech Stack</option>
 			{#each projectTechStack as tech}
 				<option value={tech}>{tech}</option>
@@ -30,7 +37,7 @@
 	{#each filteredProjects as { name, description, logo, startDate }}
 		<div id={name} class="project-entry">
 			<div
-				class="project-info flex flex-col justify-between items-start md:flex-row md:flex-wrap sm:flex-row sm:flex-wrap py-0.5 pl-0.5"
+				class="project-info flex flex-col justify-between items-center md:flex-row md:flex-wrap sm:flex-row sm:flex-wrap py-0.5 pl-0.5"
 			>
 				<div class="project-details flex flex-row">
 					<a class="flex items-center pr-0.5" href={`/projects/${name}`}>

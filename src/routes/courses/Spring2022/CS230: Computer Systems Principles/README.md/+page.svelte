@@ -58,6 +58,9 @@ int checkDirectionValid(char* direction);
 </svelte:head>
 
 <div class="text-gray-700 p-2">
+	<small class="flex flex-row items-center gap-2 mb-2">
+		<a href="/courses">← courses</a>
+	</small>
 	<h1 class="text-xl font-bold text-gray-900">CS230: Computer Systems Principles</h1>
 
 	<h2 class="text-sm font-medium text-gray-600 mt-1">

@@ -32,7 +32,7 @@
 		</h2>
 	</div>
 
-	<div class="flex items-center mb-3 space-x-2">
+	<div class="flex items-center mb-3 gap-2 flex-wrap">
 		<h3 class="text-sm font-medium text-gray-600">Tech Stack:</h3>
 		{#each logo as l}
 			<Logo brand={l} />
@@ -41,9 +41,9 @@
 
 	<div class="flex items-center mb-3">
 		<span class="text-sm font-medium text-gray-600">GitHub: </span>
-		<span>&nbsp;</span>
+		<span class="flex-shrink-0">&nbsp;</span>
 		{#if githubLink}
-			<a href={githubLink} class="hover:text-blue-600 underline break-all" title={githubLink}
+			<a href={githubLink} class="hover:text-blue-600 underline break-all flex-grow min-w-0" title={githubLink}
 				>{githubLink}</a
 			>
 		{:else}

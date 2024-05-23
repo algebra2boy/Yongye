@@ -38,7 +38,7 @@
 
 	<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
 
-	<p class="mt-1 text-gray-700 font-serif" >
+	<p class="mt-1 text-gray-700 text-sm font-mono" >
         I took this course in Fall 2022. Excellent class taught by Professor Tim Richards. 
         A lot more in depth than I expected. I learned about virtualization, memory management, multhreading with semophores and mutexes,
         and file systems. One of the most fun project I did was the Producer and Consumer, which is a classic problem in multithreading.

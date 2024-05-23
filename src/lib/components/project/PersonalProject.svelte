@@ -37,7 +37,7 @@
 	{#each filteredProjects as { name, description, logo, startDate }}
 		<div id={name} class="project-entry">
 			<div
-				class="project-info flex flex-col justify-between items-center md:flex-row md:flex-wrap sm:flex-row sm:flex-wrap py-0.5 pl-0.5"
+				class="project-info flex flex-col justify-between md:flex-row md:flex-wrap sm:flex-row sm:flex-wrap py-0.5 pl-0.5"
 			>
 				<div class="project-details flex flex-row">
 					<a class="flex items-center pr-0.5" href={`/projects/${name}`}>

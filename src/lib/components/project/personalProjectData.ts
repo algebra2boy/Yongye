@@ -317,7 +317,7 @@ example: docker container run --name fastapi_testing -p 8000:8000 yongye0997/doc
 
 3. Push the image to docker hub
 \`\`\`bash
-docke push <docker username>/<image name>
+docker push <docker username>/<image name>
 docker push yongye0997/docker_python
 \`\`\`
 
@@ -382,12 +382,12 @@ Step7: Create a container App (Be very careful with this step since it involves 
     - target port must be 8080 for this express app
 - Must use the same name for the resource group and container enviornment from previous steps
 \`\`\`bash
-az containerapp create \
-    --name <name of container app> \
-    --resource-group <name of resource group> \
-    --environment <name of container environment> \
-    --image <name of image from the ACR or docker hub> \
-    --target-port <port number> \
+az containerapp create
+    --name <name of container app>
+    --resource-group <name of resource group>
+    --environment <name of container environment>
+    --image <name of image from the ACR or docker hub>
+    --target-port <port number>
     --ingress external 
 
 Pulling image from Docker Hub example: 

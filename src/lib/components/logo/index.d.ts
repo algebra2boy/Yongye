@@ -58,7 +58,8 @@ export type Brand =
 	| 'Figma'
 	| 'NetworkX'
 	| 'GraphQL'
-	| 'RStudio';
+	| 'RStudio'
+	| 'Expo';
 
 export type Logo = {
 	[K in Brand]: {

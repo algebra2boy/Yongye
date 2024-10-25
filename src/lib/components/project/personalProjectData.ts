@@ -3,7 +3,7 @@ import type { PersonalProject } from './index.js';
 export const personalProjects: PersonalProject[] = [
 	{
 		name: 'DonutStripe',
-		description: 'Donut sell to show how stripe payment API works.',
+		description: 'Donut sell to show how stripe payment API works',
 		logo: ['Svelte', 'TailwindCSS', 'Typescript', 'Vercel'],
 		startDate: new Date(2024, 5),
 		endDate: new Date(2024, 5),

@@ -8,8 +8,14 @@
 
 	let jobs: Job[] = [
 		{
-			company: 'Fidelity',
-			position: 'iOS Intern',
+			company: "Site Service Software",
+			position: "React Native Mobile Intern",
+			time: "Oct 2024 - Present",
+			link: "https://siteservicesoftware.com/"
+		},
+		{
+			company: 'Fidelity Investments',
+			position: 'iOS Mobile Intern',
 			time: 'Summer 2024',
 			link: 'https://www.fidelity.com/'
 		},

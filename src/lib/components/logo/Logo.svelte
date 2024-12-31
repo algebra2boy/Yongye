@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { techStack } from './logoData.js';
 	import type { Brand } from './index.js';
 
@@ -20,9 +21,22 @@
 
 	const width = { small: '18', medium: '30', large: '42' } as SizeProps;
 	const height = { small: '20', medium: '30', large: '40' } as SizeProps;
+
+	let tooltipPosition: 'left' | 'right' = $state('right');
+
+	onMount(() => {
+		const logoElement = document.getElementById(`logo-${brand}`);
+		if (logoElement) {
+			const rect = logoElement.getBoundingClientRect();
+			const tooltipWidth = 300; // Approximate width of the tooltip
+			if (rect.right + tooltipWidth > window.innerWidth) {
+				tooltipPosition = 'left';
+			}
+		}
+	});
 </script>
 
-<div class="relative group">
+<div class="relative group" id={`logo-${brand}`}>
 	<img
 		src={imageUrl}
 		alt={imageUrl}
@@ -31,10 +45,10 @@
 		class="relative z-10"
 	/>
 	<div
-		class="absolute top-0 sm:-right-20 md:-right-1 lg:-right-1 group-hover:block pt-6 pr-1 hidden z-20"
+		class={`absolute top-0 ${
+			tooltipPosition === 'right' ? 'left-full ml-0.5' : 'right-full mr-0.5'
+		} group-hover:block mt-3.5 px-2 py-1 bg-gray-200 text-xs font-medium hidden z-20 rounded`}
 	>
-		<div class="bg-gray-200 px-1 py-0.5">
-			<p class="text-sm font-medium">{brand}</p>
-		</div>
+		{brand}
 	</div>
 </div>

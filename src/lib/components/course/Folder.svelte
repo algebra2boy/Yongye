@@ -15,7 +15,7 @@
 <button class:expanded on:click={toggle}>{name}</button>
 
 {#if expanded}
-	<ul transition:slide={{ duration: 180 }}>
+	<ul transition:slide|global={{ duration: 180 }}>
 		{#each files as file}
 			<li>
 				{#if file.type === 'folder'}

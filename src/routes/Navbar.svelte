@@ -3,7 +3,7 @@
 	import { Github, LinkedIn, Gmail, Hamburger } from '$lib/components/icons';
 </script>
 
-<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
+<!-- svelte-ignore a11y_no_noninteractive_tabindex -->
 <div class="flex justify-between items-center navbar pt-2" tabindex="0">
 	<div class="navbar-start">
 		<div class="dropdown">

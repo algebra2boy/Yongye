@@ -37,7 +37,7 @@
 <div class="flex justify-center items-center gap-3 mb-6 mt-4">
 	<button
 		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-		on:click={() => goto('/courses/Spring2022/CS198C: C Programming Language/README.md')}
+		onclick={() => goto('/courses/Spring2022/CS198C: C Programming Language/README.md')}
 	>
 		Next
 	</button>

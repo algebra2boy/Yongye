@@ -1,34 +1,34 @@
 <script lang="ts">
+	import Folder from './Folder.svelte';
 	import type { FileStructure } from './';
 	import { filesExpandedStore } from '$lib/stores/filesExpandedStore.js';
 	import File from './File.svelte';
 	import { slide } from 'svelte/transition';
 
-	export let expanded: boolean = false;
-	export let name: string;
-	export let path: string;
-	export let files: FileStructure[];
+	interface FolderProps {
+		expanded?: boolean;
+		name: string;
+		path: string;
+		files?: FileStructure[];
+	}
+
+	let { expanded = $bindable(false), name, path, files }: FolderProps = $props();
 
 	const toggle = () => (expanded = !expanded);
 </script>
 
-<button class:expanded on:click={toggle}>{name}</button>
+<button class:expanded onclick={toggle}>{name}</button>
 
 {#if expanded}
 	<ul transition:slide|global={{ duration: 180 }}>
-		{#each files as file}
+		{#each files || [] as file}
 			<li>
 				{#if file.type === 'folder'}
 					<!-- recursive component build tree -->
 					{#if $filesExpandedStore}
-						<svelte:self
-							name={file.name}
-							files={file.files}
-							path={path + '/' + file.name}
-							expanded
-						/>
+						<Folder name={file.name} files={file.files} path={path + '/' + file.name} expanded />
 					{:else}
-						<svelte:self name={file.name} files={file.files} path={path + '/' + file.name} />
+						<Folder name={file.name} files={file.files} path={path + '/' + file.name} />
 					{/if}
 				{:else if file.type === 'file'}
 					<File name={file.name} path={path + '/' + file.name} />

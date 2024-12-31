@@ -2,7 +2,7 @@
 	import { Intro, Work, Skill } from '$lib/components/index.js';
 	import { onMount } from 'svelte';
 
-	let timeCommitted: string;
+	let timeCommitted: string = $state("");
 
 	async function checkMostRecentCommittedTime() {
 		try {

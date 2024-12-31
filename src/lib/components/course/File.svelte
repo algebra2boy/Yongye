@@ -1,9 +1,13 @@
 <script lang="ts">
-	export let name: string; // ex. basicSelect.sql
-	export let path: string; // ex. Summer2022/CS 345: Data Management/basicSelect.sql
+	interface FileProps {
+		name: string; // ex. basicSelect.sql
+		path: string; // ex. Summer2022/CS 345: Data Management/basicSelect.sql
+	}
+
+	let { name, path }: FileProps = $props();
 
 	// "happy.gif" -> "gif"
-	$: type = name.slice(name.lastIndexOf('.') + 1);
+	let type = $derived(name.slice(name.lastIndexOf('.') + 1));
 </script>
 
 {#if type === 'md' || type === 'pdf'}

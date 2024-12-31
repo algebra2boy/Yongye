@@ -8,10 +8,22 @@
 
 	let jobs: Job[] = [
 		{
-			company: "Site Service Software",
-			position: "React Native Mobile Intern",
-			time: "Oct 2024 - Present",
-			link: "https://siteservicesoftware.com/"
+			company: 'Capital One',
+			position: 'Software Engineering Intern',
+			time: 'Summer 2025',
+			link: 'https://www.capitalone.com/'
+		},
+		{
+			company: 'Manning College',
+			position: 'Course Assistant for Scalable Web Systems - CS 426',
+			time: 'Spring 2025',
+			link: 'https://www.cics.umass.edu/'
+		},
+		{
+			company: 'Site Service Software',
+			position: 'React Native Mobile Intern',
+			time: 'Oct 2024 - Jan 2025',
+			link: 'https://siteservicesoftware.com/'
 		},
 		{
 			company: 'Fidelity Investments',

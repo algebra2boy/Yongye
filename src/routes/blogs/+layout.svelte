@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/state';
 	import type { Snippet } from 'svelte';
 
 	interface LayoutProps {
@@ -10,7 +11,11 @@
 
 <div class="p-2">
 	<small class="flex flex-row items-center gap-2 mb-3">
-		<a href="/blogs">← Blogs</a>
+		{#if page.url.href.endsWith('/blogs')}
+			<a href="/">← Home</a>
+		{:else}
+			<a href="/blogs">← Blogs</a>
+		{/if}
 	</small>
 	{@render children?.()}
 </div>

@@ -9,7 +9,7 @@
 	let { children }: LayoutProps = $props();
 </script>
 
-<div class="p-2 mb-2.5 rounpmnded-lg">
+<div class="p-2 mb-2.5">
 	<small class="flex flex-row items-center gap-2 mb-3">
 		{#if page.url.href.endsWith('.md') || page.url.href.endsWith('/list')}
 			<a href="/courses">← Courses</a>

@@ -2,7 +2,7 @@
 	import { Intro, Work, Skill } from '$lib/components/index.js';
 	import { onMount } from 'svelte';
 
-	let timeCommitted: string = $state("");
+	let timeCommitted: string = $state('');
 
 	async function checkMostRecentCommittedTime() {
 		try {
@@ -20,7 +20,16 @@
 
 <svelte:head>
 	<title>Yongye Tan</title>
-	<meta name="description" content="Welcome to yongye's website where it contains lots of information about myself and many creative ideas 🔥💡" />
+	<meta
+		name="description"
+		content="Welcome to yongye's website where it contains lots of information about myself and many creative ideas 🔥💡"
+	/>
+
+	<meta property="og:title" content="Yongye Tan" />
+	<meta property="og:description" content="Welcome to yongye's website 🔥💡" />
+	<meta property="og:image" content="https://yongyetan.com/profile.jpeg" />
+	<meta property="og:url" content="https://yongyetan.com" />
+	<meta property="og:type" content="website" />
 </svelte:head>
 
 <Intro />

@@ -32,7 +32,7 @@
 
 	<div class="flex mb-3">
 		<h2 class="text-lg font-semibold text-gray-700">
-			<!-- {convertDateToString(startDate)} - {convertDateToString(endDate)} -->
+			{convertDateToString(startDate)} - {convertDateToString(endDate)}
 		</h2>
 	</div>
 

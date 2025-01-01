@@ -5,7 +5,7 @@
 
 <div class="class-container m-2">
 	<small class="flex flex-row items-center gap-2 mb-2">
-		<a href="/courses">← courses</a>
+		<a href="/courses">← Courses</a>
 	</small>
 	<p>
 		The following is a list of college courses I have taken at University of Massachusetts Amherst, and Codepath. 

@@ -15,7 +15,7 @@
 </script>
 
 <div class="flex flex-col w-full p-4 space-y-3">
-	<a href="/blogs/happy-new-year-2025">
+	<a href="/blogs/blog/happy-new-year-2025">
 		<div class="flex flex-row items-start space-x-2">
 			<!-- Content section -->
 			<div class="flex flex-col w-3/4 space-y-2">

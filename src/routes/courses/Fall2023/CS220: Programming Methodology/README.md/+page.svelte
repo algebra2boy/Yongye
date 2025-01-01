@@ -19,40 +19,34 @@ type HTTPRequest = {
 	<meta name="description" content="Programming Methodology" />
 </svelte:head>
 
-<div class="text-gray-700 p-2">
-	<small class="flex flex-row items-center gap-2 mb-2">
-		<a href="/courses">← courses</a>
-	</small>
-	<h1 class="text-xl font-bold text-gray-900">CS220: Programming Methodology</h1>
+<h1 class="text-xl font-bold text-gray-900">CS220: Programming Methodology</h1>
 
-	<h2 class="text-sm font-medium text-gray-600 mt-1">
-		Course Description: The goal of COMPSCI220 Programming Methodology is to turn you into an
-		advanced programmer with a deep understanding of modern programming methodology. We will
-		emphasize good software engineering skills, including programming abstractions, testing, and
-		debugging. Although the programming language that we will use is JavaScript, we will emphasize
-		general programming principles. Everything that you will learn in the class will be applicable
-		to other modern languages, including (for example) C++, C#, D, Go, Java, Python, Rust, and
-		Swift.
-	</h2>
+<h2 class="text-sm font-medium text-gray-600 mt-1">
+	Course Description: The goal of COMPSCI220 Programming Methodology is to turn you into an advanced
+	programmer with a deep understanding of modern programming methodology. We will emphasize good
+	software engineering skills, including programming abstractions, testing, and debugging. Although
+	the programming language that we will use is JavaScript, we will emphasize general programming
+	principles. Everything that you will learn in the class will be applicable to other modern
+	languages, including (for example) C++, C#, D, Go, Java, Python, Rust, and Swift.
+</h2>
 
-	<hr class="divide-solid border-slate-500 mt-1 border-1" />
+<hr class="divide-solid border-slate-500 mt-1 border-1" />
 
-	<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
+<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
 
-	<p class="mt-1 text-gray-700 text-sm font-mono">
-		I took this course in Fall 2023. A lot of design patterns, and software engineering principles taught by
-        professor Marius Minea. This course is indeed very time consuming, and but it is super worth and rewarding.
-        You learn how to write good code and think more critically about the code you write. The course is very
-        project-based and intense. Project every single week was a lot of work, but it was a great learning experience.
-        It was great to learn about typescript, observables, promises, async/await, and building an interpreters, and 
-        fluent design, black box testing, and functional programming.
-	</p>
+<p class="mt-1 text-gray-700 text-sm font-mono">
+	I took this course in Fall 2023. A lot of design patterns, and software engineering principles
+	taught by professor Marius Minea. This course is indeed very time consuming, and but it is super
+	worth and rewarding. You learn how to write good code and think more critically about the code you
+	write. The course is very project-based and intense. Project every single week was a lot of work,
+	but it was a great learning experience. It was great to learn about typescript, observables,
+	promises, async/await, and building an interpreters, and fluent design, black box testing, and
+	functional programming.
+</p>
 
-	<h1 class="text-xl font-normal font-mono mt-1">Code demonstration of Typescript</h1>
+<h1 class="text-xl font-normal font-mono mt-1">Code demonstration of Typescript</h1>
 
-	<Code language="typescript" {code} />
-</div>
-
+<Code language="typescript" {code} />
 
 <div class="flex justify-center items-center gap-3 mb-6 mt-4">
 	<button

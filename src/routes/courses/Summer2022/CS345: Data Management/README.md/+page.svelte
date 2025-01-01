@@ -1,6 +1,13 @@
 <script>
-	import { goto } from '$app/navigation';
-	import Code from '$lib/components/highlight/Code.svelte';
+	import {
+		CourseHeader,
+		CourseDescription,
+		CourseReflection,
+		CourseNavigation,
+		CourseDivider,
+		CourseDemonstration,
+		CourseCode
+	} from '$lib/components/course';
 
 	let query = `
 SELECT * 
@@ -14,9 +21,9 @@ WHERE name='Yongye';
 	<meta name="description" content="Data Management" />
 </svelte:head>
 
-<h1 class="text-xl font-bold text-gray-900">CS345: Data Management</h1>
+<CourseHeader>CS345: Data Management</CourseHeader>
 
-<h2 class="text-sm font-medium text-gray-600 mt-1">
+<CourseDescription>
 	Course Description: Modern computer systems make ample use of databases from where to share and
 	synchronize many types of information. For example, commercial websites store information about
 	clients and products in databases. Likewise, news organizations store news items and user
@@ -25,35 +32,26 @@ WHERE name='Yongye';
 	that can be used in such applications, with a strong emphasis on the relational database model.
 	Some of the covered topics include application-driven database design, schema refinement,
 	implementation of basic transactions, data on the web, and data visualization.
-</h2>
+</CourseDescription>
 
-<hr class="divide-solid border-slate-500 mt-1 border-1" />
+<CourseDivider />
 
-<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
+<CourseReflection>
+	<p>
+		I took this course in Summer 2022. This course was a great introduction to the use of data
+		management systems with an demonstration on SQL. The most takeway from this course was
+		understanding the relational database model, entity relationship diagrams, SQL queries, and how
+		to implement basic transactions and optimize queries, and providing security to different roles.
+		Professor Jaime Davila was a great instructor and answered a lot of my questions via email.
+		Functional dependencies, normalization, and indexing were some of the topics that I enjoyed
+		learning.
+	</p>
+</CourseReflection>
 
-<p class="mt-1 text-gray-700 text-sm font-mono">
-	I took this course in Summer 2022. This course was a great introduction to the use of data
-	management systems with an demonstration on SQL. The most takeway from this course was
-	understanding the relational database model, entity relationship diagrams, SQL queries, and how to
-	implement basic transactions and optimize queries, and providing security to different roles.
-	Professor Jaime Davila was a great instructor and answered a lot of my questions via email.
-	Functional dependencies, normalization, and indexing were some of the topics that I enjoyed
-	learning.
-</p>
+<CourseDemonstration name="SQL" />
+<CourseCode language="sql" code={query} />
 
-<Code language="sql" code={query} />
-
-<div class="flex justify-center items-center gap-3 mb-6 mt-4">
-	<button
-		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-		onclick={() => goto('/courses/Spring2022/CS198C: C Programming Language/README.md')}
-	>
-		Prev
-	</button>
-	<button
-		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-		onclick={() => goto('/courses/Fall2022/CS360: Network Security/README.md')}
-	>
-		Next
-	</button>
-</div>
+<CourseNavigation
+	prevLink="Spring2022/CS198C: C Programming Language"
+	nextLink="Fall2022/CS360: Network Security"
+/>

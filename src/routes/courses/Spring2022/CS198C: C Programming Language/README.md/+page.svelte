@@ -1,8 +1,15 @@
 <script>
-	import { goto } from '$app/navigation';
-	import Code from '$lib/components/highlight/Code.svelte';
+	import {
+		CourseHeader,
+		CourseDescription,
+		CourseReflection,
+		CourseNavigation,
+		CourseDivider,
+		CourseDemonstration,
+		CourseCode
+	} from '$lib/components/course';
 
-	let codeExample = `
+	const code = `
     #include <stdio.h>;
 int main(int argc, char* argv[]) {
     printf("Hello, 198C!\\n");
@@ -16,55 +23,47 @@ int main(int argc, char* argv[]) {
 	<meta name="description" content="C Programming Language" />
 </svelte:head>
 
-<h1 class="text-xl font-bold text-gray-900">CS 198C: C Programming Language</h1>
+<CourseHeader>CS 198C: C Programming Language</CourseHeader>
 
-<h2 class="text-sm font-medium text-gray-600 mt-1">
+<CourseDescription>
 	Course Description: This practicum assumes general background and experience in computer
 	programming (such as that provided by COMPSCI 121 or a similar introductory programming course)
 	and some knowledge of data structures (such as that provided by COMPSCI 187). Content will include
 	basic C data types, declarations, expressions, statements, and functions; simple use of macros;
 	some common library calls (such as formatted input/output); basic pointer manipulation using
 	linked lists; and introduction to using standard tools (gcc and make).
-</h2>
+</CourseDescription>
 
-<hr class="divide-solid border-slate-500 mt-1 border-1" />
+<CourseDivider />
 
-<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
+<CourseReflection>
+	<p>
+		I took this course in Spring 2022. In my honest opinion, I think this course prepared really
+		well for my C programming. There were 13 challenges in total, I enjoyed most of them, except the
+		last one, which was a bit hard for me to understand, which is makefile. I understood most of the
+		fundamental concepts of C. You can read more about the topics from this link:
+		<a href="https://sites.google.com/view/umasscs198c/schedule?authuser=0" class="underline">
+			https://sites.google.com/view/umasscs198c/schedule?authuser=0
+		</a>
+	</p>
 
-<p class="mt-1 text-gray-700 text-sm font-mono">
-	I took this course in Spring 2022. In my honest opinion, I think this course prepared really well
-	for my C programming. There were 13 challenges in total, I enjoyed most of them, except the last
-	one, which was a bit hard for me to understand, which is makefile. I understood most of the
-	fundamental concepts of C. You can read more about the topics from this link:
-	<a href="https://sites.google.com/view/umasscs198c/schedule?authuser=0" class="underline">
-		https://sites.google.com/view/umasscs198c/schedule?authuser=0
-	</a>
-</p>
-<p class="mt-1 text-gray-700 text-sm font-mono">
-	One of the biggest takeaway from this class is that I learned how to interact with the shell, and
-	how to use different commands to complie and run programs. Another takeaway is that I learned how
-	SSH and SFTP works, and how to use them to transfer files between my local machine and the server.
-	Having a good grasp of pointers and memory management is crucial to help me how machine works
-	underneath my code. I am writting this post on 5/16/2024 at this moment, and I am currently making
-	my own command line library in Node.js with Command.js, and having the knowledge of understanding
-	how flag works in C and clear documentation (man page) is really helpful. Not to mention, the
-	amount of command line that I have to use every single day, such as git, docker, npm, pip, pm2,
-	and many more. I am really glad that I took this course.
-</p>
+	<p>
+		One of the biggest takeaway from this class is that I learned how to interact with the shell,
+		and how to use different commands to complie and run programs. Another takeaway is that I
+		learned how SSH and SFTP works, and how to use them to transfer files between my local machine
+		and the server. Having a good grasp of pointers and memory management is crucial to help me how
+		machine works underneath my code. I am writting this post on 5/16/2024 at this moment, and I am
+		currently making my own command line library in Node.js with Command.js, and having the
+		knowledge of understanding how flag works in C and clear documentation (man page) is really
+		helpful. Not to mention, the amount of command line that I have to use every single day, such as
+		git, docker, npm, pip, pm2, and many more. I am really glad that I took this course.
+	</p>
+</CourseReflection>
 
-<Code language="c" code={codeExample} />
+<CourseDemonstration name="C" />
+<CourseCode language="c" {code} />
 
-<div class="flex justify-center items-center gap-3 mb-6 mt-4">
-	<button
-		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-		onclick={() => goto('/courses/Fall2021/CS191: Data Science For Good/README.md')}
-	>
-		Prev
-	</button>
-	<button
-		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-		onclick={() => goto('/courses/Spring2022/CS230: Computer Systems Principles/README.md')}
-	>
-		Next
-	</button>
-</div>
+<CourseNavigation
+	prevLink="Fall2021/CS191: Data Science For Good"
+	nextLink="Spring2022/CS230: Computer Systems Principles"
+/>

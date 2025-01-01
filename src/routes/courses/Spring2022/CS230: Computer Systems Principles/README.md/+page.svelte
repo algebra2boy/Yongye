@@ -1,6 +1,13 @@
 <script>
-	import { goto } from '$app/navigation';
-	import Code from '$lib/components/highlight/Code.svelte';
+	import {
+		CourseHeader,
+		CourseDescription,
+		CourseReflection,
+		CourseNavigation,
+		CourseDivider,
+		CourseDemonstration,
+		CourseCode
+	} from '$lib/components/course';
 
 	let project1 = `
 #include <stdio.h>
@@ -57,9 +64,9 @@ int checkDirectionValid(char* direction);
 	<meta name="description" content="Computer Systems Principles" />
 </svelte:head>
 
-<h1 class="text-xl font-bold text-gray-900">CS230: Computer Systems Principles</h1>
+<CourseHeader>CS230: Computer Systems Principles</CourseHeader>
 
-<h2 class="text-sm font-medium text-gray-600 mt-1">
+<CourseDescription>
 	Course Description: Large-scale software systems like Google - deployed over a world-wide network
 	of hundreds of thousands of computers - have become a part of our lives. These are systems success
 	stories - they are reliable, available ("up" nearly all the time), handle an unbelievable amount
@@ -69,42 +76,33 @@ int checkDirectionValid(char* direction);
 	high-performance, scalable systems. The course begins with a discussion of data representation,
 	and moves up the stack from there to the features of modern architectures, assembly languages, and
 	operating system services such as I/O, process, and synchronization.
-</h2>
+</CourseDescription>
 
-<hr class="divide-solid border-slate-500 mt-1 border-1" />
+<CourseDivider />
 
-<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
+<CourseReflection>
+	<p>
+		I took this course in Spring 2022. This has to be one of the most useful course I have taken to
+		understand how to manipulate low level stuff. I learned about how to read assembly code, how to
+		use gdb to debug, pointer with linkedlist, multhreading, and networking. I encountered a lot of
+		diffculty with pointers for the first project, which is
+		<a href="/project/personal/Clue" class="underline">Clue</a>, a room escape game. Imagine you
+		don't have any experience with pointers, and you have to program a maze game with 36 pointers. I
+		was so lost at the beginning, but I managed to finish the project with my friends' (Jeff and
+		Adam) help.
+	</p>
 
-<p class="mt-1 text-gray-700 text-sm font-mono">
-	I took this course in Spring 2022. This has to be one of the most useful course I have taken to
-	understand how to manipulate low level stuff. I learned about how to read assembly code, how to
-	use gdb to debug, pointer with linkedlist, multhreading, and networking. I encountered a lot of
-	diffculty with pointers for the first project, which is
-	<a href="/project/personal/Clue" class="underline">Clue</a>, a room escape game. Imagine you don't
-	have any experience with pointers, and you have to program a maze game with 36 pointers. I was so
-	lost at the beginning, but I managed to finish the project with my friends' (Jeff and Adam) help.
-</p>
+	<p>
+		The amount of Linux commands and Kernel knowledge that I gained from this course is invaluable.
+		I wouldn't able to excel in CS 377 and CS 426 without this course. Huge shout out to Professor
+		Meng-Chieh Chiu and Professor Tim Richards for teaching this course.
+	</p>
+</CourseReflection>
 
-<p class="mt-1 text-gray-700 text-sm font-mono">
-	The amount of Linux commands and Kernel knowledge that I gained from this course is invaluable. I
-	wouldn't able to excel in CS 377 and CS 426 without this course. Huge shout out to Professor
-	Meng-Chieh Chiu and Professor Tim Richards for teaching this course.
-</p>
+<CourseDemonstration name="Clue" />
+<CourseCode language="c" code={project1} />
 
-<h1 class="text-xl font-normal font-mono mt-1">Code demonstration for Clue</h1>
-<Code language="c" code={project1} />
-
-<div class="flex justify-center items-center gap-3 mb-6 mt-4">
-	<button
-		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-		onclick={() => goto('/courses/Spring2022/CS198C: C Programming Language/README.md')}
-	>
-		Prev
-	</button>
-	<button
-		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-		onclick={() => goto('/courses/Summer2022/CS345: Data Management/README.md')}
-	>
-		Next
-	</button>
-</div>
+<CourseNavigation
+	prevLink="Spring2022/CS198C: C Programming Language"
+	nextLink="Summer2022/CS345: Data Management"
+/>

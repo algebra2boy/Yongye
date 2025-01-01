@@ -1,4 +1,8 @@
-import type { FileStructure } from './';
+export type FileStructure = {
+	type: 'folder' | 'file';
+	name: string;
+	files?: FileStructure[];
+};
 
 const Fall2021Courses: FileStructure[] = [
 	{
@@ -343,9 +347,7 @@ const Spring2024Courses: FileStructure[] = [
 	{
 		type: 'folder',
 		name: 'CS396: Independent Study',
-		files: [
-			{ type: 'file', name: 'README.md' }
-		]
+		files: [{ type: 'file', name: 'README.md' }]
 	}
 ];
 

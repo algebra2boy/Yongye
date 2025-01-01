@@ -30,7 +30,8 @@
 <div class="flex justify-center items-center gap-3 mb-6 mt-4">
 	{#if prevLink}
 		{@render previousButton(prevLink)}
-	{:else if nextLink}
+	{/if}
+	{#if nextLink}
 		{@render nextButton(nextLink)}
 	{/if}
 </div>

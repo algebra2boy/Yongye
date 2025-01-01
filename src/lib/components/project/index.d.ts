@@ -54,7 +54,6 @@ export type PersonalProjectName =
 	| 'Distance Matrix'
 	| 'Twilio-ChatBot';
 
-
 export type PersonalProject = {
 	name: PersonalProjectName;
 	description: string;

@@ -1,10 +1,10 @@
 <script>
-	import { goto } from '$app/navigation';
 	import {
 		CourseHeader,
 		CourseDescription,
 		CourseReflection,
-		CourseNavigation
+		CourseNavigation,
+		CourseDivider
 	} from '$lib/components/course';
 </script>
 
@@ -19,15 +19,18 @@
 	Course Description: An exploration of computer science for first-year CICS students
 </CourseDescription>
 
-<hr class="divide-solid border-slate-500 mt-1 border-1" />
+<CourseDivider />
 
 <CourseReflection>
-	I took this seminar in Fall 2021, and the course went over a brief introduction about K nearest
-	neighbors and training and testing using a sample to perform predictive analysis, logistic
-	regression, and the use of the Random Forest to evaluate the model. At the end of the course, we
-	were tasked with a final project to analyze a dataset and present our findings. The final project
-	was about predicting breast cancer from FNA Using Machine, and you can find the report from here:
-	<a href="/pdf/CS_191_Project.pdf" class="underline"> CS 191 Project </a>
+	<p>
+		I took this seminar in Fall 2021, and the course went over a brief introduction about K nearest
+		neighbors and training and testing using a sample to perform predictive analysis, logistic
+		regression, and the use of the Random Forest to evaluate the model. At the end of the course, we
+		were tasked with a final project to analyze a dataset and present our findings. The final
+		project was about predicting breast cancer from FNA Using Machine, and you can find the report
+		from here:
+		<a href="/pdf/CS_191_Project.pdf" class="underline"> CS 191 Project </a>
+	</p>
 </CourseReflection>
 
 <CourseNavigation nextLink="Spring2022/CS198C: C Programming Language" />

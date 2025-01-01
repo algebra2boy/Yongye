@@ -6,22 +6,23 @@ export const getImageFromDevicon = (
 	option: DevIconOption = 'original',
 	wordmark: boolean = false
 ): string => {
-	return `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${name}/${name}-${option}${wordmark ? '-wordmark' : ''
-		}.svg`;
+	return `https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/${name}/${name}-${option}${
+		wordmark ? '-wordmark' : ''
+	}.svg`;
 };
 
 export const techStack: Logo = {
 	Expo: {
-		imageURL: "https://img.icons8.com/?size=100&id=hmieDPifBlBM&format=png&color=000000",
+		imageURL: 'https://img.icons8.com/?size=100&id=hmieDPifBlBM&format=png&color=000000',
 		isTechTool: true
 	},
 	Typescript: {
 		imageURL: getImageFromDevicon('typescript'),
-		isProgrammingLanguage: true,
+		isProgrammingLanguage: true
 	},
 	Python: {
 		imageURL: getImageFromDevicon('python'),
-		isProgrammingLanguage: true,
+		isProgrammingLanguage: true
 	},
 	Docker: {
 		imageURL: getImageFromDevicon('docker'),
@@ -33,11 +34,11 @@ export const techStack: Logo = {
 	},
 	HTML: {
 		imageURL: getImageFromDevicon('html5'),
-		isProgrammingLanguage: true,
+		isProgrammingLanguage: true
 	},
 	CSS: {
 		imageURL: getImageFromDevicon('css3'),
-		isProgrammingLanguage: true,
+		isProgrammingLanguage: true
 	},
 	TailwindCSS: {
 		imageURL: getImageFromDevicon('tailwindcss'),
@@ -45,19 +46,19 @@ export const techStack: Logo = {
 	},
 	Swift: {
 		imageURL: getImageFromDevicon('swift'),
-		isProgrammingLanguage: true,
+		isProgrammingLanguage: true
 	},
 	Javascript: {
 		imageURL: getImageFromDevicon('javascript'),
-		isProgrammingLanguage: true,
+		isProgrammingLanguage: true
 	},
 	Java: {
 		imageURL: getImageFromDevicon('java'),
-		isProgrammingLanguage: true,
+		isProgrammingLanguage: true
 	},
 	R: {
 		imageURL: getImageFromDevicon('r'),
-		isProgrammingLanguage: true,
+		isProgrammingLanguage: true
 	},
 	PostgreSQL: {
 		imageURL: getImageFromDevicon('postgresql'),
@@ -65,11 +66,11 @@ export const techStack: Logo = {
 	},
 	C: {
 		imageURL: getImageFromDevicon('c'),
-		isProgrammingLanguage: true,
+		isProgrammingLanguage: true
 	},
 	'C++': {
 		imageURL: getImageFromDevicon('cplusplus'),
-		isProgrammingLanguage: true,
+		isProgrammingLanguage: true
 	},
 	Express: {
 		imageURL: getImageFromDevicon('express'),
@@ -101,7 +102,7 @@ export const techStack: Logo = {
 	},
 	Golang: {
 		imageURL: getImageFromDevicon('go'),
-		isProgrammingLanguage: true,
+		isProgrammingLanguage: true
 	},
 	Github: {
 		imageURL: getImageFromDevicon('github'),
@@ -150,7 +151,7 @@ export const techStack: Logo = {
 	},
 	SQL: {
 		imageURL: getImageFromDevicon('azuresqldatabase'),
-		isProgrammingLanguage: true,
+		isProgrammingLanguage: true
 	},
 	VSCode: {
 		imageURL: getImageFromDevicon('vscode'),
@@ -257,7 +258,6 @@ export const techStack: Logo = {
 		isTechTool: true
 	}
 };
-
 
 export const programmingLanguages = Object.keys(techStack)
 	.sort()

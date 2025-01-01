@@ -7,9 +7,8 @@ export const personalProjects: PersonalProject[] = [
 		logo: ['Svelte', 'TailwindCSS', 'Typescript', 'Vercel'],
 		startDate: new Date(2024, 5),
 		endDate: new Date(2024, 5),
-		githubLink: "https://github.com/algebra2boy/DonutStripe",
-		readme:
-`
+		githubLink: 'https://github.com/algebra2boy/DonutStripe',
+		readme: `
 # Idea
 I have always curious of how payment API works. Introducing some sort of payment system into a web app
 is always so complicated, and sometimes a small mistake can ruin a business's reputation and cause troubles.
@@ -51,7 +50,7 @@ Live Web App at Vercel: <a>donut-stripe.vercel.app</a>
 		],
 		startDate: new Date(2024, 5),
 		endDate: new Date(2024, 9),
-		readme: "This will my independent study final project. Will update once i am done!!"
+		readme: 'This will my independent study final project. Will update once i am done!!'
 	},
 	{
 		name: 'PandoraBox',
@@ -59,7 +58,7 @@ Live Web App at Vercel: <a>donut-stripe.vercel.app</a>
 		logo: ['Swift'],
 		startDate: new Date(2024, 5),
 		endDate: new Date(2024, 5),
-		githubLink: "https://github.com/algebra2boy/PandoraBox",
+		githubLink: 'https://github.com/algebra2boy/PandoraBox',
 		readme: `to be updated`
 	},
 	{
@@ -69,8 +68,7 @@ Live Web App at Vercel: <a>donut-stripe.vercel.app</a>
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 5),
 		githubLink: 'https://github.com/algebra2boy/Yongye',
-		readme:
-			`
+		readme: `
 Making my website has been something that I wanted to do for years, but I have been waiting for a moment that motivates me to make it, instead of making it just for the sake of making it. Once I turned 21, I realized that I wanted to cherish the accomplishments that I made over the years.
 `
 	},
@@ -80,9 +78,8 @@ Making my website has been something that I wanted to do for years, but I have b
 		logo: ['Typescript', 'Node.js'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 5),
-		githubLink: "https://github.com/algebra2boy/Yogo",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Yogo',
+		readme: `
 Yogo is a simple command line tool written in Node.js that provides shortcut to many platforms.
 
 ## Installation
@@ -174,9 +171,8 @@ chmod +x yo
 		logo: ['Docker', 'Typescript', 'Node.js', 'React', 'Express', 'MongoDB', 'Vercel'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 5),
-		githubLink: "https://github.com/algebra2boy/Ice-Faculty",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Ice-Faculty',
+		readme: `
 ## Introduction
 
 Quick fact: This is the group project for CS 520. 
@@ -198,9 +194,8 @@ This is the front-end interface of the project designed specifically for teacher
 		logo: ['Docker', 'Typescript', 'Node.js', 'Express', 'MongoDB', 'Socket.io'],
 		startDate: new Date(2024, 2),
 		endDate: new Date(2024, 5),
-		githubLink: "https://github.com/algebra2boy/Ice-Queb",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Ice-Queb',
+		readme: `
 This is the back-end server of the project that handles request from both the student-end interface and teacher-end interface for office hour queuing app.
 A couple of things I learned from this project:
 - How to use socket.io to create a real-time communication between the server and client
@@ -226,9 +221,8 @@ A couple of things I learned from this project:
 		logo: ['Typescript', 'Svelte', 'TailwindCSS', 'Express', 'MongoDB', 'Playwright', 'Jest'],
 		startDate: new Date(2024, 2),
 		endDate: new Date(2024, 5),
-		githubLink: "https://github.com/cics-web-dev/Chem-Web-App",
-		readme:
-			`
+		githubLink: 'https://github.com/cics-web-dev/Chem-Web-App',
+		readme: `
 Long story short. This project is requested by the Chemistry department for making a web app that helps students to learn organic chemistry. 
 The web app is designed to be user-friendly, interactive, and informative. I was the tech lead for this project, and 
 I was responsible for the front-end, back-end development, and agile team management. After the end of the semester,
@@ -242,9 +236,8 @@ backend development using Express, MongoDB and Typescript.
 		logo: ['Javascript', 'Swift', 'Node.js', 'Express', 'MongoDB'],
 		startDate: new Date(2024, 2),
 		endDate: new Date(2024, 2),
-		githubLink: "https://github.com/aarav-nair/Cookr-HackHer2024",
-		readme:
-			`
+		githubLink: 'https://github.com/aarav-nair/Cookr-HackHer2024',
+		readme: `
 Being college students, a lot of us struggle with making the transition from dorm life to independent life due to the adjustments and skills one has to learn to accommodate to these new changes. The greatest challenge of them all is having the added responsibility of cooking and preparing food for yourself for each meal of the day which often leads to us developing unhealthy eating habits, affecting our mental and physical health and impacting our studies and work in the long term. Cooking is an incredibly hefty task to take on especially having been spoiled with #1 DINING for two years or more like we have. Thus, introducing Cookr! An app designed to be your sous chef in the kitchen, helping you with everything from meal prepping to the actual cooking of various cuisines... all specifically curated as per your taste.
 Check out https://devpost.com/software/cookr-4aojyl for our Devpost submission.
 `
@@ -255,9 +248,8 @@ Check out https://devpost.com/software/cookr-4aojyl for our Devpost submission.
 		logo: ['Github'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
-		githubLink: "https://github.com/algebra2boy/CICD-pipeline",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/CICD-pipeline',
+		readme: `
 This repository contains some basic examples for a Continuous Integration and Continuous Deployment (CI/CD) pipeline.
 
 ## Introduction
@@ -285,9 +277,8 @@ To trigger the pipeline, simply push your code changes to the repository. The pi
 		logo: ['Golang', 'Gin'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
-		githubLink: "https://github.com/algebra2boy/mlh-scraper",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/mlh-scraper',
+		readme: `
 This is my first simple mini project written in Go for web scraping. It scraps all the hackathon event from the official MLH event page([link](https://mlh.io/seasons/2024/events)) and outputs them to a csv file. I added a lot of comments to help me understand what is going on behind the scene because I am still very new to Go. For my first few attempts, I had a hard time scraping the website because the MLH website has enabled some mechniams for anti-scraping, therefore I kept receiving Forbidden response status code (403). Eventually I decided to use a free proxy server to bypass it and to avoid direct request to the MLH website. In other words, I sent a request to the proxy server with my requested website URL, and proxy server sent a request to the MLH website, and proxy server returned the HTML from MLH then sent it back to me. I learned how I/O, url query construction, Colly (the web scraping library) and other basic data structures works. Overall it is a great learning experience!
 `
 	},
@@ -297,9 +288,8 @@ This is my first simple mini project written in Go for web scraping. It scraps a
 		logo: ['Docker', 'Node.js', 'Express', 'Azure'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
-		githubLink: "https://github.com/algebra2boy/DockerDeploymentTutorial",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/DockerDeploymentTutorial',
+		readme: `
 # Instructions of how to push a docker image to Docker Hub to your Docker account
 
 ## Have docker daemon running before doing any of below
@@ -429,16 +419,16 @@ docker image build -t <image name> .
 # use the image to run container 
 docker container run --name <container name> -p <local port: container port> -d <image name>
 \`\`\`
-`	},
+`
+	},
 	{
 		name: 'Free-Write',
 		description: 'A simple free rich editor web app allow you to write and focus',
 		logo: ['React', 'Javascript', 'TailwindCSS', 'Vercel'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
-		githubLink: "https://github.com/algebra2boy/FreeWrite",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/FreeWrite',
+		readme: `
 ## Introduction
 Exploring how Quill rich editor works on a React web app. 
 
@@ -464,9 +454,8 @@ Exploring how Quill rich editor works on a React web app.
 		logo: ['Svelte', 'Javascript', 'TailwindCSS', 'Vercel'],
 		startDate: new Date(2024, 3),
 		endDate: new Date(2024, 3),
-		githubLink: "https://github.com/algebra2boy/CareerExplorer",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/CareerExplorer',
+		readme: `
 This is my first web app, written in Svelte 5. The website takes a keyword, location, radius, and number of results as inputs to call the CareerOneStop API, generating real-life job postings. I learned several new concepts from Svelte 5, such as $state, $effect, $props, and store management. This was also my first time deploying to Vercel. The process was easier than I anticipated, though it took me five attempts to deploy successfully, which required using the correct Node.js runtime, removing the package-lock.json from the root directory, and choosing the Vercel adapter.
 `
 	},
@@ -476,9 +465,8 @@ This is my first web app, written in Svelte 5. The website takes a keyword, loca
 		logo: ['Swift'],
 		startDate: new Date(2024, 2),
 		endDate: new Date(2024, 2),
-		githubLink: "https://github.com/algebra2boy/HouseFinder",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/HouseFinder',
+		readme: `
 ## About
 
 ### This repo is set up for Hack(H)er413 hackathon.
@@ -526,9 +514,8 @@ git clone https://github.com/algebra2boy/HouseFinder.git
 		logo: ['Swift'],
 		startDate: new Date(2024, 1),
 		endDate: new Date(2024, 2),
-		githubLink: "https://github.com/algebra2boy/Swift/tree/main/Pomodoro",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Swift/tree/main/Pomodoro',
+		readme: `
 This is a simple pomodoro timer app that I created for my sixth grade cousin in Guangzhou, China. He recently got an Apple Watch and I was living in his house for over an week.
 I wanted to leave some of my good programming skills with him and he studied hard, so I decided to create a simple pomodoro timer app for him to concentrate on his study.
 The app is simple, it has a tomato in the center. If you tap on it, it start the timer; if you tap on it again, it stops the timer.
@@ -545,9 +532,9 @@ You can also set the study and break timer to 10, 15, 20, 25 ,and 30 minutes.
 		logo: ['Swift'],
 		startDate: new Date(2024, 1),
 		endDate: new Date(2024, 1),
-		githubLink: "https://github.com/algebra2boy/Swift/tree/main/AppleWatchDemo/AppleWatchDemo%20Watch%20App",
-		readme:
-			`
+		githubLink:
+			'https://github.com/algebra2boy/Swift/tree/main/AppleWatchDemo/AppleWatchDemo%20Watch%20App',
+		readme: `
 When I was in China, I learned a lot of about Chinese classic quotes from my grandpa. He is a very wise man. 
 He told me that the classic quotes are the essence of the wisdom of the Chinese people. I wanted to share this wisdom
 to my cousin. Therefore, I created a simple Apple Watch app that generates classic quotes. The app is simple, it has a button
@@ -565,9 +552,8 @@ it will show a list of quotes on the app. All of these motivational quotes are i
 		logo: ['Docker', 'Javascript', 'Express', 'MongoDB', 'Bootstrap'],
 		startDate: new Date(2023, 7),
 		endDate: new Date(2023, 9),
-		githubLink: "https://github.com/algebra2boy/EventPlanner",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/EventPlanner',
+		readme: `
 ## What is this project about
 A dockerized web app that helps people create and sign up events using microservices
 
@@ -621,9 +607,8 @@ Here is video demo of the web app: [link](https://youtu.be/SlSaHrCOxC0)
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2023, 9),
 		endDate: new Date(2024, 1),
-		githubLink: "https://github.com/algebra2boy/MCAS_Analysis",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/MCAS_Analysis',
+		readme: `
 # What is this about:
 
 This research explores the relationship between explore the relationship between household income and standardized test performance. Our interest is in investigating how demographic predictors correspond to test results. The achievement gap is a prominent and ongoing socio-economic issue within education, so we expect our analysis to support the hypothesis that lower mean family income is correlated with lower MCAS scores and SAT scores. 
@@ -644,9 +629,8 @@ This research explores the relationship between explore the relationship between
 		logo: ['Swift'],
 		startDate: new Date(2023, 6),
 		endDate: new Date(2023, 1),
-		githubLink: "https://github.com/algebra2boy/ShopHub",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/ShopHub',
+		readme: `
 This project is collaboration project that I worked on with my mentor, Chengtao, at the 2023 Apple Swift Mentorship program.
 We made a basic iOS app that focuses on shopping and convenience. The app is written in Swift and SwiftUI. 
 The app has a simple UI that allows users to browse through a list of items, add items to a cart, and view the cart. 
@@ -663,9 +647,8 @@ We also adopted the Human Interface Guidelines to make the app more user-friendl
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 11),
 		endDate: new Date(2023, 12),
-		githubLink: "https://github.com/algebra2boy/TechHouse",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/TechHouse',
+		readme: `
 
 ## Features
 
@@ -708,9 +691,8 @@ Here's a walkthrough of implemented user stories:
 		logo: ['Docker', 'Swift', 'Express', 'MongoDB', 'AWS', 'ChatGPT', 'Flask', 'Tesseract.js'],
 		startDate: new Date(2023, 11),
 		endDate: new Date(2023, 11),
-		githubLink: "https://github.com/algebra2boy/Ree-See.it",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Ree-See.it',
+		readme: `
 🔥 This project is awarded to Best Mobile Hack for HackUmass Hackathon 🔥 My responsibility was leading this project, designing different microservices, and ensuring each microservices talk to each other!
 Here is the Devpost link: [Ree-See-It](https://devpost.com/software/ree-see-it)
 
@@ -765,9 +747,8 @@ Here is the Devpost link: [Ree-See-It](https://devpost.com/software/ree-see-it)
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 10),
 		endDate: new Date(2023, 10),
-		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/swiftui%20learning_2",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/React102/tree/main/Project/swiftui%20learning_2',
+		readme: `
 # Web Development Project 3 - SwiftUI Learning
 
 This web app: This React application is made to help you learn SwiftUI in a fun way!
@@ -818,9 +799,8 @@ I had difficulty with state managment. There are some state that must be uplifti
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 9),
 		endDate: new Date(2023, 10),
-		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/crewmate",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/React102/tree/main/Project/crewmate',
+		readme: `
 # Web Development Project 7 - Crewmate
 
 This web app: Playing among us could be fun, but have you made your own among us crewmate before?
@@ -865,9 +845,8 @@ The hardest part of this project is to connect the supabase database and render 
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 9),
 		endDate: new Date(2023, 10),
-		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/community%20board",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/React102/tree/main/Project/community%20board',
+		readme: `
 # Web Development Project 1 - _Computer Science Community Board_
 
 This web app: **Computer Science Amherst Club Board**
@@ -912,9 +891,8 @@ I did not know how to do it until I refreshed some of my knowledge on flex box.
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 10),
 		endDate: new Date(2023, 10),
-		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/cat",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/React102/tree/main/Project/cat',
+		readme: `
 # Web Development Project 4 - Cat The Lover
 
 This web app: This website is for anyone who enjoys and has a cat.
@@ -963,9 +941,8 @@ usestate and updating the state properly for each component and making each comp
 		logo: ['Javascript', 'React', 'CSS'],
 		startDate: new Date(2023, 10),
 		endDate: new Date(2023, 11),
-		githubLink: "https://github.com/algebra2boy/React102/tree/main/Project/breweries_part2",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/React102/tree/main/Project/breweries_part2',
+		readme: `
 # Web Development Project 6 - Breweries 2.0
 
 This web app: This brew app adds more visualization and detail pages to the brew data.
@@ -1015,8 +992,7 @@ reusable components.
 		startDate: new Date(2022, 2),
 		endDate: new Date(2022, 3),
 		githubLink: 'https://github.com/algebra2boy/Clue',
-		readme:
-			`
+		readme: `
 ## Description
 Step into a thrilling text adventure game, clue, set on a 3 x 3 gameboard. Use your wits and deductive abilities to uncover the secrets behind a mysterious murder. Rumors suggest that Anan has been murdered, with Jeff suspecting that Matt may have strangled Anan with a rope in the study room. Navigate through rooms, investigate weapons, and interact with characters: Anan, Jeff, Matt, Eric, and Adam, to unveil the truth.
 
@@ -1073,9 +1049,8 @@ gcc adventure.c room.c -o myProgram
 		logo: ['HTML', 'CSS', 'Javascript'],
 		startDate: new Date(2023, 2),
 		endDate: new Date(2023, 3),
-		githubLink: "https://github.com/algebra2boy/web102_prework",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/web102_prework',
+		readme: `
 # WEB102 Prework - HelpFunding
 
 HelpFunding is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
@@ -1119,9 +1094,8 @@ Using reduce, spread operation were a bit unintutive for me - I had to think abo
 		logo: ['HTML', 'CSS', 'Javascript'],
 		startDate: new Date(2023, 2),
 		endDate: new Date(2023, 5),
-		githubLink: "https://github.com/algebra2boy/RateMyDine",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/RateMyDine',
+		readme: `
 **How to run the website** </br>
 \`\`\`bash
 $ npm install
@@ -1187,9 +1161,8 @@ Website Logistics
 		logo: ['Python'],
 		startDate: new Date(2023, 3),
 		endDate: new Date(2023, 4),
-		githubLink: "https://github.com/algebra2boy/SocketProgramming",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/SocketProgramming',
+		readme: `
 ## Project description
 
 This project is used for learning the socket programming using the socket API from python. 
@@ -1237,9 +1210,8 @@ Server Side:
 		logo: ['Swift', 'Firebase'],
 		startDate: new Date(2022, 11),
 		endDate: new Date(2023, 2),
-		githubLink: "https://github.com/algebra2boy/DineAndGo_SwiftUI",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/DineAndGo_SwiftUI',
+		readme: `
 This was my SwiftUI project that I learned how to use Firebase to store data and authenticate users. 
 This was also my first SwiftUI project where I started my journey to learn how to build iOS apps.
 `
@@ -1250,9 +1222,8 @@ This was also my first SwiftUI project where I started my journey to learn how t
 		logo: ['HTML', 'CSS', 'Javascript', 'MongoDB', 'Flask'],
 		startDate: new Date(2022, 11),
 		endDate: new Date(2023, 1),
-		githubLink: "https://github.com/algebra2boy/Enrollment",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Enrollment',
+		readme: `
 This was a project that I learned about how to integrate frontend with Flask and Mongo.
 
 ## Flask
@@ -1285,9 +1256,8 @@ $ show dbs
 		logo: ['R', 'RStudio'],
 		startDate: new Date(2022, 9),
 		endDate: new Date(2023, 1),
-		githubLink: "https://github.com/algebra2boy/AbsenteeismAtWork",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/AbsenteeismAtWork',
+		readme: `
 In the modern world, it is common to see people be absent from work for various reasons. Absenteeism at a workplace affects the accountability and availability of a person, leads to negative consequences in a team or a company such as the decline in work reputation, and the decrease in work coordination across departments. In this report, we are analyzing an existing dataset, from Kaggle, records of absenteeism at work from July 2007 to July 2010 at a courier company in Brazil. There are 740 observations and 21 variables. Important variables exist such as Distance from Residence to Work, Work load Average/day, which are important factors to determine why a worker is absent. The central question in this article is: What is the main determinant of whether someone is absent or not from work?
 
 ## More instructions
@@ -1306,9 +1276,8 @@ This is my first independent data science project using R and statistical analys
 		logo: ['React', 'HTML', 'CSS', 'Twilio', 'Flask', 'MySQL'],
 		startDate: new Date(2022, 11),
 		endDate: new Date(2022, 12),
-		githubLink: "https://github.com/algebra2boy/Find.it",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Find.it',
+		readme: `
 Find.it is our submission for the UMASS Fall 2022 Hackathon. Find.it a scalable solution for people who've lost their things and (unsurprisingly) want to find them. 
 Here is the DevPost submission for this project: [Find.it](https://devpost.com/software/find-it-nlpzh5)
 
@@ -1354,9 +1323,8 @@ Here is the DevPost submission for this project: [Find.it](https://devpost.com/s
 		logo: ['Swift'],
 		startDate: new Date(2022, 10),
 		endDate: new Date(2022, 11),
-		githubLink: "https://github.com/algebra2boy/Flashcards",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Flashcards',
+		readme: `
 ## Flashcard
 
 ### App Description (Lab 1)
@@ -1456,9 +1424,8 @@ Flashcard now can now have autosize feature and fancy animation.
 		logo: ['Swift'],
 		startDate: new Date(2022, 9),
 		endDate: new Date(2022, 10),
-		githubLink: "https://github.com/algebra2boy/CYE_Take-Home_Assessment/tree/main/TakeHome",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/CYE_Take-Home_Assessment/tree/main/TakeHome',
+		readme: `
 This is my take-home assessment for CYE. I was lucky to be able to join this team and work on this amazing project called Appbook. 
 I really appreciated this opporunity and I learned a ton about iOS dev and the team work. I have included my take-home submission above.`
 	},
@@ -1468,9 +1435,8 @@ I really appreciated this opporunity and I learned a ton about iOS dev and the t
 		logo: ['Python', 'MySQL'],
 		startDate: new Date(2022, 8),
 		endDate: new Date(2022, 9),
-		githubLink: "https://github.com/algebra2boy/OHill-Squad-WeSQL",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/OHill-Squad-WeSQL',
+		readme: `
 ## What this is about
 I took CS 345, which is about Database Management, and the class did not teach us much about how to connect the database with Python or other major languages. 
 I wanted to learn how to create and manipulate SQL databases with Python through this personal project. All the names and data are from my classes, or my friends, 
@@ -1526,9 +1492,8 @@ pip install <the name of the package>
 		logo: ['Swift'],
 		startDate: new Date(2022, 7),
 		endDate: new Date(2022, 7),
-		githubLink: "https://github.com/algebra2boy/codepath-prework",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/codepath-prework',
+		readme: `
 
 ### App Description
 This project is my very first mini IOS project created on Xcode with Swift. It can do basic functionality like changing the background color and text color, altering the text string and saying goodbye!
@@ -1562,8 +1527,7 @@ This project is my very first mini IOS project created on Xcode with Swift. It c
 		startDate: new Date(2020, 6),
 		endDate: new Date(2020, 7),
 		githubLink: 'https://github.com/algebra2boy/LearningDataScience/tree/main/Final_Project',
-		readme:
-			`
+		readme: `
 I am fortunate to be part of Summer Search. Summer Search provided me an amazing opportunity to take this class at Brown University over the summer of 2020. I learned about how to write R code
 to understand the meaning behind data. 
 <p>
@@ -1581,23 +1545,20 @@ to understand the meaning behind data.
 		logo: ['Java'],
 		startDate: new Date(2021, 2),
 		endDate: new Date(2021, 5),
-		githubLink: "https://github.com/algebra2boy/Circus",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Circus',
+		readme: `
 This project is the final project that I did in my Java class in high school. This uses all the data structure concepts that I learned from Mr.Marques.
 I used in this project is ArrayList, TreeMap, TreeSet IO, and JavaFX. Here is the presentation we showed to the class: [Circus Presentation](https://github.com/algebra2boy/Circus)
 `
 	},
 	{
 		name: 'Java Bundle',
-		description:
-			'9 Java projects that I did in a community college course',
+		description: '9 Java projects that I did in a community college course',
 		logo: ['Java'],
 		startDate: new Date(2021, 1),
 		endDate: new Date(2021, 5),
-		githubLink: "https://github.com/algebra2boy/Advanced_Java",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Advanced_Java',
+		readme: `
 Huge thanks to my high school teacher Paul Marques (known as Mr.Marques) for teaching me Java. Without him, I don't think I would be able to major in computer science in college.
 1. BucketSort: Implements the bucket sort algorithm.
 	- A bucket sort implementation using a linked list in Java. The main class BucketSortLL initializes an array of numbers and a linked list to hold them. It creates an array of buckets (linked lists), sorts the numbers by distributing them into buckets based on digit place values, and then gathers them back into the main list. The sorting process continues until the list is sorted. Supporting classes, LinkedList and Node, manage list operations and node data.
@@ -1637,9 +1598,8 @@ Huge thanks to my high school teacher Paul Marques (known as Mr.Marques) for tea
 		logo: ['Swift'],
 		startDate: new Date(2023, 1),
 		endDate: new Date(2023, 2),
-		githubLink: "https://github.com/algebra2boy/Swift/tree/main/TicTacToeSwiftUI",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Swift/tree/main/TicTacToeSwiftUI',
+		readme: `
 ## Tic-Toe-Tac toe
 I am making a simple Tic-Toe-Tac to learn how SwiftUI works
 
@@ -1667,9 +1627,8 @@ Thank you [Cal](https://www.youtube.com/watch?v=LmkHSTPK2h8) for providing such 
 		logo: ['Swift'],
 		startDate: new Date(2023, 1),
 		endDate: new Date(2023, 1),
-		githubLink: "https://github.com/algebra2boy/Swift/tree/main/TipCalculator",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Swift/tree/main/TipCalculator',
+		readme: `
 ## About
 I am making a simple calculator wuth slider, avoiding the overhead of using the actual calculator everytime and making it fun.
 
@@ -1694,9 +1653,8 @@ I am making a simple calculator wuth slider, avoiding the overhead of using the 
 		logo: ['Swift'],
 		startDate: new Date(2023, 1),
 		endDate: new Date(2023, 10),
-		githubLink: "https://github.com/algebra2boy/Swift/tree/main/TaylorSwift",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/Swift/tree/main/TaylorSwift',
+		readme: `
 First of all, I really love Swift, SwiftUI, and libraries that Apple provides. I was fascinated with iOS dev
 and wanted to learn more about it. I found this amazing website called Hacking with Swift by Paul Hudson.
 I did all of his SwiftUI projects and learned a ton about iOS dev. I am so grateful for his amazing tutorials.
@@ -1762,9 +1720,9 @@ Here are the projects that I did:
 		logo: ['Swift'],
 		startDate: new Date(2024, 4),
 		endDate: new Date(2024, 4),
-		githubLink: "https://github.com/algebra2boy/Swift/blob/main/SpriteKit_experiment/SpriteKit_experiment/PixelMoving.swift",
-		readme:
-			`
+		githubLink:
+			'https://github.com/algebra2boy/Swift/blob/main/SpriteKit_experiment/SpriteKit_experiment/PixelMoving.swift',
+		readme: `
 This is my first project that I learn how to make a game using SpriteKit. I learned how to create a pixel moving around the screen and how to make it move in a certain direction.
 This is also my first game! I am excited to learn more about SpriteKit and make more games in the future. I do feel that SpriteKit is a bit different from SwiftUI and it hasn't been updated since 2017.
 `
@@ -1775,13 +1733,11 @@ This is also my first game! I am excited to learn more about SpriteKit and make 
 		logo: ['Typescript', 'Express', 'Svelte', 'Jest'],
 		startDate: new Date(2024, 5),
 		endDate: new Date(2024, 8),
-		githubLink: "https://github.com/algebra2boy/RateMyDine2.0",
-		readme:
-			`
+		githubLink: 'https://github.com/algebra2boy/RateMyDine2.0',
+		readme: `
 RateMyDine was a project I started in 2023 Spring to help students at UMass Amherst leave feedback for food quality. It was written in pure HTML, CSS, and Javascript. I decided to upgrade it to Typescript, Express, Svelte, SveleKit and Jest to learn more about these technologies. I also wanted to make it more user-friendly and interactive. The project is still in progress, but I have made significant progress in the backend and frontend. I have also written some tests for the backend using Jest. I am excited to see how it turns out!
 You can check out the previous version of [RateMyDine](https://github.com/algebra2boy/RateMyDine) here.
 `
-
 	},
 	{
 		name: 'Router API',
@@ -1789,8 +1745,7 @@ You can check out the previous version of [RateMyDine](https://github.com/algebr
 		logo: ['Python', 'Flask'],
 		startDate: new Date(2022, 6),
 		endDate: new Date(2022, 8),
-		readme:
-			`
+		readme: `
 ## Description:
 This purporse of this project is to set up a website API that can be called by any services to use the Curbhub's Router without having to enage with the Router code. 
 
@@ -1964,8 +1919,7 @@ To run this project, use the follwing command:
 		logo: ['Python', 'Flask'],
 		startDate: new Date(2022, 6),
 		endDate: new Date(2022, 8),
-		readme:
-			`
+		readme: `
 ## Project Overview 
 This project is used to visualize Curbhub's delivery orders on multiple vehicles,
 especially to demonstrate its ability to transfer packages from first leg courier(ex.truck, car) 
@@ -2078,8 +2032,7 @@ We have to thank for the excellent work from Optimator Lab, who made this librar
 		logo: ['Python', 'Flask', 'Twilio'],
 		startDate: new Date(2022, 6),
 		endDate: new Date(2022, 7),
-		readme:
-			`
+		readme: `
 ## Project Overview 
 This project is called WhatsApp Chat Bot. The bot can be used to communicate with the the real user. The purpose of 
 the bot is to provide access to the Curbhub's user to upload their personal information and ID to the system.
@@ -2123,13 +2076,11 @@ Any message is texted by the user is stored in their designated file called "inf
 	},
 	{
 		name: 'Distance Matrix',
-		description:
-			"Predict travel time using H3, Distance Matrix, and NetworkX Dijkstra",
+		description: 'Predict travel time using H3, Distance Matrix, and NetworkX Dijkstra',
 		logo: ['Python', 'Flask'],
 		startDate: new Date(2022, 7),
 		endDate: new Date(2022, 8),
-		readme:
-			`
+		readme: `
 ## Introduction
 Every time if you want to go to an unfamiliar or distant location, you would always certainly want to use 
 some sort of navigation system (Google Maps, Apple Maps, etc) to guide you to the destination. The map system
@@ -2240,4 +2191,3 @@ personalProjects.sort((a, b) => {
 		return 0;
 	}
 });
-

@@ -1,6 +1,13 @@
 <script>
-	import { goto } from '$app/navigation';
-	import Code from '$lib/components/highlight/Code.svelte';
+	import {
+		CourseHeader,
+		CourseDescription,
+		CourseReflection,
+		CourseNavigation,
+		CourseDivider,
+		CourseDemonstration,
+		CourseCode
+	} from '$lib/components/course';
 
 	let code = `
 type HTTPMethod = 'GET' | 'POST' | 'PUT' | 'DELETE';
@@ -19,46 +26,35 @@ type HTTPRequest = {
 	<meta name="description" content="Programming Methodology" />
 </svelte:head>
 
-<h1 class="text-xl font-bold text-gray-900">CS220: Programming Methodology</h1>
+<CourseHeader>CS220: Programming Methodology</CourseHeader>
 
-<h2 class="text-sm font-medium text-gray-600 mt-1">
+<CourseDescription>
 	Course Description: The goal of COMPSCI220 Programming Methodology is to turn you into an advanced
 	programmer with a deep understanding of modern programming methodology. We will emphasize good
 	software engineering skills, including programming abstractions, testing, and debugging. Although
 	the programming language that we will use is JavaScript, we will emphasize general programming
 	principles. Everything that you will learn in the class will be applicable to other modern
 	languages, including (for example) C++, C#, D, Go, Java, Python, Rust, and Swift.
-</h2>
+</CourseDescription>
 
-<hr class="divide-solid border-slate-500 mt-1 border-1" />
+<CourseDivider />
 
-<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
+<CourseReflection>
+	<p>
+		I took this course in Fall 2023. A lot of design patterns, and software engineering principles
+		taught by professor Marius Minea. This course is indeed very time consuming, and but it is super
+		worth and rewarding. You learn how to write good code and think more critically about the code
+		you write. The course is very project-based and intense. Project every single week was a lot of
+		work, but it was a great learning experience. It was great to learn about typescript,
+		observables, promises, async/await, and building an interpreters, and fluent design, black box
+		testing, and functional programming.
+	</p>
+</CourseReflection>
 
-<p class="mt-1 text-gray-700 text-sm font-mono">
-	I took this course in Fall 2023. A lot of design patterns, and software engineering principles
-	taught by professor Marius Minea. This course is indeed very time consuming, and but it is super
-	worth and rewarding. You learn how to write good code and think more critically about the code you
-	write. The course is very project-based and intense. Project every single week was a lot of work,
-	but it was a great learning experience. It was great to learn about typescript, observables,
-	promises, async/await, and building an interpreters, and fluent design, black box testing, and
-	functional programming.
-</p>
+<CourseDemonstration name="Typescript" />
+<CourseCode language="typescript" {code} />
 
-<h1 class="text-xl font-normal font-mono mt-1">Code demonstration of Typescript</h1>
-
-<Code language="typescript" {code} />
-
-<div class="flex justify-center items-center gap-3 mb-6 mt-4">
-	<button
-		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-		onclick={() => goto('/courses/Summer2023/CS490STA: Scalable Web Systems/README.md')}
-	>
-		Prev
-	</button>
-	<button
-		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-		onclick={() => goto('/courses/Spring2024/CICS305: Junior Year Writing/README.md')}
-	>
-		Next
-	</button>
-</div>
+<CourseNavigation
+	prevLink="Summer2023/CS490STA: Scalable Web Systems"
+	nextLink="Spring2024/CICS305: Junior Year Writing"
+/>

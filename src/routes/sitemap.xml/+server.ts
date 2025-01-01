@@ -5,22 +5,30 @@ const site = 'https://yongyetan.com';
 const pages: string[] = [];
 
 const generateDyanmicRoutes = () => {
+	const peronalProjectNames = personalProjects.map((p) => p.name);
+	peronalProjectNames.forEach((name) => pages.push(`projects/${name}`));
 
-  const peronalProjectNames = personalProjects.map((p) => p.name);
-  peronalProjectNames.forEach((name) => pages.push(`projects/${name}`));
+	pages.push('courses');
+	pages.push('courses/list');
 
-  pages.push('courses');
-  pages.push('courses/list');
-  
-  let index = 0;
-  const semesters = ["Fall2021", "Spring2022", "Summer2022", "Fall2022", "Spring2023", "Summer2023", "Fall2023", "Spring2024"];
-  courses.forEach((semester) => {
-    semester.forEach((course) => {
-      pages.push('courses/' + semesters[index] + '/' + course.name + "/README.md");
-    })
-    index++;
-  });
-}
+	let index = 0;
+	const semesters = [
+		'Fall2021',
+		'Spring2022',
+		'Summer2022',
+		'Fall2022',
+		'Spring2023',
+		'Summer2023',
+		'Fall2023',
+		'Spring2024'
+	];
+	courses.forEach((semester) => {
+		semester.forEach((course) => {
+			pages.push('courses/' + semesters[index] + '/' + course.name + '/README.md');
+		});
+		index++;
+	});
+};
 
 const sitemap = (pages: string[]) => `<?xml version="1.0" encoding="UTF-8" ?>
 <urlset
@@ -37,24 +45,26 @@ const sitemap = (pages: string[]) => `<?xml version="1.0" encoding="UTF-8" ?>
     <priority>1</priority>
 </url>
 
-${pages.map((page) => `
+${pages
+	.map(
+		(page) => `
   <url>
     <loc>${site}/${page}</loc>
     <changefreq>daily</changefreq>
     <priority>1</priority>
   </url>
   `
-).join('')}
+	)
+	.join('')}
 </urlset>`;
 
 // Reference: https://sveltekit.io/blog/svelte-sitemaps
 // https://sveltekit.io/blog/svelte-sitemaps
 export async function GET() {
-
-  generateDyanmicRoutes();
-  const body = sitemap(pages);
-  const response = new Response(body);
-  response.headers.set('Cache-Control', 'max-age=0, s-maxage=3600');
-  response.headers.set('Content-Type', 'application/xml');
-  return response;
+	generateDyanmicRoutes();
+	const body = sitemap(pages);
+	const response = new Response(body);
+	response.headers.set('Cache-Control', 'max-age=0, s-maxage=3600');
+	response.headers.set('Content-Type', 'application/xml');
+	return response;
 }

@@ -1,5 +1,11 @@
 <script>
-	import { goto } from '$app/navigation';
+	import {
+		CourseHeader,
+		CourseDescription,
+		CourseReflection,
+		CourseNavigation,
+		CourseDivider
+	} from '$lib/components/course';
 	import Code from '$lib/components/highlight/Code.svelte';
 
 	let backward = `
@@ -35,9 +41,9 @@ def _forward(self, instance_attributes=None, instance_class=None):
 	<meta name="description" content="Machine Learning" />
 </svelte:head>
 
-<h1 class="text-xl font-bold text-gray-900">CS589: Machine Learning</h1>
+<CourseHeader>CS589: Machine Learning</CourseHeader>
 
-<h2 class="text-sm font-medium text-gray-600 mt-1">
+<CourseDescription>
 	Course Description: This course will introduce core machine learning models and algorithms for
 	classification, regression, clustering, and dimensionality reduction. On the theory side, the
 	course will cover the mathematical foundations underlying the most commonly-used machine learning
@@ -51,19 +57,20 @@ def _forward(self, instance_attributes=None, instance_class=None):
 	techniques, linear regression, logistic regression, neural networks, convolutional neural networks
 	and deep learning, unsupervised learning and clustering algorithms, k-means, hierarchical
 	clustering, and dimensionality reduction techniques.
-</h2>
+</CourseDescription>
 
-<hr class="divide-solid border-slate-500 mt-1 border-1" />
+<CourseDivider />
 
-<h1 class="text-xl font-normal font-mono mt-1">My Course Reflection</h1>
-
-<p class="mt-1 text-gray-700 text-sm font-mono">
-	I took this course in Spring 2023. My God, this course was a great introduction to the core
-	machine learning models. We learned and implemented KNN, Decision Trees, Random Forest, Naive
-	Baives, Neural Networks, and so on. The homework was time consuming, but it was rewarding to see
-	how much I have learned from the course. This course wasn't diffcult at all, but must pay
-	attention to the details and slides. Buidling everything from scratch was the most rewarding part.
-</p>
+<CourseReflection>
+	<p>
+		I took this course in Spring 2023. My God, this course was a great introduction to the core
+		machine learning models. We learned and implemented KNN, Decision Trees, Random Forest, Naive
+		Baives, Neural Networks, and so on. The homework was time consuming, but it was rewarding to see
+		how much I have learned from the course. This course wasn't diffcult at all, but must pay
+		attention to the details and slides. Buidling everything from scratch was the most rewarding
+		part.
+	</p>
+</CourseReflection>
 
 <h1 class="text-xl font-normal font-mono mt-1">
 	Code demonstration of Forward and Backward Propagation in Neutral Network
@@ -71,17 +78,7 @@ def _forward(self, instance_attributes=None, instance_class=None):
 <Code language="python" code={forward} />
 <Code language="python" code={backward} />
 
-<div class="flex justify-center items-center gap-3 mb-6 mt-4">
-	<button
-		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-		onclick={() => goto('/courses/Spring2023/CS453: Computer Networks/README.md')}
-	>
-		Prev
-	</button>
-	<button
-		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-		onclick={() => goto('/courses/Summer2023/CS490STA: Scalable Web Systems/README.md')}
-	>
-		Next
-	</button>
-</div>
+<CourseNavigation
+	prevLink="Spring2023/CS453: Computer Networks"
+	nextLink="Summer2023/CS490STA: Scalable Web Systems"
+/>

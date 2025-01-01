@@ -20,6 +20,6 @@ export {
 	CourseReflection,
 	CourseNavigation,
 	CourseDivider,
-    CourseDemonstration,
+	CourseDemonstration,
 	CourseCode
 };

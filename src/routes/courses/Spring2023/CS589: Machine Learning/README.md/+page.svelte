@@ -6,7 +6,8 @@
 		CourseNavigation,
 		CourseDivider
 	} from '$lib/components/course';
-	import Code from '$lib/components/highlight/Code.svelte';
+	import CourseCode from '$lib/components/course/CourseCode.svelte';
+	import CourseDemonstration from '$lib/components/course/CourseDemonstration.svelte';
 
 	let backward = `
 def _backward(self, delta: list, activation: list, gradients: list, training_index: int): 
@@ -72,11 +73,9 @@ def _forward(self, instance_attributes=None, instance_class=None):
 	</p>
 </CourseReflection>
 
-<h1 class="text-xl font-normal font-mono mt-1">
-	Code demonstration of Forward and Backward Propagation in Neutral Network
-</h1>
-<Code language="python" code={forward} />
-<Code language="python" code={backward} />
+<CourseDemonstration name="Forward and Backward Propagation in Neutral Network" />
+<CourseCode language="python" code={forward} />
+<CourseCode language="python" code={backward} />
 
 <CourseNavigation
 	prevLink="Spring2023/CS453: Computer Networks"

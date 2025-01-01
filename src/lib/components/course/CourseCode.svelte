@@ -5,7 +5,6 @@
 	interface CourseCodeProps {
 		language: Language;
 		code: string;
-
 	}
 
 	let { language, code }: CourseCodeProps = $props();

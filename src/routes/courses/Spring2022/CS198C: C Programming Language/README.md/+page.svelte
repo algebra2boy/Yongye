@@ -64,13 +64,13 @@ int main(int argc, char* argv[]) {
 <div class="flex justify-center items-center gap-3 mb-6 mt-4">
 	<button
 		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-		on:click={() => goto('/courses/Fall2021/CS191: Data Science For Good/README.md')}
+		onclick={() => goto('/courses/Fall2021/CS191: Data Science For Good/README.md')}
 	>
 		Prev
 	</button>
 	<button
 		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-		on:click={() => goto('/courses/Spring2022/CS230: Computer Systems Principles/README.md')}
+		onclick={() => goto('/courses/Spring2022/CS230: Computer Systems Principles/README.md')}
 	>
 		Next
 	</button>

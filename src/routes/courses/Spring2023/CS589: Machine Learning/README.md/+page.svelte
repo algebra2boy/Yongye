@@ -79,13 +79,13 @@ def _forward(self, instance_attributes=None, instance_class=None):
 <div class="flex justify-center items-center gap-3 mb-6 mt-4">
 	<button
 		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-		on:click={() => goto('/courses/Spring2023/CS453: Computer Networks/README.md')}
+		onclick={() => goto('/courses/Spring2023/CS453: Computer Networks/README.md')}
 	>
 		Prev
 	</button>
 	<button
 		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-		on:click={() => goto('/courses/Summer2023/CS490STA: Scalable Web Systems/README.md')}
+		onclick={() => goto('/courses/Summer2023/CS490STA: Scalable Web Systems/README.md')}
 	>
 		Next
 	</button>

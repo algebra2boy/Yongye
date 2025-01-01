@@ -5,7 +5,11 @@
 		gfm: true // GitHub Flavored Markdown
 	});
 
-	export let readme: string = '';
+	interface ReadmeProps {
+		readme?: string;
+	}
+
+	let { readme = '' }: ReadmeProps = $props();
 </script>
 
 <!-- https://stackoverflow.com/questions/74914969/override-65ch-max-width-in-tailwind-css-typography -->

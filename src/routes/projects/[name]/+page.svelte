@@ -4,16 +4,16 @@
 	import { personalProjects } from '$lib/components/project/personalProjectData.js';
 	import README from '$lib/components/project/README.svelte';
 
-	export let data;
+	let { data } = $props();
 
 	// whenever route changes that causes refetching, these variables should be recreated
-	$: ({ name, description, logo, startDate, endDate, githubLink, readme } = data);
+	let { name, description, logo, startDate, endDate, githubLink, readme } = $derived(data);
 
 	const projectNames = personalProjects.map((p) => p.name);
 
 	// prevName and nextName relies on "name" reactivity
-	$: prevName = projectNames[projectNames.indexOf(name) - 1];
-	$: nextName = projectNames[projectNames.indexOf(name) + 1];
+	let prevName = $derived(projectNames[projectNames.indexOf(name) - 1]);
+	let nextName = $derived(projectNames[projectNames.indexOf(name) + 1]);
 </script>
 
 <svelte:head>
@@ -32,7 +32,7 @@
 
 	<div class="flex mb-3">
 		<h2 class="text-lg font-semibold text-gray-700">
-			{convertDateToString(startDate)} - {convertDateToString(endDate)}
+			<!-- {convertDateToString(startDate)} - {convertDateToString(endDate)} -->
 		</h2>
 	</div>
 

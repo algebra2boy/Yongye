@@ -12,7 +12,7 @@ export const getImageFromDevicon = (
 
 export const techStack: Logo = {
 	Expo: {
-		imageURL: "https://seeklogo.com/images/E/expo-logo-01BB2BCFC3-seeklogo.com.png",
+		imageURL: "https://img.icons8.com/?size=100&id=hmieDPifBlBM&format=png&color=000000",
 		isTechTool: true
 	},
 	Typescript: {

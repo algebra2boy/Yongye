@@ -8,12 +8,13 @@
 		new Set(personalProjects.map((project) => project.logo).flat())
 	).sort();
 
-	let selectedTechStack = 'Tech Stack';
+	let selectedTechStack = $state('Tech Stack');
 
-	$: filteredProjects =
+	let filteredProjects = $derived(
 		selectedTechStack === 'Tech Stack'
 			? personalProjects
-			: personalProjects.filter((project) => project.logo.includes(selectedTechStack as Brand));
+			: personalProjects.filter((project) => project.logo.includes(selectedTechStack as Brand))
+	);
 </script>
 
 <div class="pt-2 pl-2 mb-2.5 rounded-lg">

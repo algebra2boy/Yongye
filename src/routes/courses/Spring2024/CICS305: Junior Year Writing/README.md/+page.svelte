@@ -44,13 +44,13 @@
 <div class="flex justify-center items-center gap-3 mb-6 mt-4">
 	<button
 		class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-		on:click={() => goto('/courses/Fall2023/CS220: Programming Methodology/README.md')}
+		onclick={() => goto('/courses/Fall2023/CS220: Programming Methodology/README.md')}
 	>
 		Prev
 	</button>
 	<button
 		class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-		on:click={() => goto('/courses/Spring2024/CS496: Web Systems Dev Real-World/README.md')}
+		onclick={() => goto('/courses/Spring2024/CS496: Web Systems Dev Real-World/README.md')}
 	>
 		Next
 	</button>

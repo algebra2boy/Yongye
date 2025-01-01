@@ -14,7 +14,7 @@
 		'Spring2024'
 	];
 
-	let isSemesterFolderExpanded: boolean = false;
+	let isSemesterFolderExpanded: boolean = $state(false);
 
 	const toggleSemesterFolder = () => (isSemesterFolderExpanded = !isSemesterFolderExpanded);
 	const toggleAllFiles = () => filesExpandedStore.update((expanded) => !expanded);
@@ -32,7 +32,7 @@
 		<button
 			class="text-xs hover:bg-blue-300 text-black border-2 border-black font-medium py-0.5 px-1 rounded focus:outline-none focus:shadow-outline"
 			class:disable={$filesExpandedStore}
-			on:click={toggleSemesterFolder}
+			onclick={toggleSemesterFolder}
 			disabled={$filesExpandedStore}
 		>
 			{isSemesterFolderExpanded ? 'Close Folders' : 'Open Folders'}
@@ -40,7 +40,7 @@
 		<button
 			class="text-xs hover:bg-blue-300 text-black border-2 border-black font-medium py-0.5 px-1 rounded focus:outline-none focus:shadow-outline"
 			class:disable={!isSemesterFolderExpanded}
-			on:click={toggleAllFiles}
+			onclick={toggleAllFiles}
 			disabled={!isSemesterFolderExpanded}
 		>
 			{$filesExpandedStore ? 'Close Files' : 'Open Files'}

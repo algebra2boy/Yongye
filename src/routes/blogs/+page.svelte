@@ -1,28 +1,10 @@
-<div class="flex flex-col w-full p-4 space-y-3">
-	<!-- body section -->
-	<div class="flex flex-row items-center">
-		<!-- keep both in around 100 words -->
-		<div class="flex flex-col w-3/4 space-y-2">
-			<h1 class="text-lg font-semibold md:text-base sm:text-sm">
-				Transition from MVVM to VIPER: WHy iOS Developers Are Embracing a New Architecture in Swift
-			</h1>
-			<h2 class="text-sm font-extralight md:text-xs sm:text-[10px]">
-				As iOS app development projects scale in size and complexity, architectural pattersn play an
-				increasingly signiificant role
-			</h2>
-		</div>
+<script lang="ts">
+	import { Blog } from '$lib/components/index.js';
+</script>
 
-		<div class="flex w-1/4 items-center justify-center">
-			<img
-				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMEZ0lYRRer3MH7AGhaXQpahywLUsainpduw&s"
-				alt="apple"
-				class="w-36 h-32 md:w-28 md:h-20 sm:w-20 sm:h-16 object-cover shadow-lg rounded-sm"
-			/>
-		</div>
-	</div>
+<svelte:head>
+	<title>Yongye's blogs</title>
+	<meta name="description" content="Yongye's blogs" />
+</svelte:head>
 
-	<!-- footer section -->
-	<div class="flex flex-row justify-start">
-        <p class="text-sm md:text-xs sm:text-[10px]">Dec 31</p>
-    </div>
-</div>
+<Blog />

@@ -8,6 +8,12 @@
 
 	let jobs: Job[] = [
 		{
+			company: 'Manning College',
+			position: 'Teaching Assistant for Scalable Web Systems - CS 426',
+			time: 'Sep 2025 - present',
+			link: 'https://www.cics.umass.edu/'
+		},
+		{
 			company: 'Capital One',
 			position: 'Software Engineering Intern',
 			time: 'Summer 2025',

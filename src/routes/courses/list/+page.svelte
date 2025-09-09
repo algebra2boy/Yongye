@@ -17,6 +17,7 @@
 	<li>Math 456: Math Modeling</li>
 	<li>Math 535: Statistical Computing</li>
 	<li>Math 545: Linear Algebra Applied Math</li>
+	<li>Math 551: Introduction to Scientific Computing</li>
 </ul>
 
 <h1 class="font-medium text-lg">Computer Science</h1>
@@ -39,6 +40,14 @@
 	<li>CS 496W: Web Systems Dev: Real-World</li>
 	<li>CS 520: Theory and Practice/Software Engineering</li>
 	<li>CS 589: Machine Learning</li>
+</ul>
+
+<h1 class="font-medium text-lg">Language</h1>
+
+<ul class="list-disc pl-6">
+	<li>ForLangC 197WE: Cantonese/Mandarin Speakers</li>
+	<li>Japanese 110: Non-Intensive Elementary Japanese</li>
+	<li>EDUC 395Z: Intergroup Relation Dialogue</li>
 </ul>
 
 <h1 class="font-medium text-lg">Codepath Coursework</h1>

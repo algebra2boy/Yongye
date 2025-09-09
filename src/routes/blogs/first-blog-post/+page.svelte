@@ -10,7 +10,7 @@
 	/>
 	<meta
 		property="og:image"
-		content="https://yongyetan.com/blogs_asset/rockefeller_christmas_tree.jpg"
+		content="https://yongyetan.com/blogs_asset/first-blog-post/rockefeller_christmas_tree.jpg"
 	/>
 	<meta property="og:url" content="https://yongyetan.com" />
 	<meta property="og:type" content="website" />
@@ -18,7 +18,7 @@
 
 <div class="flex flex-col justify-center items-center space-y-3 p-4 bg-gray-100 rounded-lg">
 	<img
-		src="/blogs_asset/rockefeller_christmas_tree.jpg"
+		src="/blogs_asset/first-blog-post/rockefeller_christmas_tree.jpg"
 		alt="Rockefeller Christmas Tree"
 		class="object-cover w-1/2 rounded-md shadow-lg"
 	/>

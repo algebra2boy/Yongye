@@ -9,6 +9,6 @@
 </script>
 
 <figure class="flex flex-col items-center">
-	<img {src} {alt} class="object-cover w-1/2 rounded-md shadow-lg" />
-	<figcaption class="mt-3 text-sm text-gray-600">{caption}</figcaption>
+	<img {src} {alt} class="object-cover w-full md:w-1/2 rounded-md shadow-lg" />
+	<figcaption class="mt-3 text-sm text-center text-gray-600">{caption}</figcaption>
 </figure>

@@ -1,10 +1,15 @@
+<script lang="ts">
+	import BlogFigure from '$lib/components/blog/BlogFigure.svelte';
+	import BlogVideo from '$lib/components/blog/BlogVideo.svelte';
+</script>
+
 <svelte:head>
 	<title>Summer 2025</title>
 	<meta name="description" content="Yongye's blogs - Summer 2025" />
 
 	<!-- Open Graph Meta Tags -->
 	<meta property="og:title" content="Summer 2025" />
-	<meta property="og:description" content="Yongye's blogs - Traveling unlocks new perspectives!" />
+	<meta property="og:description" content="Yongye's blog - Traveling unlocks new perspectives!" />
 	<meta
 		property="og:image"
 		content="https://yongyetan.com/blogs_asset/summer-2025/golden_gate_bridge.jpg"
@@ -12,11 +17,6 @@
 	<meta property="og:url" content="https://yongyetan.com" />
 	<meta property="og:type" content="website" />
 </svelte:head>
-
-<script lang="ts">
-	import BlogFigure from '$lib/components/blog/BlogFigure.svelte';
-	import BlogVideo from '$lib/components/blog/BlogVideo.svelte';
-</script>
 
 <div class="flex flex-col justify-center items-center space-y-3 p-4 bg-gray-100 rounded-lg">
 	<p>

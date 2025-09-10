@@ -4,7 +4,7 @@
 
 <svelte:head>
 	<title>Happy New Year 2025</title>
-	<meta name="description" content="Yongye's blogs - Happy New Year 2025" />
+	<meta name="description" content="Yongye's blog - Happy New Year 2025" />
 
 	<!-- Open Graph Meta Tags -->
 	<meta property="og:title" content="Happy New Year 2025" />

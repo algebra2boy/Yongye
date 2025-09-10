@@ -12,6 +12,6 @@
 <BlogPreview
 	title={'Summer 2025'}
 	subtitle={'Traveling unlocks new perspectives'}
-	date={new Date(2025, 9, 9)}
+	date={new Date(2025, 8, 9)}
 	imageURL={'https://yongyetan.com/blogs_asset/summer-2025/golden_gate_bridge.jpg'}
 />

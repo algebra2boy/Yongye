@@ -454,7 +454,65 @@
 	</figure>
 
 	<p>Ninth stop: San Jose, CA</p>
-	<p></p>
+	<p>Visited Stanford and Vietnam Town at San Jose</p>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/postman.jpg"
+			alt="Postman"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">So many AI ads on the highway!</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<!-- svelte-ignore a11y_media_has_caption -->
+		<video controls class="w-1/2 rounded-md shadow-lg">
+			<source src="/blogs_asset/summer-2025/stanford.mp4" type="video/mp4" />
+		</video>
+		<figcaption class="mt-3 text-sm text-gray-600">Stanford campus is beautiful!</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/yahoo_server.jpg"
+			alt="Yahoo Server"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">
+			Yahoo Server at Jen-Hsun Huang Engineering Center
+		</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/viet_town.jpg"
+			alt="Vietnam Town"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">
+			First time visiting a neighborhood where there are many so many Vietnam stuff
+		</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/viet_menu.jpg"
+			alt="Vietnam Menu"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">
+			The menu is so presentable and has so many pictures
+		</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<!-- svelte-ignore a11y_media_has_caption -->
+		<video controls class="w-1/2 rounded-md shadow-lg">
+			<source src="/blogs_asset/summer-2025/municipal_rose_garden.mp4" type="video/mp4" />
+		</video>
+		<figcaption class="mt-3 text-sm text-gray-600">Municipal Rose Garden in San Jose</figcaption>
+	</figure>
 
 	<p>Tenth stop: York, Maine</p>
 	<p>Visited the one of the most photographed lighthouses in the world</p>

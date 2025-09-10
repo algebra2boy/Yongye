@@ -40,7 +40,7 @@
 	</figure>
 
 	<p>Second stop: Dallas, TX</p>
-	<p>A weekend trip where the first No Kings Protest took place.</p>
+	<p>A weekend trip at the same time as the Dallas No Kings Protest.</p>
 
 	<figure class="flex flex-col items-center">
 		<img
@@ -142,7 +142,7 @@
 			class="object-cover w-1/2 rounded-md shadow-lg"
 		/>
 		<figcaption class="mt-3 text-sm text-gray-600">
-			Most authentic Texas BBQ at Terry Black's, Austin
+			Most authentic Texas BBQ at Terry Black, Austin
 		</figcaption>
 	</figure>
 
@@ -183,14 +183,172 @@
 	<p>Sixth stop: Washington, D.C.</p>
 	<p>
 		Checked out the Smithsonian museums, White House, monuments, Lincoln Memorial, as well as the
-		zoo and Gordon Ramsay's pizza shop!
+		Smithsonian National Zoo and Gordon Ramsay's pizza shop!
 	</p>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/whiteHouse.jpg"
+			alt="White House"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">White House</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/monument.jpg"
+			alt="Washington Monument"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Washington Monument</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/lincoln_memorial.jpg"
+			alt="Lincoln Memorial"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Lincoln Memorial</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/me_far_monument.jpg"
+			alt="Me far away from Monument"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">
+			Me where Martin Luther King Jr. gave his "I Have a Dream" speech
+		</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/pizza.jpg"
+			alt="Gordon Ramsay Pizza"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Gordon Ramsay Street Pizza</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<!-- svelte-ignore a11y_media_has_caption -->
+		<video controls class="w-1/2 rounded-md shadow-lg">
+			<source src="/blogs_asset/summer-2025/panda.mp4" type="video/mp4" />
+		</video>
+		<figcaption class="mt-3 text-sm text-gray-600">Panda at Smithsonian National Zoo</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<!-- svelte-ignore a11y_media_has_caption -->
+		<video controls class="w-1/2 rounded-md shadow-lg">
+			<source src="/blogs_asset/summer-2025/red_panda.mp4" type="video/mp4" />
+		</video>
+		<figcaption class="mt-3 text-sm text-gray-600">
+			Red Panda at Smithsonian National Zoo
+		</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/moai.jpg"
+			alt="Moai"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">
+			Moai at Smithsonian National Museum of Natural History
+		</figcaption>
+	</figure>
 
 	<p>Seventh stop: Vancouver, Canada</p>
 	<p>
 		Visited the beautiful city of Vancouver, Canada. Checked out UBC, downtown, Gastown, Stanley
 		Park, the beautiful mountains, and Queen Elizabeth Park.
 	</p>
+
+	<figure class="flex flex-col items-center">
+		<!-- svelte-ignore a11y_media_has_caption -->
+		<video controls class="w-1/2 rounded-md shadow-lg">
+			<source src="/blogs_asset/summer-2025/night_market.mp4" type="video/mp4" />
+		</video>
+		<figcaption class="mt-3 text-sm text-gray-600">Richmond Night Market!!</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/ubc.jpg"
+			alt="UBC"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">
+			Cute Water bottles from University of British Columbia
+		</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/granville_island.jpg"
+			alt="Granville Island"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Granville Island</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/west_vancouver_night.jpg"
+			alt="West Vancouver"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Night view at West Vancouver</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<!-- svelte-ignore a11y_media_has_caption -->
+		<video controls class="w-1/2 rounded-md shadow-lg">
+			<source src="/blogs_asset/summer-2025/gastown.mp4" type="video/mp4" />
+		</video>
+		<figcaption class="mt-3 text-sm text-gray-600">Gastown Steam Clock</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/vancouver_chinatown.jpg"
+			alt="Vancouver Chinatown"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Vancouver Chinatown</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/queen_elizabeth_park.jpg"
+			alt="Queen Elizabeth Park"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Queen Elizabeth Park</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<!-- svelte-ignore a11y_media_has_caption -->
+		<video controls class="w-1/2 rounded-md shadow-lg">
+			<source src="/blogs_asset/summer-2025/stanley_park.mp4" type="video/mp4" />
+		</video>
+		<figcaption class="mt-3 text-sm text-gray-600">Stanley Park</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/dog_goodbye.jpg"
+			alt="Dog Goodbye"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">
+			Doggy misses me already as you can tell from the eyes
+		</figcaption>
+	</figure>
 
 	<p>Eighth stop: San Francisco, CA</p>
 	<p></p>
@@ -199,5 +357,13 @@
 	<p></p>
 
 	<p>Tenth stop: Maine</p>
-	<p></p>
+	<p>Visited the one of the most photographed lighthouses in the world</p>
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/nubble_lighthouse.jpg"
+			alt="Nubble Lighthouse"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Nubble Lighthouse in Maine</figcaption>
+	</figure>
 </div>

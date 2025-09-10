@@ -7,7 +7,7 @@
 	<meta property="og:description" content="Yongye's blogs - Traveling unlocks new perspectives!" />
 	<meta
 		property="og:image"
-		content="https://yongyetan.com/blogs_asset/first-blog-post/rockefeller_christmas_tree.jpg"
+		content="https://yongyetan.com/blogs_asset/summer-2025/golden_gate_bridge.jpg"
 	/>
 	<meta property="og:url" content="https://yongyetan.com" />
 	<meta property="og:type" content="website" />
@@ -351,12 +351,112 @@
 	</figure>
 
 	<p>Eighth stop: San Francisco, CA</p>
-	<p></p>
+	<p>First time visiting San Francisco! Yay! The city is so lively and vibrant!</p>
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/transamerica_pyramid.jpg"
+			alt="Transamerica Pyramid"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Transamerica Pyramid</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/golden_gate_bridge.jpg"
+			alt="Golden Gate Bridge"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Golden Gate Bridge</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<!-- svelte-ignore a11y_media_has_caption -->
+		<video controls class="w-1/2 rounded-md shadow-lg">
+			<source src="/blogs_asset/summer-2025/california_academy_of_sciences.mp4" type="video/mp4" />
+		</video>
+		<figcaption class="mt-3 text-sm text-gray-600">
+			So many butterflies at California Academy of Sciences
+		</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<!-- svelte-ignore a11y_media_has_caption -->
+		<video controls class="w-1/2 rounded-md shadow-lg">
+			<source src="/blogs_asset/summer-2025/waymo.mp4" type="video/mp4" />
+		</video>
+		<figcaption class="mt-3 text-sm text-gray-600">
+			First time sitting at Waymo!! This is amazing!
+		</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<!-- svelte-ignore a11y_media_has_caption -->
+		<video controls class="w-1/2 rounded-md shadow-lg">
+			<source src="/blogs_asset/summer-2025/ocean_beach.mp4" type="video/mp4" />
+		</video>
+		<figcaption class="mt-3 text-sm text-gray-600">
+			Ocean Beach by far my favorite beach in America
+		</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<!-- svelte-ignore a11y_media_has_caption -->
+		<video controls class="w-1/2 rounded-md shadow-lg">
+			<source src="/blogs_asset/summer-2025/coit_tower.mp4" type="video/mp4" />
+		</video>
+		<figcaption class="mt-3 text-sm text-gray-600">Scene at Coit Tower</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/morse_code.jpg"
+			alt="Morse Code at Exploratorium"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Morse Code at Exploratorium</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/ferryBuilding.jpg"
+			alt="Ferry Building"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Ferry Building</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/japanese_tea_garden.jpg"
+			alt="Japanese Tea Garden"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Japanese Tea Garden</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/palace_of_fine_arts.jpg"
+			alt="Palace of Fine Arts"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Palace of Fine Arts</figcaption>
+	</figure>
+
+	<figure class="flex flex-col items-center">
+		<img
+			src="/blogs_asset/summer-2025/me_golden.jpg"
+			alt="Me at Golden Gate Bridge"
+			class="object-cover w-1/2 rounded-md shadow-lg"
+		/>
+		<figcaption class="mt-3 text-sm text-gray-600">Me at Golden Gate Bridge</figcaption>
+	</figure>
 
 	<p>Ninth stop: San Jose, CA</p>
 	<p></p>
 
-	<p>Tenth stop: Maine</p>
+	<p>Tenth stop: York, Maine</p>
 	<p>Visited the one of the most photographed lighthouses in the world</p>
 	<figure class="flex flex-col items-center">
 		<img

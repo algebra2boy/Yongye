@@ -6,10 +6,9 @@
 	/>
 	<div class="pl-3 pt-1">
 		<p class="text-sm pt-2">
-			I am a senior at the University of Massachusetts Amherst, majoring in Computer Science and
-			Mathematics. I am passionate about software engineering, API, iOS dev, full stack and game
-			dev. I'm interning at <span class="text-red-600 font-semibold">Capital One</span>
-			this summer!
+			I am a <span class="text-red-600">4+1</span> Master's student in Computer Science at the University
+			of Massachusetts Amherst. I am passionate about software engineering, API, iOS dev, full stack
+			and game dev.
 		</p>
 	</div>
 </div>

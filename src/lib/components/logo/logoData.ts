@@ -104,6 +104,10 @@ export const techStack: Logo = {
 		imageURL: getImageFromDevicon('go'),
 		isProgrammingLanguage: true
 	},
+	CSharp: {
+		imageURL: getImageFromDevicon('csharp'),
+		isProgrammingLanguage: true
+	},
 	Github: {
 		imageURL: getImageFromDevicon('github'),
 		isTechTool: true
@@ -121,7 +125,7 @@ export const techStack: Logo = {
 		isTechTool: true
 	},
 	ChatGPT: {
-		imageURL: 'https://static-00.iconduck.com/assets.00/openai-icon-2021x2048-4rpe5x7n.png',
+		imageURL: 'https://cdn.iconscout.com/icon/free/png-256/free-chatgpt-icon-svg-png-download-7576880.png?f=webp',
 		isTechTool: true
 	},
 	Flask: {

@@ -11,6 +11,7 @@ export type Brand =
 	| 'R'
 	| 'C'
 	| 'C++'
+	| 'CSharp'
 	| 'PostgreSQL'
 	| 'MongoDB'
 	| 'Express'

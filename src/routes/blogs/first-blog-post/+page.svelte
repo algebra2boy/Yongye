@@ -1,3 +1,7 @@
+<script>
+	import BlogFigure from '$lib/components/blog/BlogFigure.svelte';
+</script>
+
 <svelte:head>
 	<title>Happy New Year 2025</title>
 	<meta name="description" content="Yongye's blogs - Happy New Year 2025" />
@@ -17,13 +21,11 @@
 </svelte:head>
 
 <div class="flex flex-col justify-center items-center space-y-3 p-4 bg-gray-100 rounded-lg">
-	<img
+	<BlogFigure
 		src="/blogs_asset/first-blog-post/rockefeller_christmas_tree.jpg"
 		alt="Rockefeller Christmas Tree"
-		class="object-cover w-1/2 rounded-md shadow-lg"
+		caption="Picture taken at Rockefeller Center at New York City at 3:49 pm on December 21, 2024"
 	/>
-	<p class="text-gray-700 text-sm italic">
-		Picture taken at Rockefeller Center at New York City at 3:49 pm on December 21, 2024
-	</p>
+
 	<p class="font-bold">Merry Christmas and Happy New Year 2025! It will be a good one!</p>
 </div>

@@ -13,515 +13,329 @@
 	<meta property="og:type" content="website" />
 </svelte:head>
 
+<script lang="ts">
+	import BlogFigure from '$lib/components/blog/BlogFigure.svelte';
+	import BlogVideo from '$lib/components/blog/BlogVideo.svelte';
+</script>
+
 <div class="flex flex-col justify-center items-center space-y-3 p-4 bg-gray-100 rounded-lg">
 	<p>
-		This summer, I traveled to eight cities and took nine flights. Each city uniquely captures the
-		differences between the East, West, and Texas.
+		This summer, I traveled to ten cities and took nine flights. Each city uniquely captured the
+		differences among the East, the West, Texas, and various cultures from around the world.
 	</p>
 
-	<p>First stop: Plano, TX</p>
-	<p>Where I spent 10 weeks interning at Capital One as a Software Engineer Intern.</p>
+	<p>🏢 <span class="font-bold">First stop: Plano, TX</span></p>
+	<p>I spent 10 weeks interning at Capital One as a Software Engineer Intern.</p>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/c1_final_week.png"
-			alt="Capital One Final Week"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Capital One Final Week</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/c1_final_week.png"
+		alt="Capital One Final Week"
+		caption="Capital One Final Week"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/high_jump.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">A video of me doing a high jump</figcaption>
-	</figure>
+	<BlogVideo
+		src="/blogs_asset/summer-2025/high_jump.mp4"
+		caption="A video of me doing a high jump"
+	/>
 
-	<p>Second stop: Dallas, TX</p>
-	<p>A weekend trip at the same time as the Dallas No Kings Protest.</p>
+	<p>🏙️ <span class="font-bold">Second stop: Dallas, TX</span></p>
+	<p>A weekend trip that coincided with the Dallas No Kings Protest.</p>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/dallas.jpg"
-			alt="City of Dallas"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">City of Dallas</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/dallas.jpg"
+		alt="City of Dallas"
+		caption="City of Dallas"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/no_kings_protest.jpg"
-			alt="Dallas No Kings Protest"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Dallas No Kings Protest</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/no_kings_protest.jpg"
+		alt="Dallas No Kings Protest"
+		caption="Dallas No Kings Protest"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/jfk_meseum.jpg"
-			alt="JFK Museum"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			Crime scene for the JFK assassination
-		</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/jfk_meseum.jpg"
+		alt="JFK Museum"
+		caption="Crime scene of the JFK assassination"
+	/>
 
-	<p>Third stop: Richmond, Virginia</p>
 	<p>
-		I spent my first week here doing intern onboarding. This is also where Capital One started their
-		company in 1988.
+		🎢 <span class="font-bold">Third stop: Richmond, Virginia</span>
 	</p>
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/king_dominions.jpg"
-			alt="King Dominions"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Intern event at Kings Dominion</figcaption>
-	</figure>
-
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/snoopy_comic.jpg"
-			alt="Snoopy Comic"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Snoopy Comic</figcaption>
-	</figure>
-
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/maymount.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">Beautiful Maymont Park</figcaption>
-	</figure>
-
-	<p>Fourth stop: Austin, TX</p>
 	<p>
-		Quick weekend trip where I visited the Texas House of Representatives and UT Austin, and enjoyed
-		authentic Texas BBQ.
+		I spent my first week here doing intern onboarding. This is also where Capital One was founded
+		in 1988.
 	</p>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/king_dominions.jpg"
+		alt="Kings Dominion"
+		caption="Intern event at Kings Dominion"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/ut_austin.jpg"
-			alt="UT Austin"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">University of Texas, Austin</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/snoopy_comic.jpg"
+		alt="Snoopy Comic"
+		caption="Snoopy Comic"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/texas_capitol_outside.jpg"
-			alt="Texas Capitol Outside"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Outside view of Texas Capitol</figcaption>
-	</figure>
+	<BlogVideo
+		src="/blogs_asset/summer-2025/maymount.mp4"
+		caption="Beautiful Maymont Park in Richmond"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/texas_capitol_inside.jpg"
-			alt="Texas Capitol inside"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Inside view of Texas Capitol</figcaption>
-	</figure>
-
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/terry_black.jpg"
-			alt="Terry Black BBQ "
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			Most authentic Texas BBQ at Terry Black, Austin
-		</figcaption>
-	</figure>
-
-	<p>Fifth stop: McLean, VA</p>
+	<p>🎸 <span class="font-bold">Fourth stop: Austin, TX</span></p>
 	<p>
-		Visited the Capital One headquarters and had a tour around the building. I even got a picture
-		with the CEO of Capital One.
+		A quick weekend trip where I visited the Texas House of Representatives and UT Austin, and
+		enjoyed authentic Texas BBQ.
 	</p>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/picture_with_ceo_1.jpg"
-			alt="CEO"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			Trying to take a picture with the CEO
-		</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/ut_austin.jpg"
+		alt="UT Austin"
+		caption="University of Texas, Austin"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/picture_with_ceo_2.jpg"
-			alt="Side by side with CEO"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Finally got a picture with him!!!</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/texas_capitol_outside.jpg"
+		alt="Texas Capitol Outside"
+		caption="Outside view of Texas Capitol"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/c1_headquarter.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">Capital One Headquarter</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/texas_capitol_inside.jpg"
+		alt="Texas Capitol inside"
+		caption="Inside view of Texas Capitol"
+	/>
 
-	<p>Sixth stop: Washington, D.C.</p>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/terry_black.jpg"
+		alt="Terry Black BBQ "
+		caption="The most authentic Texas BBQ at Terry Black in Austin"
+	/>
+
+	<p>🏦 <span class="font-bold">Fifth stop: McLean, VA</span></p>
 	<p>
-		Checked out the Smithsonian museums, White House, monuments, Lincoln Memorial, as well as the
-		Smithsonian National Zoo and Gordon Ramsay's pizza shop!
+		Visited the Capital One headquarters and toured the building. I even got a picture with the CEO
+		of Capital One.
 	</p>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/whiteHouse.jpg"
-			alt="White House"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">White House</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/picture_with_ceo_1.jpg"
+		alt="CEO"
+		caption="Trying to take a picture with the CEO."
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/monument.jpg"
-			alt="Washington Monument"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Washington Monument</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/picture_with_ceo_2.jpg"
+		alt="Side by side with CEO"
+		caption="Finally got a picture with Richard Fairbank!"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/lincoln_memorial.jpg"
-			alt="Lincoln Memorial"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Lincoln Memorial</figcaption>
-	</figure>
+	<BlogVideo src="/blogs_asset/summer-2025/c1_headquarter.mp4" caption="Capital One Headquarter" />
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/me_far_monument.jpg"
-			alt="Me far away from Monument"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			Me where Martin Luther King Jr. gave his "I Have a Dream" speech
-		</figcaption>
-	</figure>
+	<p>
+		🏛️ <span class="font-bold">Sixth stop: Washington, D.C.</span>
+	</p>
+	<p>
+		Checked out the Smithsonian museums, the White House, monuments, the Lincoln Memorial, as well
+		as the Smithsonian National Zoo and Gordon Ramsay's pizza shop!
+	</p>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/pizza.jpg"
-			alt="Gordon Ramsay Pizza"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Gordon Ramsay Street Pizza</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/whiteHouse.jpg"
+		alt="White House"
+		caption="White House"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/panda.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">Panda at Smithsonian National Zoo</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/monument.jpg"
+		alt="Washington Monument"
+		caption="Washington Monument"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/red_panda.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			Red Panda at Smithsonian National Zoo
-		</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/lincoln_memorial.jpg"
+		alt="Lincoln Memorial"
+		caption="Lincoln Memorial"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/moai.jpg"
-			alt="Moai"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			Moai at Smithsonian National Museum of Natural History
-		</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/me_far_monument.jpg"
+		alt="Me far away from Monument"
+		caption="Me at the spot where Martin Luther King Jr. gave his I Have a Dream speech"
+	/>
 
-	<p>Seventh stop: Vancouver, Canada</p>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/pizza.jpg"
+		alt="Gordon Ramsay Pizza"
+		caption="Gordon Ramsay's Street Pizza"
+	/>
+
+	<BlogVideo src="/blogs_asset/summer-2025/panda.mp4" caption="Panda at Smithsonian National Zoo" />
+
+	<BlogVideo
+		src="/blogs_asset/summer-2025/red_panda.mp4"
+		caption="Red panda at the Smithsonian National Zoo"
+	/>
+
+	<BlogFigure
+		src="/blogs_asset/summer-2025/moai.jpg"
+		alt="Moai"
+		caption="Moai at the Smithsonian National Museum of Natural History"
+	/>
+
+	<p>
+		🇨🇦 <span class="font-bold">Seventh stop: Vancouver, Canada</span>
+	</p>
 	<p>
 		Visited the beautiful city of Vancouver, Canada. Checked out UBC, downtown, Gastown, Stanley
-		Park, the beautiful mountains, and Queen Elizabeth Park.
+		Park, the mountains, and Queen Elizabeth Park.
 	</p>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/night_market.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">Richmond Night Market!!</figcaption>
-	</figure>
+	<BlogVideo src="/blogs_asset/summer-2025/night_market.mp4" caption="Richmond Night Market!!" />
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/ubc.jpg"
-			alt="UBC"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			Cute Water bottles from University of British Columbia
-		</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/ubc.jpg"
+		alt="UBC"
+		caption="Cute water bottles from the University of British Columbia"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/granville_island.jpg"
-			alt="Granville Island"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Granville Island</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/granville_island.jpg"
+		alt="Granville Island"
+		caption="Granville Island"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/west_vancouver_night.jpg"
-			alt="West Vancouver"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Night view at West Vancouver</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/west_vancouver_night.jpg"
+		alt="West Vancouver"
+		caption="Night view in West Vancouver"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/gastown.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">Gastown Steam Clock</figcaption>
-	</figure>
+	<BlogVideo src="/blogs_asset/summer-2025/gastown.mp4" caption="Gastown Steam Clock" />
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/vancouver_chinatown.jpg"
-			alt="Vancouver Chinatown"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Vancouver Chinatown</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/vancouver_chinatown.jpg"
+		alt="Vancouver Chinatown"
+		caption="Vancouver Chinatown"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/queen_elizabeth_park.jpg"
-			alt="Queen Elizabeth Park"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Queen Elizabeth Park</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/queen_elizabeth_park.jpg"
+		alt="Queen Elizabeth Park"
+		caption="Queen Elizabeth Park"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/stanley_park.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">Stanley Park</figcaption>
-	</figure>
+	<BlogVideo src="/blogs_asset/summer-2025/stanley_park.mp4" caption="Stanley Park" />
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/dog_goodbye.jpg"
-			alt="Dog Goodbye"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			Doggy misses me already as you can tell from the eyes
-		</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/dog_goodbye.jpg"
+		alt="Dog Goodbye"
+		caption="The dog already misses me, as you can tell from its eyes."
+	/>
 
-	<p>Eighth stop: San Francisco, CA</p>
-	<p>First time visiting San Francisco! Yay! The city is so lively and vibrant!</p>
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/transamerica_pyramid.jpg"
-			alt="Transamerica Pyramid"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Transamerica Pyramid</figcaption>
-	</figure>
+	<p>
+		🌉 <span class="font-bold">Eighth stop: San Francisco, CA</span>
+	</p>
+	<p>My first time visiting San Francisco! Yay! The city is so lively and vibrant!</p>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/transamerica_pyramid.jpg"
+		alt="Transamerica Pyramid"
+		caption="Transamerica Pyramid"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/golden_gate_bridge.jpg"
-			alt="Golden Gate Bridge"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Golden Gate Bridge</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/golden_gate_bridge.jpg"
+		alt="Golden Gate Bridge"
+		caption="Golden Gate Bridge"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/california_academy_of_sciences.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			So many butterflies at California Academy of Sciences
-		</figcaption>
-	</figure>
+	<BlogVideo
+		src="/blogs_asset/summer-2025/california_academy_of_sciences.mp4"
+		caption="So many butterflies at California Academy of Sciences"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/waymo.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			First time sitting at Waymo!! This is amazing!
-		</figcaption>
-	</figure>
+	<BlogVideo
+		src="/blogs_asset/summer-2025/waymo.mp4"
+		caption="My first time sitting in a Waymo! This is amazing!"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/ocean_beach.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			Ocean Beach by far my favorite beach in America
-		</figcaption>
-	</figure>
+	<BlogVideo
+		src="/blogs_asset/summer-2025/ocean_beach.mp4"
+		caption="Ocean Beach is by far my favorite beach in America."
+	/>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/coit_tower.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">Scene at Coit Tower</figcaption>
-	</figure>
+	<BlogVideo src="/blogs_asset/summer-2025/coit_tower.mp4" caption="Scene at Coit Tower" />
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/morse_code.jpg"
-			alt="Morse Code at Exploratorium"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Morse Code at Exploratorium</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/morse_code.jpg"
+		alt="Morse Code at Exploratorium"
+		caption="Morse code at the Exploratorium"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/ferryBuilding.jpg"
-			alt="Ferry Building"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Ferry Building</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/ferryBuilding.jpg"
+		alt="Ferry Building"
+		caption="Ferry Building"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/japanese_tea_garden.jpg"
-			alt="Japanese Tea Garden"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Japanese Tea Garden</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/japanese_tea_garden.jpg"
+		alt="Japanese Tea Garden"
+		caption="Japanese Tea Garden"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/palace_of_fine_arts.jpg"
-			alt="Palace of Fine Arts"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Palace of Fine Arts</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/palace_of_fine_arts.jpg"
+		alt="Palace of Fine Arts"
+		caption="Palace of Fine Arts"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/me_golden.jpg"
-			alt="Me at Golden Gate Bridge"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Me at Golden Gate Bridge</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/me_golden.jpg"
+		alt="Me at Golden Gate Bridge"
+		caption="Me at Golden Gate Bridge"
+	/>
 
-	<p>Ninth stop: San Jose, CA</p>
+	<p>🤖 <span class="font-bold">Ninth stop: San Jose, CA</span></p>
 	<p>Visited Stanford and Vietnam Town at San Jose</p>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/postman.jpg"
-			alt="Postman"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">So many AI ads on the highway!</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/postman.jpg"
+		alt="Postman"
+		caption="So many AI ads on the highway!"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/stanford.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">Stanford campus is beautiful!</figcaption>
-	</figure>
+	<BlogVideo src="/blogs_asset/summer-2025/stanford.mp4" caption="Stanford campus is beautiful!" />
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/yahoo_server.jpg"
-			alt="Yahoo Server"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			Yahoo Server at Jen-Hsun Huang Engineering Center
-		</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/yahoo_server.jpg"
+		alt="Yahoo Server"
+		caption="Yahoo Server at Jen-Hsun Huang Engineering Center"
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/viet_town.jpg"
-			alt="Vietnam Town"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			First time visiting a neighborhood where there are many so many Vietnam stuff
-		</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/viet_town.jpg"
+		alt="Vietnam Town"
+		caption="My first time visiting a neighborhood with so much Vietnamese culture."
+	/>
 
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/viet_menu.jpg"
-			alt="Vietnam Menu"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">
-			The menu is so presentable and has so many pictures
-		</figcaption>
-	</figure>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/viet_menu.jpg"
+		alt="Vietnam Menu"
+		caption="The menu is very presentable and has so many pictures."
+	/>
 
-	<figure class="flex flex-col items-center">
-		<!-- svelte-ignore a11y_media_has_caption -->
-		<video controls class="w-1/2 rounded-md shadow-lg">
-			<source src="/blogs_asset/summer-2025/municipal_rose_garden.mp4" type="video/mp4" />
-		</video>
-		<figcaption class="mt-3 text-sm text-gray-600">Municipal Rose Garden in San Jose</figcaption>
-	</figure>
+	<BlogVideo
+		src="/blogs_asset/summer-2025/municipal_rose_garden.mp4"
+		caption="Municipal Rose Garden in San Jose"
+	/>
 
-	<p>Tenth stop: York, Maine</p>
-	<p>Visited the one of the most photographed lighthouses in the world</p>
-	<figure class="flex flex-col items-center">
-		<img
-			src="/blogs_asset/summer-2025/nubble_lighthouse.jpg"
-			alt="Nubble Lighthouse"
-			class="object-cover w-1/2 rounded-md shadow-lg"
-		/>
-		<figcaption class="mt-3 text-sm text-gray-600">Nubble Lighthouse in Maine</figcaption>
-	</figure>
+	<p>🗼 <span class="font-bold">Tenth stop: York, Maine</span></p>
+	<p>Visited one of the most photographed lighthouses in the world</p>
+	<BlogFigure
+		src="/blogs_asset/summer-2025/nubble_lighthouse.jpg"
+		alt="Nubble Lighthouse"
+		caption="Nubble Lighthouse in Maine"
+	/>
 </div>
